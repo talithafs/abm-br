@@ -1,0 +1,78 @@
+package abm.agents;
+
+import java.util.HashMap;
+
+import abm.components.Statistics;
+
+public class Government extends Agent {
+
+	private static Government instance = new Government();
+	private final Statistics stats = Statistics.getInstance() ;
+	private HashMap<String,Double> params = null ;
+	
+	private double unempRate ;
+	private double empRate ;
+	private double meanUnempRate ;
+	
+	private double gdpDev ;
+	private double gdpGrowth ;
+	private double accumGdp ;
+	private double gdp ;
+	
+	private double vacanRatio ;
+	
+	private double inflation ;
+	
+	
+	private double meanGdp ;
+	private double accumInflation ;
+	
+	public void setParams(HashMap<String,Double> params) {
+		
+		if(this.params == null) {
+			this.params =  params ;
+		}
+
+	}
+	
+	public void initStatistics() {
+		
+		unempRate = stats.calculateUnempRate() ;
+		empRate = 1 - unempRate ;
+		meanUnempRate = stats.getMeanUnempRate().get(0);
+		
+		gdp = stats.calculateGdp() ;
+		gdpDev = calculateGdpDev() ;
+		gdpGrowth = calculateGdpGrowth() ;
+		
+		
+		
+		
+	}
+	
+	private double calculateGdpDev() {
+		return 0 ;
+	}
+	
+	private double calculateGdpGrowth() {
+		return 0 ;
+	}
+	
+	// TODO Call at the end of the cycle
+	public void calculateStatistics() {
+		
+	}
+	
+	public double getParam(String key) {
+		return params.get(key);
+	}
+	    
+	private Government() { } 
+	
+	public static Government getInstance() {
+		return instance ;
+	}
+	
+	
+
+}

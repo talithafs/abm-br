@@ -1,0 +1,15 @@
+<repast.simphony.data2.engine.FileSinkDescriptor simphonyVersion="2.5.0">
+  <name>Okun&apos;s Law</name>
+  <dataSet>Indicators</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>GdpDev</string>
+    <string>UnempRate</string>
+    <string>tick</string>
+    <string>Inflation</string>
+    <string>MeanUnempRate</string>
+  </sourceIds>
+  <fileName>okun.csv</fileName>
+  <addTimeStamp>false</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>

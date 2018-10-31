@@ -1,0 +1,100 @@
+package abm.creators;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import abm.agents.Consumer;
+import abm.agents.EmployedConsumer;
+import abm.agents.UnemployedConsumer;
+import abm.helpers.Constants;
+import cern.jet.random.Uniform;
+import repast.simphony.random.RandomHelper;
+import repast.simphony.util.SimUtilities;
+
+public class ConsumersCreator implements AgentsCreator<Consumer> {
+	
+	private static ConsumersCreator instance = new ConsumersCreator();
+	
+	// class cannot be instantiated
+	private ConsumersCreator(){}
+
+	//Get the only object available
+	public static ConsumersCreator getInstance(){
+		return instance;
+	}
+	
+	public ArrayList<Consumer> create(HashMap<String,Float> params){
+		
+		int nConsumers = params.get(Constants.Keys.N_CONSUMERS).intValue();
+		int nUnemployed = params.get(Constants.Keys.N_UNEMPLOYED).intValue();
+		int nEmployed = nConsumers - nUnemployed ;
+//		double percDebt = (double) params.get(Constants.Keys.HH_DEBT);
+//		
+//		Uniform runif = RandomHelper.createUniform(0, 2*percDebt);	
+		ArrayList<Consumer> consumers = new ArrayList<Consumer>();
+		
+		for(int i = 0; i < nEmployed; i++) {
+			Consumer cons = new EmployedConsumer();
+//			percDebt = runif.nextDouble()/100;
+			cons.setDebt(debt);
+			consumers.add();
+		}
+		
+		for(int i = 0; i < nUnemployed; i++) {
+			consumers.add(new UnemployedConsumer());
+		}
+		
+		SimUtilities.shuffle(consumers, RandomHelper.getUniform());
+		return consumers ;
+	}
+	
+	public void distribute(ArrayList<Consumer> consumers, ArrayList<Integer[]> distribution) {
+		
+		int i = 0 ;
+		
+		for(Consumer cons : consumers) {
+			
+			if(cons instanceof EmployedConsumer) {
+				
+				for(Integer[] row : distribution) {
+
+					if(row[0] > 0) {
+						int wage = row[2] ;
+						((EmployedConsumer) cons).setWage(wage);
+						cons.setResWage(wage);
+						int wealth = row[3];
+						cons.setAssets(wealth);
+						row[0]-- ;
+						distribution.set(i, row);
+						break;
+					}
+					i++;
+				}
+				i = 0 ;
+			} 
+			else {
+				
+				for(Integer[] row : distribution) {
+
+					if(row[1] > 0) {
+						int wage = row[2] ;
+						cons.setResWage(wage);
+						int wealth = row[3];
+						cons.setAssets(wealth);
+						row[1]-- ;
+						distribution.set(i, row);
+						break;
+					}
+					i++;
+				}
+				i = 0 ;	
+			}
+		}
+		
+		for(Integer[] d : distribution) {
+		System.out.println(d[0] + " " + d[1] +  " " + d[2] +  " " + d[3]);
+		}
+		
+	}
+
+}

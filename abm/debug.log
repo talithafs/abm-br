@@ -1,0 +1,199 @@
+INFO  [Thread-0] 2018-09-02 15:04:29,429 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO  [Thread-0] 2018-09-02 15:04:29,433 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO  [Thread-0] 2018-09-02 15:04:29,436 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+INFO  [Thread-0] 2018-09-02 15:04:29,439 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow.iterate(Flow.java:82)
+INFO  [Thread-0] 2018-09-02 15:04:29,442 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow.run(Flow.java:53)
+INFO  [Thread-0] 2018-09-02 15:04:29,445 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow$$FastClassByCGLIB$$591e9990.invoke(<generated>)
+INFO  [Thread-0] 2018-09-02 15:04:29,445 repast.simphony.batch.ssh.LocalSession - 	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+INFO  [Thread-0] 2018-09-02 15:04:29,445 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+INFO  [Thread-0] 2018-09-02 15:04:29,448 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.controller.ScheduledMethodControllerAction$StaticMethodAction.execute(ScheduledMethodControllerAction.java:247)
+INFO  [Thread-0] 2018-09-02 15:04:29,448 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+INFO  [Thread-0] 2018-09-02 15:04:29,448 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+INFO  [Thread-0] 2018-09-02 15:04:29,448 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.BatchScheduleRunner$ScheduleLoopRunnable.run(BatchScheduleRunner.java:37)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.lang.Thread.run(Thread.java:844)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - Caused by: java.lang.OutOfMemoryError: Java heap space
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.HashMap.putVal(HashMap.java:630)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.HashMap.put(HashMap.java:611)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.HashSet.add(HashSet.java:219)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at edu.uci.ics.jung.graph.UndirectedOrderedSparseMultigraph.getNeighbors(UndirectedOrderedSparseMultigraph.java:81)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at edu.uci.ics.jung.graph.UndirectedSparseMultigraph.getPredecessors(UndirectedSparseMultigraph.java:174)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.space.graph.JungNetwork.getAdjacent(JungNetwork.java:63)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.context.space.graph.ContextJungNetwork.getAdjacent(ContextJungNetwork.java:129)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at abm.markets.AbstractMarket.getAdjacent(AbstractMarket.java:83)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at abm.markets.CreditMarket.getRandomAgents(CreditMarket.java:81)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	at abm.agents.Bank.calculateAvailableCredit(Bank.java:75)
+INFO  [Thread-0] 2018-09-02 15:04:29,452 repast.simphony.batch.ssh.LocalSession - 	... 16 more
+INFO  [Thread-0] 2018-09-02 15:04:48,923 repast.simphony.batch.ssh.LocalSession - >> New run: 3133
+INFO  [Thread-0] 2018-09-02 15:05:30,592 repast.simphony.batch.ssh.LocalSession - >> New run: 3134
+INFO  [Thread-0] 2018-09-02 15:05:55,581 repast.simphony.batch.ssh.LocalSession - 
+INFO  [Thread-0] 2018-09-02 15:05:55,595 repast.simphony.batch.ssh.LocalSession - Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Thread-3344"
+INFO  [Thread-0] 2018-09-02 15:06:09,290 repast.simphony.batch.ssh.LocalSession - >> New run: 3135
+INFO  [Thread-0] 2018-09-02 15:06:34,031 repast.simphony.batch.ssh.LocalSession - >> New run: 3136
+INFO  [Thread-0] 2018-09-02 15:07:07,674 repast.simphony.batch.ssh.LocalSession - >> New run: 3137
+INFO  [Thread-0] 2018-09-02 15:07:31,907 repast.simphony.batch.ssh.LocalSession - >> New run: 3138
+INFO  [Thread-0] 2018-09-02 15:08:06,724 repast.simphony.batch.ssh.LocalSession - >> New run: 3139
+INFO  [Thread-0] 2018-09-02 15:08:38,897 repast.simphony.batch.ssh.LocalSession - >> New run: 3140
+INFO  [pool-1-thread-1] 2018-09-02 15:09:07,197 repast.simphony.batch.ssh.LocalDonePoller - Polled /home/talithafs/Dropbox/Dissertação/Modelo/calibration/tmp/simphony_model_1535737345820 for DONE:  no
+INFO  [Thread-0] 2018-09-02 15:09:16,742 repast.simphony.batch.ssh.LocalSession - >> New run: 3141
+INFO  [Thread-0] 2018-09-02 15:09:40,410 repast.simphony.batch.ssh.LocalSession - >> New run: 3142
+INFO  [Thread-0] 2018-09-02 15:10:13,238 repast.simphony.batch.ssh.LocalSession - >> New run: 3143
+INFO  [Thread-0] 2018-09-02 15:10:46,087 repast.simphony.batch.ssh.LocalSession - >> New run: 3144
+INFO  [Thread-0] 2018-09-02 15:11:19,225 repast.simphony.batch.ssh.LocalSession - >> New run: 3145
+INFO  [Thread-0] 2018-09-02 15:11:43,018 repast.simphony.batch.ssh.LocalSession - >> New run: 3146
+INFO  [Thread-0] 2018-09-02 15:12:15,843 repast.simphony.batch.ssh.LocalSession - >> New run: 3147
+INFO  [Thread-0] 2018-09-02 15:12:48,979 repast.simphony.batch.ssh.LocalSession - >> New run: 3148
+INFO  [Thread-0] 2018-09-02 15:13:22,297 repast.simphony.batch.ssh.LocalSession - >> New run: 3149
+INFO  [Thread-0] 2018-09-02 15:13:55,316 repast.simphony.batch.ssh.LocalSession - >> New run: 3150
+INFO  [Thread-0] 2018-09-02 15:14:29,444 repast.simphony.batch.ssh.LocalSession - >> New run: 3151
+INFO  [Thread-0] 2018-09-02 15:15:02,173 repast.simphony.batch.ssh.LocalSession - >> New run: 3152
+INFO  [Thread-0] 2018-09-02 15:15:34,667 repast.simphony.batch.ssh.LocalSession - >> New run: 3153
+INFO  [Thread-0] 2018-09-02 15:16:08,937 repast.simphony.batch.ssh.LocalSession - >> New run: 3154
+INFO  [Thread-0] 2018-09-02 15:16:41,417 repast.simphony.batch.ssh.LocalSession - >> New run: 3155
+INFO  [Thread-0] 2018-09-02 15:17:14,639 repast.simphony.batch.ssh.LocalSession - >> New run: 3156
+INFO  [Thread-0] 2018-09-02 15:17:47,411 repast.simphony.batch.ssh.LocalSession - >> New run: 3157
+INFO  [Thread-0] 2018-09-02 15:18:20,764 repast.simphony.batch.ssh.LocalSession - >> New run: 3158
+INFO  [Thread-0] 2018-09-02 15:19:06,692 repast.simphony.batch.ssh.LocalSession - >> New run: 3159
+INFO  [Thread-0] 2018-09-02 15:19:41,221 repast.simphony.batch.ssh.LocalSession - >> New run: 3160
+INFO  [Thread-0] 2018-09-02 15:20:16,034 repast.simphony.batch.ssh.LocalSession - >> New run: 3161
+INFO  [Thread-0] 2018-09-02 15:20:58,076 repast.simphony.batch.ssh.LocalSession - >> New run: 3162
+INFO  [Thread-0] 2018-09-02 15:21:31,182 repast.simphony.batch.ssh.LocalSession - >> New run: 3163
+INFO  [Thread-0] 2018-09-02 15:22:13,181 repast.simphony.batch.ssh.LocalSession - >> New run: 3164
+INFO  [Thread-0] 2018-09-02 15:22:52,481 repast.simphony.batch.ssh.LocalSession - >> New run: 3165
+INFO  [Thread-0] 2018-09-02 15:23:33,743 repast.simphony.batch.ssh.LocalSession - >> New run: 3166
+INFO  [Thread-0] 2018-09-02 15:24:15,042 repast.simphony.batch.ssh.LocalSession - >> New run: 3167
+INFO  [Thread-0] 2018-09-02 15:24:56,700 repast.simphony.batch.ssh.LocalSession - >> New run: 3168
+INFO  [Thread-0] 2018-09-02 15:25:38,409 repast.simphony.batch.ssh.LocalSession - >> New run: 3169
+INFO  [Thread-0] 2018-09-02 15:26:10,986 repast.simphony.batch.ssh.LocalSession - >> New run: 3170
+INFO  [Thread-0] 2018-09-02 15:27:01,988 repast.simphony.batch.ssh.LocalSession - >> New run: 3171
+INFO  [Thread-0] 2018-09-02 15:27:43,591 repast.simphony.batch.ssh.LocalSession - >> New run: 3172
+INFO  [Thread-0] 2018-09-02 15:28:24,826 repast.simphony.batch.ssh.LocalSession - >> New run: 3173
+INFO  [Thread-0] 2018-09-02 15:29:06,614 repast.simphony.batch.ssh.LocalSession - >> New run: 3174
+INFO  [Thread-0] 2018-09-02 15:29:59,508 repast.simphony.batch.ssh.LocalSession - >> New run: 3175
+INFO  [Thread-0] 2018-09-02 15:30:47,680 repast.simphony.batch.ssh.LocalSession - >> New run: 3176
+INFO  [Thread-0] 2018-09-02 15:31:28,891 repast.simphony.batch.ssh.LocalSession - >> New run: 3177
+INFO  [Thread-0] 2018-09-02 15:32:18,752 repast.simphony.batch.ssh.LocalSession - >> New run: 3178
+INFO  [Thread-0] 2018-09-02 15:33:00,002 repast.simphony.batch.ssh.LocalSession - >> New run: 3179
+INFO  [Thread-0] 2018-09-02 15:33:50,112 repast.simphony.batch.ssh.LocalSession - >> New run: 3180
+INFO  [Thread-0] 2018-09-02 15:34:42,038 repast.simphony.batch.ssh.LocalSession - >> New run: 3181
+INFO  [Thread-0] 2018-09-02 15:35:32,116 repast.simphony.batch.ssh.LocalSession - >> New run: 3182
+INFO  [Thread-0] 2018-09-02 15:36:22,701 repast.simphony.batch.ssh.LocalSession - >> New run: 3183
+INFO  [Thread-0] 2018-09-02 15:37:13,892 repast.simphony.batch.ssh.LocalSession - >> New run: 3184
+INFO  [Thread-0] 2018-09-02 15:38:04,137 repast.simphony.batch.ssh.LocalSession - >> New run: 3185
+INFO  [Thread-0] 2018-09-02 15:38:54,348 repast.simphony.batch.ssh.LocalSession - >> New run: 3186
+INFO  [Thread-0] 2018-09-02 15:39:44,450 repast.simphony.batch.ssh.LocalSession - >> New run: 3187
+INFO  [Thread-0] 2018-09-02 15:40:44,429 repast.simphony.batch.ssh.LocalSession - >> New run: 3188
+INFO  [Thread-0] 2018-09-02 15:41:46,568 repast.simphony.batch.ssh.LocalSession - >> New run: 3189
+INFO  [Thread-0] 2018-09-02 15:42:42,463 repast.simphony.batch.ssh.LocalSession - >> New run: 3190
+INFO  [Thread-0] 2018-09-02 15:43:31,667 repast.simphony.batch.ssh.LocalSession - Installed cap is zero!
+INFO  [Thread-0] 2018-09-02 15:43:32,025 repast.simphony.batch.ssh.LocalSession - >> New run: 3191
+INFO  [Thread-0] 2018-09-02 15:44:21,909 repast.simphony.batch.ssh.LocalSession - Installed cap is zero!
+INFO  [Thread-0] 2018-09-02 15:44:37,937 repast.simphony.batch.ssh.LocalSession - >> New run: 3192
+INFO  [Thread-0] 2018-09-02 15:45:29,354 repast.simphony.batch.ssh.LocalSession - >> New run: 3193
+INFO  [Thread-0] 2018-09-02 15:46:32,761 repast.simphony.batch.ssh.LocalSession - >> New run: 3194
+INFO  [Thread-0] 2018-09-02 15:47:23,162 repast.simphony.batch.ssh.LocalSession - >> New run: 3195
+INFO  [Thread-0] 2018-09-02 15:48:22,264 repast.simphony.batch.ssh.LocalSession - >> New run: 3196
+INFO  [Thread-0] 2018-09-02 15:49:21,666 repast.simphony.batch.ssh.LocalSession - >> New run: 3197
+INFO  [Thread-0] 2018-09-02 15:50:20,710 repast.simphony.batch.ssh.LocalSession - >> New run: 3198
+INFO  [Thread-0] 2018-09-02 15:51:21,099 repast.simphony.batch.ssh.LocalSession - >> New run: 3199
+INFO  [Thread-0] 2018-09-02 15:52:27,940 repast.simphony.batch.ssh.LocalSession - Installed cap is zero!
+INFO  [Thread-0] 2018-09-02 15:52:28,284 repast.simphony.batch.ssh.LocalSession - >> New run: 3200
+INFO  [Thread-0] 2018-09-02 15:53:27,702 repast.simphony.batch.ssh.LocalSession - >> New run: 3201
+INFO  [Thread-0] 2018-09-02 15:54:40,265 repast.simphony.batch.ssh.LocalSession - >> New run: 3202
+INFO  [Thread-0] 2018-09-02 15:55:48,472 repast.simphony.batch.ssh.LocalSession - >> New run: 3203
+INFO  [Thread-0] 2018-09-02 15:56:56,817 repast.simphony.batch.ssh.LocalSession - >> New run: 3204
+INFO  [Thread-0] 2018-09-02 15:58:05,160 repast.simphony.batch.ssh.LocalSession - >> New run: 3205
+INFO  [Thread-0] 2018-09-02 15:59:22,488 repast.simphony.batch.ssh.LocalSession - >> New run: 3206
+INFO  [Thread-0] 2018-09-02 16:00:39,311 repast.simphony.batch.ssh.LocalSession - >> New run: 3207
+INFO  [Thread-0] 2018-09-02 16:02:06,132 repast.simphony.batch.ssh.LocalSession - >> New run: 3208
+INFO  [Thread-0] 2018-09-02 16:03:33,035 repast.simphony.batch.ssh.LocalSession - >> New run: 3209
+INFO  [Thread-0] 2018-09-02 16:05:08,320 repast.simphony.batch.ssh.LocalSession - >> New run: 3210
+INFO  [Thread-0] 2018-09-02 16:06:44,159 repast.simphony.batch.ssh.LocalSession - java.lang.reflect.InvocationTargetException
+INFO  [Thread-0] 2018-09-02 16:06:44,252 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO  [Thread-0] 2018-09-02 16:06:44,252 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO  [Thread-0] 2018-09-02 16:06:44,252 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO  [Thread-0] 2018-09-02 16:06:44,253 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+INFO  [Thread-0] 2018-09-02 16:06:44,253 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow.iterate(Flow.java:82)
+INFO  [Thread-0] 2018-09-02 16:06:44,254 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow.run(Flow.java:62)
+INFO  [Thread-0] 2018-09-02 16:06:44,254 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow$$FastClassByCGLIB$$591e9990.invoke(<generated>)
+INFO  [Thread-0] 2018-09-02 16:06:44,254 repast.simphony.batch.ssh.LocalSession - 	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+INFO  [Thread-0] 2018-09-02 16:06:44,386 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+INFO  [Thread-0] 2018-09-02 16:06:44,386 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.controller.ScheduledMethodControllerAction$StaticMethodAction.execute(ScheduledMethodControllerAction.java:247)
+INFO  [Thread-0] 2018-09-02 16:06:44,410 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+INFO  [Thread-0] 2018-09-02 16:06:44,410 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+INFO  [Thread-0] 2018-09-02 16:06:44,626 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+INFO  [Thread-0] 2018-09-02 16:06:44,627 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+INFO  [Thread-0] 2018-09-02 16:06:44,627 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.BatchScheduleRunner$ScheduleLoopRunnable.run(BatchScheduleRunner.java:37)
+INFO  [Thread-0] 2018-09-02 16:06:44,674 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.lang.Thread.run(Thread.java:844)
+INFO  [Thread-0] 2018-09-02 16:06:44,674 repast.simphony.batch.ssh.LocalSession - Caused by: java.lang.IllegalArgumentException: Non-existing pdf
+INFO  [Thread-0] 2018-09-02 16:06:44,737 repast.simphony.batch.ssh.LocalSession - 	at cern.jet.random.EmpiricalWalker.setState(Unknown Source)
+INFO  [Thread-0] 2018-09-02 16:06:44,737 repast.simphony.batch.ssh.LocalSession - 	at cern.jet.random.EmpiricalWalker.<init>(Unknown Source)
+INFO  [Thread-0] 2018-09-02 16:06:44,737 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.random.DefaultRandomRegistry.createEmpiricalWalker(DefaultRandomRegistry.java:334)
+INFO  [Thread-0] 2018-09-02 16:06:44,748 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.random.RandomHelper.createEmpiricalWalker(RandomHelper.java:125)
+INFO  [Thread-0] 2018-09-02 16:06:44,748 repast.simphony.batch.ssh.LocalSession - 	at abm.agents.CapitalGoodsFirm.getSelectionFunction(CapitalGoodsFirm.java:159)
+INFO  [Thread-0] 2018-09-02 16:06:44,748 repast.simphony.batch.ssh.LocalSession - 	at abm.agents.CapitalGoodsFirm.innovate(CapitalGoodsFirm.java:127)
+INFO  [Thread-0] 2018-09-02 16:06:44,748 repast.simphony.batch.ssh.LocalSession - 	... 16 more
+INFO  [Thread-0] 2018-09-02 16:06:44,748 repast.simphony.batch.ssh.LocalSession - >> New run: 3211
+INFO  [Thread-0] 2018-09-02 16:08:18,816 repast.simphony.batch.ssh.LocalSession - >> New run: 3212
+INFO  [Thread-0] 2018-09-02 16:10:02,157 repast.simphony.batch.ssh.LocalSession - >> New run: 3213
+INFO  [Thread-0] 2018-09-02 16:11:47,103 repast.simphony.batch.ssh.LocalSession - >> New run: 3214
+INFO  [Thread-0] 2018-09-02 16:13:43,523 repast.simphony.batch.ssh.LocalSession - >> New run: 3215
+INFO  [Thread-0] 2018-09-02 16:15:34,792 repast.simphony.batch.ssh.LocalSession - >> New run: 3216
+INFO  [Thread-0] 2018-09-02 16:17:36,554 repast.simphony.batch.ssh.LocalSession - >> New run: 3217
+INFO  [Thread-0] 2018-09-02 16:19:46,797 repast.simphony.batch.ssh.LocalSession - >> New run: 3218
+INFO  [Thread-0] 2018-09-02 16:22:06,260 repast.simphony.batch.ssh.LocalSession - >> New run: 3219
+INFO  [Thread-0] 2018-09-02 16:24:25,355 repast.simphony.batch.ssh.LocalSession - >> New run: 3220
+INFO  [Thread-0] 2018-09-02 16:26:53,868 repast.simphony.batch.ssh.LocalSession - >> New run: 3221
+INFO  [Thread-0] 2018-09-02 16:29:29,310 repast.simphony.batch.ssh.LocalSession - >> New run: 3222
+INFO  [Thread-0] 2018-09-02 16:32:15,334 repast.simphony.batch.ssh.LocalSession - >> New run: 3223
+INFO  [Thread-0] 2018-09-02 16:35:18,932 repast.simphony.batch.ssh.LocalSession - >> New run: 3224
+INFO  [Thread-0] 2018-09-02 16:38:23,418 repast.simphony.batch.ssh.LocalSession - >> New run: 3225
+INFO  [Thread-0] 2018-09-02 16:41:42,305 repast.simphony.batch.ssh.LocalSession - >> New run: 3226
+INFO  [Thread-0] 2018-09-02 16:45:20,089 repast.simphony.batch.ssh.LocalSession - >> New run: 3227
+INFO  [pool-1-thread-1] 2018-09-02 16:49:08,002 repast.simphony.batch.ssh.LocalDonePoller - Polled /home/talithafs/Dropbox/Dissertação/Modelo/calibration/tmp/simphony_model_1535737345820 for DONE:  no
+INFO  [Thread-0] 2018-09-02 16:49:41,785 repast.simphony.batch.ssh.LocalSession - >> New run: 3228
+INFO  [Thread-0] 2018-09-02 16:54:11,246 repast.simphony.batch.ssh.LocalSession - >> New run: 3229
+INFO  [Thread-0] 2018-09-02 16:58:49,067 repast.simphony.batch.ssh.LocalSession - Installed cap is zero!
+INFO  [Thread-0] 2018-09-02 16:58:58,334 repast.simphony.batch.ssh.LocalSession - >> New run: 3230
+INFO  [Thread-0] 2018-09-02 17:04:38,174 repast.simphony.batch.ssh.LocalSession - >> New run: 3231
+INFO  [Thread-0] 2018-09-02 17:11:10,527 repast.simphony.batch.ssh.LocalSession - >> New run: 3232
+INFO  [Thread-0] 2018-09-02 17:18:01,378 repast.simphony.batch.ssh.LocalSession - >> New run: 3233
+INFO  [Thread-0] 2018-09-02 17:26:29,370 repast.simphony.batch.ssh.LocalSession - >> New run: 3234
+INFO  [Thread-0] 2018-09-02 17:36:34,023 repast.simphony.batch.ssh.LocalSession - >> New run: 3235
+INFO  [Thread-0] 2018-09-02 17:51:17,214 repast.simphony.batch.ssh.LocalSession - >> New run: 3236
+INFO  [Thread-0] 2018-09-02 18:13:59,801 repast.simphony.batch.ssh.LocalSession - >> New run: 3237
+INFO  [pool-1-thread-1] 2018-09-02 18:29:08,077 repast.simphony.batch.ssh.LocalDonePoller - Polled /home/talithafs/Dropbox/Dissertação/Modelo/calibration/tmp/simphony_model_1535737345820 for DONE:  no
+INFO  [Thread-0] 2018-09-02 18:44:11,256 repast.simphony.batch.ssh.LocalSession - java.lang.reflect.InvocationTargetException
+INFO  [Thread-0] 2018-09-02 18:44:11,290 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO  [Thread-0] 2018-09-02 18:44:11,290 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO  [Thread-0] 2018-09-02 18:44:11,290 repast.simphony.batch.ssh.LocalSession - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO  [Thread-0] 2018-09-02 18:44:11,331 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+INFO  [Thread-0] 2018-09-02 18:44:11,331 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow.iterate(Flow.java:82)
+INFO  [Thread-0] 2018-09-02 18:44:11,374 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow.run(Flow.java:53)
+INFO  [Thread-0] 2018-09-02 18:44:11,374 repast.simphony.batch.ssh.LocalSession - 	at abm.Flow$$FastClassByCGLIB$$591e9990.invoke(<generated>)
+INFO  [Thread-0] 2018-09-02 18:44:11,374 repast.simphony.batch.ssh.LocalSession - 	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+INFO  [Thread-0] 2018-09-02 18:44:11,374 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+INFO  [Thread-0] 2018-09-02 18:44:11,374 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.controller.ScheduledMethodControllerAction$StaticMethodAction.execute(ScheduledMethodControllerAction.java:247)
+INFO  [Thread-0] 2018-09-02 18:44:11,408 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+INFO  [Thread-0] 2018-09-02 18:44:11,409 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+INFO  [Thread-0] 2018-09-02 18:44:11,409 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+INFO  [Thread-0] 2018-09-02 18:44:11,441 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+INFO  [Thread-0] 2018-09-02 18:44:11,441 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.BatchScheduleRunner$ScheduleLoopRunnable.run(BatchScheduleRunner.java:37)
+INFO  [Thread-0] 2018-09-02 18:44:11,487 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.lang.Thread.run(Thread.java:844)
+INFO  [Thread-0] 2018-09-02 18:44:11,487 repast.simphony.batch.ssh.LocalSession - Caused by: java.lang.OutOfMemoryError: Java heap space
+INFO  [Thread-0] 2018-09-02 18:44:11,487 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256)
+INFO  [Thread-0] 2018-09-02 18:44:11,528 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.HashMap.putVal(HashMap.java:630)
+INFO  [Thread-0] 2018-09-02 18:44:11,528 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.HashMap.put(HashMap.java:611)
+INFO  [Thread-0] 2018-09-02 18:44:11,528 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.util.HashSet.add(HashSet.java:219)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	at edu.uci.ics.jung.graph.UndirectedOrderedSparseMultigraph.getNeighbors(UndirectedOrderedSparseMultigraph.java:81)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	at edu.uci.ics.jung.graph.UndirectedSparseMultigraph.getSuccessors(UndirectedSparseMultigraph.java:178)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.space.graph.JungNetwork.getAdjacent(JungNetwork.java:64)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.context.space.graph.ContextJungNetwork.getAdjacent(ContextJungNetwork.java:129)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	at abm.markets.AbstractMarket.getAdjacent(AbstractMarket.java:83)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	at abm.markets.CreditMarket.getRandomAgents(CreditMarket.java:81)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	at abm.agents.Bank.calculateAvailableCredit(Bank.java:75)
+INFO  [Thread-0] 2018-09-02 18:44:11,529 repast.simphony.batch.ssh.LocalSession - 	... 16 more
+INFO  [Thread-0] 2018-09-02 18:45:30,841 repast.simphony.batch.ssh.LocalSession - 
+INFO  [Thread-0] 2018-09-02 18:45:30,841 repast.simphony.batch.ssh.LocalSession - Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Thread-3236"

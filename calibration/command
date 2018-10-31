@@ -1,0 +1,12 @@
+
+
+java -cp $CLASSPATH:/home/talithafs/opt/eclipse/plugins/repast.simphony.runtime_2.5.0/bin/*:/home/talithafs/opt/eclipse/plugins/repast.simphony.runtime_2.5.0/bin/:/home/talithafs/opt/eclipse/plugins/repast.simphony.runtime_2.5.0/lib/*:/home/talithafs/opt/eclipse/plugins/repast.simphony.batch_2.5.0/bin:/home/talithafs/opt/eclipse/plugins/repast.simphony.core_2.5.0/lib/*:/home/talithafs/opt/eclipse/plugins/repast.simphony.bin_and_src_2.5.0/repast.simphony.bin_and_src.jar:lib/opencsv-4.1.jar:./bin/ repast.simphony.batch.BatchMain -params batch/batch_params.xml batch/batch_configuration.properties -interactive ./abm.rs
+
+java -cp $CLASSPATH:/home/talithafs/opt/eclipse/pluginrepast.simphony.runtime_2.5.0/bin/*:/home/talithafs/opt/eclipse/plugins/repast.simphony.runtime_2.5.0/bin/:/home/talithafs/opt/eclipse/plugins/repast.simphony.runtime_2.5.0/lib/*:/home/talithafs/opt/eclipse/plugins/repast.simphony.batch_2.5.0/bin/:/home/talithafs/opt/eclipse/plugins/repast.simphony.distributed.batch.ui_2.5.0/bin-standalone/:/home/talithafs/opt/eclipse/plugins/repast.simphony.distributed.batch_2.5.0/bin/:/home/talithafs/opt/eclipse/plugins/repast.simphony.core_2.5.0/lib/*:/home/talithafs/opt/eclipse/plugins/com.jcraft.jsch_0.1.54.v20170116-1932.jar:/home/talithafs/opt/eclipse/plugins/repast.simphony.bin_and_src_2.5.0/repast.simphony.bin_and_src.jar:lib/opencsv-4.1.jar:./bin/ repast.simphony.batch.standalone.StandAloneMain -hl -b batch/batch_params.xml -c batch/batch_configuration.properties -r
+
+
+
+
+
+
+

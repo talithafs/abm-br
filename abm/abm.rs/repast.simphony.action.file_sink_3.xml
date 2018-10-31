@@ -1,0 +1,14 @@
+<repast.simphony.data2.engine.FileSinkDescriptor simphonyVersion="2.5.0">
+  <name>Business Cycles</name>
+  <dataSet>Indicators</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>GdpGrowth</string>
+    <string>Gdp</string>
+    <string>MeanGdp</string>
+    <string>tick</string>
+  </sourceIds>
+  <fileName>business.csv</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>

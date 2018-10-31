@@ -1,0 +1,19 @@
+package abm.creators;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import abm.agents.Firm;
+
+
+public class FirmsCreator implements AgentsCreator<Firm> {
+
+	public ArrayList<Firm> create(HashMap<String,Float> params){
+		
+	}
+	
+	public void distribute(ArrayList<Firm> firms, ArrayList<Integer[]> distribution) {
+		
+	}
+	
+}

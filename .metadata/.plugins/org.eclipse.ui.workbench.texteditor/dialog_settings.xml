@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="getDouble" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="getInteger"/>
+			<item value="public static void init"/>
+			<item value="Double"/>
+			<item value="meanGdpGrowth"/>
+			<item value="13"/>
+			<item value="a"/>
+			<item value="additionalRD"/>
+			<item value="hire"/>
+			<item value="1968"/>
+			<item value="3572"/>
+			<item value="3736"/>
+			<item value="3705"/>
+			<item value="1805"/>
+			<item value="1942"/>
+			<item value="3462"/>
+		</list>
+		<list key="replacehistory">
+			<item value="getDouble"/>
+			<item value="private static void init"/>
+			<item value="double"/>
+			<item value="accumGdpGrowth"/>
+			<item value="meanGdpGrowth"/>
+			<item value="System.out.println"/>
+			<item value=""/>
+			<item value="1.05"/>
+			<item value="setCurrentSales"/>
+			<item value="TestsHelper.calculateCredit(banks,nonFins);"/>
+			<item value="TestsHelper.planProduction(firms, "/>
+			<item value="Bank"/>
+			<item value="bank"/>
+			<item value="conFirm"/>
+			<item value="firm"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="338" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="430" key="DIALOG_HEIGHT"/>
+		<item value="36" key="DIALOG_X_ORIGIN"/>
+		<item value="32" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

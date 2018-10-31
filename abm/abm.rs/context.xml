@@ -1,0 +1,7 @@
+<context id="abm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://repast.org/scenario/context">
+  	<projection type="network" id="accounts"/>
+  	<projection type="network" id="loans"/>
+  	<projection type="network" id="jobs"/>
+  	<projection type="network" id="capMarket"/>
+  	<projection type="network" id="conMarket"/>
+</context>

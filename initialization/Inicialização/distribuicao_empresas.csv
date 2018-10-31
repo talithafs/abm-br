@@ -1,0 +1,154 @@
+Tipo;Faixas;Número de empresas e outras organizações (Unidades);Pessoal ocupado total (Pessoas);Salário médio mensal (Salários mínimos)
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;0 a 4;88848;110599;1,6
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;5 a 9;6009;39090;1,6
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;10 a 19;3592;47512;1,8
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;20 a 29;1074;25712;1,9
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;30 a 49;848;X;X
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;50 a 99;601;X;X
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;100 a 249;379;56782;2,1
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;250 a 499;159;X;X
+A Agricultura, pecuária, produção florestal, pesca e aquicultura;500 ou mais;136;X;X
+B Indústrias extrativas;0 a 4;6254;X;X
+B Indústrias extrativas;5 a 9;1680;11083;2
+B Indústrias extrativas;10 a 19;1168;X;X
+B Indústrias extrativas;20 a 29;482;11485;2,5
+B Indústrias extrativas;30 a 49;363;13881;3
+B Indústrias extrativas;50 a 99;288;19742;3,4
+B Indústrias extrativas;100 a 249;145;21489;6,6
+B Indústrias extrativas;250 a 499;42;14157;7,4
+B Indústrias extrativas;500 ou mais;51;109964;6,7
+C Indústrias de transformação;0 a 4;232271;469021;1,6
+C Indústrias de transformação;5 a 9;81414;538133;1,7
+C Indústrias de transformação;10 a 19;54928;743404;1,9
+C Indústrias de transformação;20 a 29;19846;474060;2
+C Indústrias de transformação;30 a 49;13946;X;X
+C Indústrias de transformação;50 a 99;10329;711714;2,4
+C Indústrias de transformação;100 a 249;5555;849025;3
+C Indústrias de transformação;250 a 499;1863;X;X
+C Indústrias de transformação;500 ou mais;1763;X;X
+D Eletricidade e gás;0 a 4;1659;X;X
+D Eletricidade e gás;5 a 9;286;1864;6,3
+D Eletricidade e gás;10 a 19;234;3136;6,6
+D Eletricidade e gás;20 a 29;90;2196;6,4
+D Eletricidade e gás;30 a 49;86;3269;6,7
+D Eletricidade e gás;50 a 99;80;5652;6
+D Eletricidade e gás;100 a 249;47;6816;6,4
+D Eletricidade e gás;250 a 499;19;6639;8,9
+D Eletricidade e gás;500 ou mais;49;X;X
+F Construção;0 a 4;170090;311959;1,7
+F Construção;5 a 9;35620;232389;1,8
+F Construção;10 a 19;20578;275288;1,9
+F Construção;20 a 29;7368;X;X
+F Construção;30 a 49;5678;214934;2,1
+F Construção;50 a 99;4204;290163;2,3
+F Construção;100 a 249;2477;373647;2,4
+F Construção;250 a 499;785;X;X
+F Construção;500 ou mais;470;712043;3,9
+"G Comércio; reparação de veículos automotores e motocicletas";0 a 4;1462597;2829473;1,5
+"G Comércio; reparação de veículos automotores e motocicletas";5 a 9;335920;2166096;1,6
+"G Comércio; reparação de veículos automotores e motocicletas";10 a 19;144630;1897231;1,8
+"G Comércio; reparação de veículos automotores e motocicletas";20 a 29;29345;X;X
+"G Comércio; reparação de veículos automotores e motocicletas";30 a 49;17061;636830;2
+"G Comércio; reparação de veículos automotores e motocicletas";50 a 99;9114;X;X
+"G Comércio; reparação de veículos automotores e motocicletas";100 a 249;4376;655432;2,6
+"G Comércio; reparação de veículos automotores e motocicletas";250 a 499;1130;X;X
+"G Comércio; reparação de veículos automotores e motocicletas";500 ou mais;884;X;X
+H Transporte, armazenagem e correio;0 a 4;175337;319237;1,9
+H Transporte, armazenagem e correio;5 a 9;30594;196946;1,9
+H Transporte, armazenagem e correio;10 a 19;15246;202979;2
+H Transporte, armazenagem e correio;20 a 29;4591;109510;2,2
+H Transporte, armazenagem e correio;30 a 49;3835;145144;2,3
+H Transporte, armazenagem e correio;50 a 99;2809;194273;2,4
+H Transporte, armazenagem e correio;100 a 249;1658;254482;2,9
+H Transporte, armazenagem e correio;250 a 499;691;241485;3,2
+H Transporte, armazenagem e correio;500 ou mais;724;1089345;3,8
+I Alojamento e alimentação;0 a 4;193847;378855;1,3
+I Alojamento e alimentação;5 a 9;65862;435416;1,4
+I Alojamento e alimentação;10 a 19;38188;508354;1,5
+I Alojamento e alimentação;20 a 29;9793;232329;1,5
+I Alojamento e alimentação;30 a 49;6186;229063;1,6
+I Alojamento e alimentação;50 a 99;2281;X;X
+I Alojamento e alimentação;100 a 249;617;X;X
+I Alojamento e alimentação;250 a 499;146;50453;1,9
+I Alojamento e alimentação;500 ou mais;124;X;X
+J Informação e comunicação;0 a 4;113092;186768;2,4
+J Informação e comunicação;5 a 9;12384;80931;2,4
+J Informação e comunicação;10 a 19;7037;93434;2,8
+J Informação e comunicação;20 a 29;2010;47834;3,5
+J Informação e comunicação;30 a 49;1551;58513;3,8
+J Informação e comunicação;50 a 99;968;66597;4,9
+J Informação e comunicação;100 a 249;597;91205;5,6
+J Informação e comunicação;250 a 499;203;70536;6
+J Informação e comunicação;500 ou mais;175;414017;6,6
+K Atividades financeiras, de seguros e serviços relacionados;0 a 4;67921;106477;2,8
+K Atividades financeiras, de seguros e serviços relacionados;5 a 9;7438;46270;3,2
+K Atividades financeiras, de seguros e serviços relacionados;10 a 19;2835;36515;4,3
+K Atividades financeiras, de seguros e serviços relacionados;20 a 29;696;16685;5,7
+K Atividades financeiras, de seguros e serviços relacionados;30 a 49;704;26820;5,9
+K Atividades financeiras, de seguros e serviços relacionados;50 a 99;605;43072;7
+K Atividades financeiras, de seguros e serviços relacionados;100 a 249;502;77538;6,4
+K Atividades financeiras, de seguros e serviços relacionados;250 a 499;161;56980;7
+K Atividades financeiras, de seguros e serviços relacionados;500 ou mais;181;676842;8
+L Atividades imobiliárias;0 a 4;66222;120715;1,9
+L Atividades imobiliárias;5 a 9;8808;55011;2,1
+L Atividades imobiliárias;10 a 19;2728;35211;2,3
+L Atividades imobiliárias;20 a 29;566;13379;2,6
+L Atividades imobiliárias;30 a 49;356;13355;3
+L Atividades imobiliárias;50 a 99;271;18559;3
+L Atividades imobiliárias;100 a 249;95;12652;3,5
+L Atividades imobiliárias;250 a 499;25;8162;4,5
+L Atividades imobiliárias;500 ou mais;9;7119;5,6
+M Atividades profissionais, científicas e técnicas;0 a 4;215037;387076;2,1
+M Atividades profissionais, científicas e técnicas;5 a 9;31312;201404;2,2
+M Atividades profissionais, científicas e técnicas;10 a 19;13645;179477;2,6
+M Atividades profissionais, científicas e técnicas;20 a 29;3258;77437;3
+M Atividades profissionais, científicas e técnicas;30 a 49;2271;84953;3,3
+M Atividades profissionais, científicas e técnicas;50 a 99;1241;83424;3,9
+M Atividades profissionais, científicas e técnicas;100 a 249;537;80084;5,1
+M Atividades profissionais, científicas e técnicas;250 a 499;165;55488;6,2
+M Atividades profissionais, científicas e técnicas;500 ou mais;136;169535;5,7
+N Atividades administrativas e serviços complementares;0 a 4;212919;378125;1,7
+N Atividades administrativas e serviços complementares;5 a 9;38423;X;X
+N Atividades administrativas e serviços complementares;10 a 19;17220;228802;1,9
+N Atividades administrativas e serviços complementares;20 a 29;5171;X;X
+N Atividades administrativas e serviços complementares;30 a 49;4538;172512;1,9
+N Atividades administrativas e serviços complementares;50 a 99;3868;268642;1,9
+N Atividades administrativas e serviços complementares;100 a 249;2322;353098;1,8
+N Atividades administrativas e serviços complementares;250 a 499;865;300561;2
+N Atividades administrativas e serviços complementares;500 ou mais;1016;2075725;1,9
+P Educação;0 a 4;53600;100053;1,5
+P Educação;5 a 9;18355;122916;1,5
+P Educação;10 a 19;14051;190068;1,5
+P Educação;20 a 29;5233;125194;1,5
+P Educação;30 a 49;4741;179639;1,7
+P Educação;50 a 99;2611;172691;2
+P Educação;100 a 249;581;83692;2,7
+P Educação;250 a 499;141;49766;3,5
+P Educação;500 ou mais;92;130285;4
+Q Saúde humana e serviços sociais;0 a 4;121669;246636;1,5
+Q Saúde humana e serviços sociais;5 a 9;24717;156757;1,6
+Q Saúde humana e serviços sociais;10 a 19;10052;129711;1,8
+Q Saúde humana e serviços sociais;20 a 29;2497;59358;2
+Q Saúde humana e serviços sociais;30 a 49;1761;66278;2,1
+Q Saúde humana e serviços sociais;50 a 99;1245;86051;2,2
+Q Saúde humana e serviços sociais;100 a 249;618;94707;2,3
+Q Saúde humana e serviços sociais;250 a 499;246;86922;2,3
+Q Saúde humana e serviços sociais;500 ou mais;162;249499;3,4
+R Artes, cultura, esporte e recreação;0 a 4;39641;71120;1,4
+R Artes, cultura, esporte e recreação;5 a 9;6705;43467;1,4
+R Artes, cultura, esporte e recreação;10 a 19;3100;40971;1,5
+R Artes, cultura, esporte e recreação;20 a 29;719;17041;1,6
+R Artes, cultura, esporte e recreação;30 a 49;425;15644;1,5
+R Artes, cultura, esporte e recreação;50 a 99;189;12581;2,1
+R Artes, cultura, esporte e recreação;100 a 249;60;8634;2,3
+R Artes, cultura, esporte e recreação;250 a 499;11;X;X
+R Artes, cultura, esporte e recreação;500 ou mais;9;X;X
+S Outras atividades de serviços;0 a 4;81282;152314;1,4
+S Outras atividades de serviços;5 a 9;15949;102183;1,5
+S Outras atividades de serviços;10 a 19;6525;84995;1,6
+S Outras atividades de serviços;20 a 29;1367;32247;1,7
+S Outras atividades de serviços;30 a 49;964;35949;1,8
+S Outras atividades de serviços;50 a 99;424;28061;1,9
+S Outras atividades de serviços;100 a 249;123;X;X
+S Outras atividades de serviços;250 a 499;27;X;X
+S Outras atividades de serviços;500 ou mais;12;21175;2,7

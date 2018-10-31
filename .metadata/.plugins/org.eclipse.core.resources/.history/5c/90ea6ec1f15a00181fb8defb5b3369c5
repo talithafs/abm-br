@@ -1,0 +1,547 @@
+package abm.agents;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+import abm.Calibrable;
+import abm.components.JobOffering;
+import abm.components.MachineOrder;
+import abm.components.NewMachine;
+import abm.components.UsedMachine;
+import abm.helpers.Constants.Keys;
+import abm.helpers.Utils;
+import abm.markets.ConsumptionGoodsMarket;
+import cern.jet.random.Binomial;
+import repast.simphony.random.RandomHelper;
+import repast.simphony.util.collections.Pair;
+
+public class ConsumptionGoodsFirm extends Firm {
+	
+	// State variables	
+	private ArrayList<UsedMachine> machines ;
+	private ArrayList<Integer> demand ;
+	private ArrayList<Integer> production ;
+	private int supply = 0 ; 
+	private int installedCap = 0;
+	private int usedCap = 0;
+	private float usedWages = 0 ; 
+	private int inventory = 0 ;
+	private float price = -1;
+	private int totalDemand = 0 ;
+	private int sales = 0 ;
+	
+	// Parameters
+	private float beta = (float) 0.1 ;
+	private float kappa = (float) 0.001 ;
+	private float nu = (float) 0.95 ;
+	
+	// Temporary variables
+	private int eDemand = 0 ;
+	private int dProduction = 0 ;
+	private float dInvestment = 0 ;
+	private float neededForInvestment = 0 ;
+	private ArrayList<MachineOrder> investments ;
+	private Pair<UsedMachine,NewMachine> replacement ;
+	
+	// Constant
+	protected final static ConsumptionGoodsMarket consumptionGoodsMarket = ConsumptionGoodsMarket.getInstance() ;
+	
+	public ConsumptionGoodsFirm(float income, float debt, float assets, int nEmployees) {
+		super(income, debt, assets, nEmployees);
+		this.machines = new ArrayList<UsedMachine>();
+		this.demand = new ArrayList<Integer>();
+		this.production = new ArrayList<Integer>();
+	}
+	
+	public void initProduction(float price) {
+		
+		if(this.price == -1) {
+			this.price = price ;
+			this.demand.add(this.usedCap);
+			this.production.add((int)((1-this.beta)*this.usedCap));
+			this.inventory = optimumInventory();
+			this.supply = this.inventory + getLastProduction() ;
+		}
+	}
+	
+	private int optimumInventory() {
+		return (int) this.beta*getLastDemand() ;
+	}
+	
+	public void planProduction() {
+		
+		super.planProduction(); 
+		
+		this.eDemand = calculateExpectedDemand();
+		this.dProduction = calculateDesiredProduction() ;
+		this.price = calculatePrice();
+		
+		if(dProduction <= usedCap) {
+			fireEmployees();
+		} 
+		else {
+			
+			if(dProduction > installedCap) {
+				createJobOfferings(false);
+				calculateExpansionInvestment();
+			} 
+			else {
+				createJobOfferings(true);
+			}
+			
+			calculateReplacementInvestment();
+		}
+	}
+	
+	private int calculateExpectedDemand() {
+		return demand.get(demand.size()-1); 
+	}
+	
+	// TODO inventory is never updated
+	private int calculateDesiredProduction() {	
+		return this.eDemand + optimumInventory() - this.inventory ;
+	}
+	
+	private float calculatePrice() {
+		return this.price + this.kappa*(getLastDemand() - this.supply);
+	}
+	
+	public void fireEmployees() {
+		
+		int uCap = this.usedCap ;
+		
+		for(UsedMachine machine : machines) {
+			ArrayList<EmployedConsumer> operators = machine.getOperators();
+			
+			while(uCap > dProduction && !operators.isEmpty()) {
+				
+				EmployedConsumer operator = operators.get(0);
+				
+				int oldCap = machine.getUsedCapacity() ;
+				machine.removeOperator(operator);
+				int newCap = machine.getUsedCapacity() ;
+				
+				uCap -= (oldCap - newCap) ;
+
+				// TODO is additionalPayroll ever reset? 
+				this.additionalPayroll -= operator.getWage() ;
+				fire(operator);			
+			}
+		}	
+		
+	}
+	
+	private void createJobOfferings(boolean proportional) {
+		
+		float minWage = Government.getInstance().getParam(Keys.MIN_WAGE);
+		int size = this.machines.size();
+		int extra = dProduction - usedCap; 
+		
+		this.offerings = new ArrayList<JobOffering>();
+		
+		for(int i = size-1; i >= 0; i--) {
+			
+			UsedMachine machine = this.machines.get(i);
+			float difWage = machine.getMaxWages() - machine.getUsedWages() ;
+			
+			if(proportional) {
+				
+				float unused = machine.getCapacity() - machine.getUsedCapacity() ;
+				
+				if(extra <= unused) {
+					float wage = (extra/machine.getEfficiency())*minWage ;
+					addJobOffering(new JobOffering(wage,machine));
+					// TODO is this break really working?
+					break ;
+				} 
+				else { // extra > unused
+					extra -= unused ;
+					float wage = difWage*minWage ;
+					addJobOffering(new JobOffering(wage,machine));
+				}
+			}
+			else { // not proportional
+				float wage = difWage*minWage ;
+				addJobOffering(new JobOffering(wage,machine));
+			}
+		}
+	}
+	
+	private void calculateExpansionInvestment() {
+		
+		Government gov = Government.getInstance() ;
+		int n = (int) ((this.getNEmployees() / gov.getParam(Keys.N_CONSUMERS))*gov.getParam(Keys.N_CAP_FIRMS));
+		
+		ArrayList<CapitalGoodsFirm> firms = capitalGoodsMarket.getAdjacent(this);
+		ArrayList<CapitalGoodsFirm> randomFirms = capitalGoodsMarket.getRandomFirms(this, n);
+		
+		firms.addAll(randomFirms);
+		
+		ArrayList<MachineOrder> investments = new ArrayList<MachineOrder>();
+		
+		float diff = dProduction - installedCap  ;
+		float maxEff = Float.MIN_VALUE ;
+		
+		MachineOrder preOrder = null ;
+		TreeSet<MachineOrder> preOrders = new TreeSet<MachineOrder>();
+		
+		for(CapitalGoodsFirm firm : firms) {
+			
+			ArrayList<NewMachine> catalog = firm.getCatalog() ;
+			
+			for(NewMachine machine : catalog) {
+				
+				if(machine.getCapacity() >= diff) {
+					if(machine.getEfficiency() > maxEff) {
+						preOrder = new MachineOrder(machine, (CapitalGoodsFirm) firm, 1);
+						maxEff = machine.getEfficiency() ;
+					}
+					break ;
+				}
+			}
+			
+			if(preOrder == null) {
+				for(NewMachine machine : catalog) {
+					preOrders.add(new MachineOrder(machine, (CapitalGoodsFirm) firm, 1));
+				}
+			}
+		}
+		
+		if(preOrder == null) {
+			
+			Iterator<MachineOrder> itr = preOrders.descendingIterator() ;
+			
+			while(itr.hasNext() && diff > 0) {
+				MachineOrder ord = itr.next() ;
+				NewMachine mac = ord.getMachine() ; 
+				diff -= mac.getCapacity() ;
+				
+				if(!investments.contains(ord)) {
+					investments.add(ord);
+				}
+				else {
+					int index = investments.indexOf(ord);
+					investments.get(index).increaseQuantity(1);
+				}
+			}
+		}
+		else {
+			investments.add(preOrder);
+		}
+		
+		this.investments = investments ;
+	}
+	
+	private void calculateReplacementInvestment() {
+		
+		if(this.getNetWorth() > 0) {
+			
+			double prob = 1 - Math.exp(-Calibrable.getRepExponent()*this.getNetWorth());
+			int replace = 1 ;
+			
+			if(prob != 1) {
+				Binomial binon = RandomHelper.createBinomial(1, prob) ;
+				replace = binon.nextInt() ;
+			}
+
+			if(replace == 1) {
+				
+				UsedMachine oldMachine = machines.get(0);
+				ArrayList<CapitalGoodsFirm> adjFirms = capitalGoodsMarket.getAdjacent(this);
+				
+				float efficiency = oldMachine.getEfficiency() ;
+				float minPrice = Float.MAX_VALUE ;
+				NewMachine chosenMachine = null ;
+				CapitalGoodsFirm chosenFirm = null ; 
+				
+				for(CapitalGoodsFirm firm : adjFirms) {
+					
+					ArrayList<NewMachine> newMachines = firm.getCatalog() ;
+					
+					for(NewMachine newMachine : newMachines) {
+						
+						if(newMachine.getEfficiency() > efficiency) {
+							if(newMachine.getPrice() < minPrice) {
+								chosenMachine = newMachine ;
+								chosenFirm = firm ;
+							}
+						}
+					}
+				}
+				
+				if(chosenMachine != null) {
+					
+					replacement = new Pair<UsedMachine,NewMachine>(oldMachine, chosenMachine);
+					MachineOrder order = new MachineOrder(chosenMachine, chosenFirm, 1);
+					
+					// TODO is contains working properly?
+					if(!investments.contains(order)) {
+						investments.add(order);
+					}
+					else {
+						int inx = investments.indexOf(order);
+						investments.get(inx).increaseQuantity(1);
+					}	
+				}	
+			}
+		}
+	}
+	
+	@Override
+	public void calculateNeededCredit() {
+		
+		super.calculateNeededCredit(); 
+		
+		dInvestment = 0 ;
+		
+		for(MachineOrder order : investments) {
+			dInvestment += order.getMachine().getPrice() * order.getQuantity() ;
+		}
+		
+		if(this.getNetWorth() + this.profit > (1-this.alpha)*dInvestment){
+			this.neededForInvestment = (1-this.alpha)*dInvestment ;
+			this.neededCredit += this.neededForInvestment ;
+		}
+	}	
+	
+
+	public EmployedConsumer hire(Consumer consumer, JobOffering offering) {
+		
+		EmployedConsumer con = super.hire(consumer, offering);
+		UsedMachine machine = offering.getMachine() ;
+		
+		this.usedCap -= machine.getUsedCapacity() ;
+		this.usedWages -= machine.getUsedWages() ;
+		this.installedCap -= machine.getCapacity() ; 
+		
+		machine.addOperator(con);
+		
+		this.usedCap += machine.getUsedCapacity() ;
+		this.usedWages += machine.getUsedWages() ;
+		this.installedCap += machine.getCapacity() ; 
+		
+		return con ;
+	}
+	
+	public void buyMachines() {
+		
+		float grantedForInvestment = 0 ;
+		
+		if(this.neededForInvestment != 0) {	
+			
+			this.grantedCredit = creditMarket.getGrantedCredit(this);
+			
+			float grantedForLabor = this.neededCredit - this.neededForInvestment ; 
+			grantedForInvestment = this.grantedCredit - grantedForLabor + this.neededForLabor ;
+			
+			if(grantedForInvestment >= 0) {
+
+				float fromAssets = this.alpha * this.dInvestment ;
+					
+				Collections.sort(investments);
+
+				while(this.dInvestment > grantedForInvestment + fromAssets) {
+					
+					MachineOrder order = investments.remove(0);
+					this.dInvestment -= order.getMachine().getPrice() ;
+				}
+			}			
+		}
+		
+		if(!investments.isEmpty()) {
+			
+			float totalValue = capitalGoodsMarket.executeSales(this, investments);
+			float ownFunds = totalValue - grantedForInvestment ;
+			
+			Bank bank = creditMarket.getBankWithDeposits(this);
+			
+			if(ownFunds > 0) {
+				bank.withdraw(this, ownFunds);
+			} 
+			else if(ownFunds < 0) {
+				bank.deposit(this, -ownFunds);
+			}
+		}
+	}
+	
+	public void produceGoods() {
+		
+		int production = 0 ;
+		
+		if(this.remainingWages == 0) {
+			production = (int) (this.usedCap*this.usedWages) ;	
+		}
+		else {
+			float minWage = Government.getInstance().getParam(Keys.MIN_WAGE);
+			
+			for(UsedMachine machine : machines) {
+				
+				ArrayList<EmployedConsumer> operators = machine.getOperators() ;
+				
+				for(EmployedConsumer operator : operators) {
+					
+					if(operator.getPayment() == 0) {
+						production += this.nu * operator.getWage()/minWage * machine.getCapacity();
+					}
+					else {
+						production +=  operator.getWage()/minWage * machine.getCapacity();
+					}
+				}
+			}
+		}
+		
+		this.production.add(production);
+		this.supply = production + this.inventory ;
+		this.sales = 0 ;
+	}
+	
+	public void sellGoods(int totalDemand) {
+		
+		int supply = this.supply ;
+		supply -= this.sales ; 
+		this.totalDemand += totalDemand ;
+		
+		if(supply > 0) { 
+			
+			boolean soldOut = false ;
+			boolean isEmpty = consumptionGoodsMarket.isQueueEmpty(this);
+			int demand = 0 ;
+			
+			while(!soldOut && !isEmpty) {
+				
+				Consumer con = consumptionGoodsMarket.pollQueue(this);
+				int conDemand = con.getDemand() ;
+				
+				if(conDemand <= supply) {
+					con.buyGoods(conDemand);
+					supply -= conDemand ;
+					demand += conDemand ;
+				}
+				else { // conDemand > production
+					con.buyGoods(supply);
+					demand += supply ;
+					supply = 0 ;
+				}
+				
+				if(supply == 0) {
+					soldOut = true ;
+				}
+				
+				isEmpty = consumptionGoodsMarket.isQueueEmpty(this);
+			}
+			
+			this.sales += demand ;
+		}
+	}
+	
+	
+	// TODO Schedule receiveMachines()
+	public void receiveMachines() {
+		
+		for(MachineOrder order : investments) {
+			NewMachine newMachine = order.getMachine() ;
+			UsedMachine usedMachine = newMachine.toUsedMachine() ;
+			
+			if(replacement.getSecond().equals(newMachine)){
+				
+				UsedMachine oldMachine = replacement.getFirst() ;
+				ArrayList<EmployedConsumer> operators = oldMachine.getOperators();
+				usedMachine.addOperators(operators);
+				removeMachine(oldMachine);
+			}
+			
+			addMachine(usedMachine);
+		}
+	}
+	
+	// TODO Call this in the end of the cycle
+	public void reset() {
+		this.inventory = this.supply - getLastDemand();
+		int diff = this.totalDemand - getLastDemand() ;
+		increaseLastDemand(diff);
+	}
+
+	public void addMachine(UsedMachine machine) {
+		machines.add(machine);
+		this.usedCap += machine.getUsedCapacity() ;
+		this.installedCap += machine.getCapacity() ; 
+		this.usedWages += machine.getUsedWages() ;
+		Collections.sort(machines);
+	}
+	
+	public void removeMachine(UsedMachine machine) {
+		machines.remove(machine);
+		this.usedCap -= machine.getUsedCapacity() ;
+		this.installedCap -= machine.getCapacity() ;
+		this.usedWages -= machine.getUsedWages() ;
+	}
+	
+	private void increaseLastDemand(int by) {
+		int last = demand.remove(demand.size()-1) ;
+		last += by ;
+		demand.add(last);
+	}
+
+	public int getLastDemand() {
+		return demand.get(demand.size()-1) ;
+	}
+	
+	public int getLastProduction() {
+		return production.get(production.size()-1) ;
+	}
+	
+	public void setLastDemand(int quantity) {
+		this.income = quantity * this.price ;
+		this.demand.add(quantity);
+	}
+	
+	public void setLastProduction(int quantity) {
+		this.production.add(quantity);
+	}
+	
+	public float getPrice() {
+		return this.price ;
+	}
+	
+	public ArrayList<UsedMachine> getMachines(){
+		return machines ;
+	}
+
+	public int getInstalledCapacity() {
+		return installedCap;
+	}
+
+	public int getUsedCapacity() {
+		return usedCap;
+	}
+	
+	
+	public int getInventory() {
+		return inventory;
+	}
+
+	public void setInventory(int inventory) {
+		this.inventory = inventory;
+	}
+
+	@Override 
+	public String toString() {
+		
+		String strAgent = super.toString() ;
+		Integer nMacs = this.machines.size() ;
+		Integer lastDemand = getLastDemand();
+		Float price = this.price ;
+		Integer usedCap = this.usedCap ;
+		
+		String[][] fields = { { "Number of Machines", nMacs.toString()},
+							  { "Last demand", lastDemand.toString()},
+							  { "Price", price.toString()},
+							  { "Used Capacity", usedCap.toString()}} ;
+		
+	    return strAgent + Utils.getAgentDescriptor(fields, false) ;
+	}
+	
+	
+}

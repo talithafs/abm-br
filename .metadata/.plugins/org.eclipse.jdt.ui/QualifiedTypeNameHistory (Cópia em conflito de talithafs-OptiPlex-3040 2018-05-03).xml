@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="abm.helpers.Messages.Errors"/>
+    <fullyQualifiedTypeName name="abm.helpers.Messages"/>
+    <fullyQualifiedTypeName name="abm.helpers.Messages.Warnings"/>
+    <fullyQualifiedTypeName name="abm.helpers.Constants.Paths"/>
+    <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Field"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+    <fullyQualifiedTypeName name="abm.builders.ConsumersCreator"/>
+    <fullyQualifiedTypeName name="repast.simphony.util.SimUtilities"/>
+    <fullyQualifiedTypeName name="abm.creators.FirmsCreator"/>
+    <fullyQualifiedTypeName name="cern.jet.random.Uniform"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="abm.helpers.Constants"/>
+    <fullyQualifiedTypeName name="abm.helpers.Utils"/>
+    <fullyQualifiedTypeName name="repast.simphony.space.graph.RepastEdge"/>
+    <fullyQualifiedTypeName name="abm.agents.Loan"/>
+    <fullyQualifiedTypeName name="repast.simphony.random.RandomHelper"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="abm.agents.Agent"/>
+    <fullyQualifiedTypeName name="abm.agents.Consumer"/>
+    <fullyQualifiedTypeName name="abm.Controller"/>
+    <fullyQualifiedTypeName name="abm.helpers.Constants.Keys"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="abm.agents.EmployedConsumer"/>
+    <fullyQualifiedTypeName name="repast.simphony.space.graph.Network"/>
+    <fullyQualifiedTypeName name="repast.simphony.context.Context"/>
+    <fullyQualifiedTypeName name="repast.simphony.util.ContextUtils"/>
+    <fullyQualifiedTypeName name="repast.simphony.engine.schedule.ScheduleParameters"/>
+</qualifiedTypeNameHistroy>

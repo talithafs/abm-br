@@ -1,0 +1,13 @@
+<repast.simphony.data2.engine.FileSinkDescriptor simphonyVersion="2.5.0">
+  <name>Countercyclical</name>
+  <dataSet>Indicators</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>GdpGrowth</string>
+    <string>UnempRate</string>
+    <string>tick</string>
+  </sourceIds>
+  <fileName>counter_cycle.csv</fileName>
+  <addTimeStamp>false</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>

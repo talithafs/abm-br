@@ -1,0 +1,836 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Planet Eclipse</title>
+	<link>http://planeteclipse.org/planet/</link>
+	<language>en</language>
+	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
+
+<item>
+	<title>Eclipse Announcements: IoT Developer Survey 2018 | Results are in!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/1COMKF1x4u8/key-trends-iot-developer-survey-2018</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/1COMKF1x4u8/key-trends-iot-developer-survey-2018</link>
+	<description>Results from the IoT Developer Survey are in! Read about the key findings about IoT cloud platforms, databases, security, and more.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/1COMKF1x4u8&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 17 Apr 2018 14:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Benjamin Cabe: Key Trends from the IoT Developer Survey 2018</title>
+	<guid isPermaLink="false">https://blog.benjamin-cabe.com/?p=3150</guid>
+	<link>http://feedproxy.google.com/~r/benjamin-cabe-planet-eclipse/~3/1COMKF1x4u8/key-trends-iot-developer-survey-2018</link>
+	<description>&lt;h1&gt;Executive Summary&lt;/h1&gt;
+&lt;p&gt;The IoT Developer Survey 2018 collected feedback from 502 individuals between January and March 2018.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;key findings&lt;/strong&gt; in this year’s edition of the survey include the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;Amazon AWS and Microsoft Azure are the top 2 cloud services for IoT. Google Cloud Platform is failing to get traction.&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;MQTT remains the standard of choice for IoT messaging, while AMQP is becoming more and more popular as companies scale their IoT deployments and backend systems.&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;93% of the databases and data stores used for IoT are open source software. Data collected and used in IoT applications is incredibly diverse, from time series sensor data to device information to logs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;For the past four years, the &lt;strong&gt;IoT Developer Survey&lt;/strong&gt; has been a great way to look at the IoT landscape, from understanding the key challenges for people building IoT solutions, to identifying relevant open source technology or standards.&lt;/p&gt;
+&lt;p&gt;Just like in previous years (see results from &lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2017&quot;&gt;2017&lt;/a&gt;, &lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2016&quot;&gt;2016&lt;/a&gt; and &lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2015&quot;&gt;2015&lt;/a&gt; survey), the &lt;a href=&quot;https://iot.eclipse.org/&quot;&gt;Eclipse IoT Working Group&lt;/a&gt; has collaborated with a number of organizations to promote the survey to different IoT developer communities: &lt;a href=&quot;http://agile-iot.eu/&quot;&gt;Agile-IoT&lt;/a&gt; H2020 Project, &lt;a href=&quot;https://ieee.org/&quot;&gt;IEEE&lt;/a&gt;, and the &lt;a href=&quot;https://www.omaspecworks.org/&quot;&gt;Open Mobile Alliance&lt;/a&gt; (now OMA SpecWorks).&lt;/p&gt;
+&lt;p&gt;We had a total of 502 individual responses. You will find a link to the complete report at the end of this blog post, as well as pointers to download the raw survey data.&lt;/p&gt;
+&lt;p&gt;Here are the key trends that we identified this year:&lt;/p&gt;
+
+&lt;h1&gt;Amazon and Azure get traction, Google slips behind&lt;/h1&gt;
+&lt;p&gt;For the past few years, we’ve asked people what cloud platform they use or plan on using for building their IoT solution.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-cloud-top3-e1523368283588.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: IoT Cloud Platforms Adoption – Amazon vs. Microsoft vs. Google&quot; class=&quot;aligncenter wp-image-3173 size-large&quot; height=&quot;198&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-cloud-top3-e1523368283588-1024x428.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Since 2016, Amazon AWS has always come up as the platform of choice for the respondents&lt;/b&gt;, followed by Microsoft Azure and Google Cloud Platform.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;The use of AWS for building IoT solutions increased by 21% since 2017.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=The%20use%20of%20@awscloud%20for%20building%20%23IoT%20solutions%20increased%20by%2021%25%20since%202017%20according%20to%20%23IoT%20Developer%20Survey.&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone size-full wp-image-3195&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Looking at this year’s results, there is a clear upward trend in terms of adoption for Amazon AWS (51.8%, a 21% increase from last year) and Microsoft Azure (31.21%, a 17% increase from 2017). In the meantime, &lt;b&gt;Google Cloud Platform is struggling to get adoption from IoT developers&lt;/b&gt; (18.8%, an 8% year-to-year decrease).&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;Google Cloud Platform struggles, with an 8% decrease in market share for IoT deployments since 2017.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=Google%20Cloud%20Platform%20struggles%20in%20%23IoT%2C%20with%20an%208%25%20decrease%20in%20market%20share%20for%20IoT%20deployments%20since%202017%20according%20to%20%23IoT%20Developer%20Survey.&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone size-full wp-image-3195&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Seeing AWS ahead of the pack is no surprise. It seems to be the public cloud platform of choice for developers, &lt;a href=&quot;https://insights.stackoverflow.com/survey/2018/#technology-platforms&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;according to the recent Stack Overflow Developer Survey&lt;/a&gt;, and one of the &lt;a href=&quot;https://insights.stackoverflow.com/survey/2018/#technology-most-loved-dreaded-and-wanted-platforms&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;most loved platforms&lt;/a&gt; for development in general. And looking at the same survey, it seems Google is not really doing great with their Cloud Platform (it is used by 8.0% of the respondents vs. 24.1% for AWS).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-cloud-trends-e1523368417779.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: IoT Cloud Platforms Adoption – Trends&quot; class=&quot;aligncenter wp-image-3175 size-large&quot; height=&quot;226&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-cloud-trends-e1523368417779-1024x489.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It will be interesting to see how, and if, Google catches up in the IoT cloud race, and whether we will see more acquisitions similar to &lt;a href=&quot;https://www.blog.google/topics/google-cloud/google-cloud-announces-intent-to-acquire-xively/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Xively’s in February&lt;/a&gt; to help beef up their IoT offering in 2018. Since Microsoft is planning to&lt;a href=&quot;https://blogs.microsoft.com/iot/2018/04/04/microsoft-will-invest-5-billion-in-iot-heres-why/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt; invest $5 billion in IoT over the next four years&lt;/a&gt;, the IoT cloud competition will definitely be interesting to follow…&lt;/p&gt;
+&lt;h1&gt;IoT Data is finally getting attention&lt;/h1&gt;
+&lt;p&gt;While IoT has been around for a while now, it looks like developers are starting to realize that beyond the “cool” factor of building connected devices, the real motivation and business opportunity for IoT is in collecting data and making sense out of it.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;Collecting and analyzing data becomes #2 concern for #IoT developers.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=Collecting%20and%20analyzing%20data%20becomes%20%232%20concern%20for%20%23IoT%20developers%20according%20to%20%23IoT%20Developer%20Survey.&amp;amp;hashtags=bigdata%2Canalytics%2Cai&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone wp-image-3195 size-full&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This year, &lt;b&gt;18% of the respondents identified &lt;/b&gt;&lt;b&gt;&lt;i&gt;Data Collection &amp;amp; Analytics&lt;/i&gt;&lt;/b&gt;&lt;b&gt; as one of their top concerns for developing IoT solutions&lt;/b&gt;. This is a 50% increase from last year, and puts this topic as #2 concern—&lt;i&gt;Security&lt;/i&gt; remains #1, and &lt;i&gt;Connectivity&lt;/i&gt; is sharing the third place with &lt;i&gt;Integration with Hardware&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-key-concerns.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: Key IoT Concerns&quot; class=&quot;aligncenter wp-image-3170 size-large&quot; height=&quot;267&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-key-concerns-1024x576.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Unsurprisingly, industries such as &lt;i&gt;Industrial Automation&lt;/i&gt; or &lt;i&gt;Smart Cities&lt;/i&gt; tend to care about IoT data collection and analytics even more—23% of the respondents working in those industries consider data collection &amp;amp; analytics to be a key concern.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-concerns-trend.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: Key IoT Concerns - Trends&quot; class=&quot;aligncenter wp-image-3172 size-large&quot; height=&quot;225&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-concerns-trend-e1523368192756-1024x486.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On a side note, it is great to get the confirmation of a trend we identified last year, with &lt;i&gt;Interoperability&lt;/i&gt; clearing becoming less of a concern for IoT developers. It’s been ranking #2 since we started doing the survey in 2015, and is now relegated to the 5th place.&lt;/p&gt;
+&lt;p&gt;As someone working with IoT open source communities on a day-to-day basis, I can’t help but think about the crucial role open standards and open source IoT platforms have had in making IoT interoperability a reality.&lt;/p&gt;
+&lt;h1&gt;Consolidation in IoT messaging protocols&lt;/h1&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;MQTT is used in 62% of IoT solutions and remains the IoT messaging protocol of choice.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=%23MQTT%20is%20used%20in%2062%25%20of%20%23IoT%20solutions%20and%20remains%20the%20IoT%20messaging%20protocol%20of%20choice%20according%20to%20%23IoT%20Developer%20Survey&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone size-full wp-image-3195&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;An area I particularly like to observe year-over-year is the evolution of IoT messaging protocols. For many years now, &lt;b&gt;MQTT has established itself as a protocol of choice for IoT&lt;/b&gt;, and this year’s survey is just confirming this: MQTT is used by over 62% of our respondents, followed by HTTP (54.1%).&lt;/p&gt;
+&lt;p&gt;Six years after IBM and Eurotech open sourced their implementations of the MQTT protocol (see the&lt;a href=&quot;https://www.eclipse.org/paho/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt; Eclipse Paho&lt;/a&gt; project), and with the ever-increasing popularity of the&lt;a href=&quot;http://mosquitto.org/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt; Eclipse Mosquitto&lt;/a&gt; project (and many other open MQTT-based projects out there of course), this is once again a demonstration that open wins. With&lt;a href=&quot;http://modelbasedtesting.co.uk/2018/04/09/a-story-of-mqtt-5-0/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt; MQTT 5 around the corner&lt;/a&gt; and several of the identified “limitations” of the protocol gone, MQTT will possibly become even more clearly &lt;em&gt;THE&lt;/em&gt; IoT messaging standard in the future.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-consolidation-messaging-protocols.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: Consolidation in IoT Messaging Protocols&quot; class=&quot;aligncenter wp-image-3169 size-large&quot; height=&quot;267&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-consolidation-messaging-protocols-1024x576.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It would appear that the use of&lt;b&gt; HTTP is declining&lt;/b&gt; (54.1%), perhaps to the benefit of the more lightweight and versatile &lt;b&gt;HTTP/2&lt;/b&gt; (24.9% vs. 16.8% last year). &lt;b&gt;XMPP&lt;/b&gt; (4.3%) is one of the protocols that seems to be losing the protocol consolidation battle, with a continued decline since 2016.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;Adoption of AMQP increased by over 30% since 2017 as people scale their IoT deployments.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=Adoption%20of%20%23AMQP%20increased%20by%20over%2030%25%20since%20last%20year%20as%20people%20scale%20their%20IoT%20deployments%20according%20to%20%23IoT%20Developer%20Survey.&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone size-full wp-image-3195&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Since more and more people start scaling their IoT deployments, it is likely a reason for the significant increase in &lt;b&gt;AMQP&lt;/b&gt;’s adoption (18.2%, from 13.9% last year), which is a core element of many IoT backends.&lt;/p&gt;
+&lt;p&gt;The &lt;b&gt;use of proprietary vendor protocols and in-house protocols is steadily decreasing&lt;/b&gt;, confirming that the industry at large tends to favor open standards over closed solutions.&lt;/p&gt;
+&lt;p&gt;It will be interesting to watch how the adoption of &lt;b&gt;DDS&lt;/b&gt; (4.9%) evolves over time. It already seems to be getting some traction in domains such as Automotive, where 10% of the respondents said they are using it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-messaging-protocols.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: IoT Messaging Protocols – Trends&quot; class=&quot;aligncenter wp-image-3168 size-large&quot; height=&quot;228&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-messaging-protocols-e1523368219286-1024x492.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Focus on security increases&lt;/h1&gt;
+&lt;p&gt;It is always interesting to watch how developers approach security in the context of IoT, and it has always been mentioned as the #1 concern for IoT developers since we started doing the survey in 2015.&lt;/p&gt;
+&lt;p&gt;However, it is no secret that security is hard, and there is unfortunately still only a limited set of security-related practices that are on the front burner of IoT developers. &lt;strong&gt;Communication-layer security&lt;/strong&gt; (e.g the use of TLS or DTLS) &lt;strong&gt;and data encryption remain the two most popular practices&lt;/strong&gt;, used by respectively 57.3% and 45.1% of the respondents.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-security.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: IoT Security Technologies&quot; class=&quot;aligncenter wp-image-3167 size-large&quot; height=&quot;267&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-security-1024x576.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For the first time in the history of this survey, we explicitly asked respondents if they were using &lt;b&gt;blockchain or distributed ledger technology (DLT)&lt;/b&gt; in their IoT solutions. I was frankly surprised to see that it would appear to be the case for 11% of the respondents. As the technology matures, and as some of the barriers making it sometimes impractical for constrained/embedded devices slowly disappear, I am expecting blockchain &amp;amp; DLT to be used more and more for securing IoT solutions (and probably in combination with &lt;a href=&quot;https://blog.benjamin-cabe.com/2017/12/21/monetizing-iot-data-using-iota&quot;&gt;data monetization&lt;/a&gt; use cases).&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;Adoption of over-the-air updates to keep IoT applications up-to-date and secure increased by almost 50% since last year.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=Adoption%20of%20%23OTA%20updates%20to%20keep%20%23IoT%20applications%20up-to-date%20and%20secured%20increased%20by%20almost%2050%25%20since%20last%20year%2C%20according%20to%20%23IoT%20Developer%20Survey.&amp;amp;hashtags=security&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone size-full wp-image-3195&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;To end on a positive note, it is pretty clear that developers are starting to bake security into their IoT products, as an increasing number of developers indicated they implement security techniques compared to 2017. &lt;strong&gt;Over-the-air updates appear to be used more and more&lt;/strong&gt; (27.3%, a 47% increase from 2017). Open device management standards such as &lt;a href=&quot;https://www.omaspecworks.org/what-is-oma-specworks/iot/lightweight-m2m-lwm2m/&quot;&gt;LWM2M&lt;/a&gt;, together with open source implementations such as &lt;a href=&quot;https://www.eclipse.org/wakaama/&quot;&gt;Eclipse Wakaama&lt;/a&gt; and &lt;a href=&quot;https://www.eclipse.org/leshan/&quot;&gt;Eclipse Leshan&lt;/a&gt;, are certainly making it easier for developers to implement OTA in their solutions.&lt;/p&gt;
+&lt;h1&gt;IoT Data is multifaceted and open source databases dominate the market&lt;/h1&gt;
+&lt;p&gt;This year we added a few questions to the survey aimed at understanding better the kind of IoT data being collected, and how it is being stored.&lt;/p&gt;
+&lt;p&gt;It is interesting to see that across all industries, IoT data is equally multifaceted, and a wide variety of data is being collected by today’s IoT applications.&lt;b&gt; 61.9% of the data collected is time series data &lt;/b&gt;(e.g sensor data), but almost equally important are device information (60.4%) and log data (54.1%). This is not really surprising as collecting sensor data is only half of the IoT operational equation: one also needs to be able to track and manage their fleet of devices.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-data.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: Types of IoT Data&quot; class=&quot;aligncenter wp-image-3164 size-large&quot; height=&quot;267&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-data-1024x576.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Keeping that in mind, it is interesting to look at the landscape of databases and data stores used for IoT applications. While time series data is the most common form of data that IoT applications collect, &lt;b&gt;traditional relational databases&lt;/b&gt; (namely, MySQL, with a clear leading position at 44.6%) &lt;b&gt;are still widely used&lt;/b&gt;. It is likely reflecting the importance of storing all kinds of device metadata or legacy enterprise data in addition to sensor data.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-databases.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: IoT Databases&quot; class=&quot;aligncenter wp-image-3163 size-large&quot; height=&quot;267&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-databases-1024x576.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With regards to time series databases, &lt;b&gt;MongoDB&lt;/b&gt; (29.8%) &lt;b&gt;and InfluxDB&lt;/b&gt; (15.7%) &lt;b&gt;seem to be the two platforms of choice for storing IoT time series data&lt;/b&gt;.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;93% of databases used in IoT are open source.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=93%25%20of%20databases%20used%20in%20%23IoT%20are%20%23opensource%20according%20to%20%23IoT%20Developer%20Survey.&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone size-full wp-image-3195&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It is worth highlighting that&lt;b&gt; an astounding majority (93%) of the databases used for IoT are open source&lt;/b&gt;, with Amazon DynamoDB (6.9%) being the only notable exception. With something as critical and sensitive as IoT data, it seems that solution developers tend to favor technology that is not only easy and free to access, but more importantly that allows them to really “own” their data.&lt;/p&gt;
+&lt;h1&gt;Linux remains the undisputed IoT operating system&lt;/h1&gt;
+&lt;p&gt;Once again, Linux (71.8%) remains the leading operating system across IoT devices, gateways, and cloud backends.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-top-os.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: Top IoT Operating Systems &amp;amp; Distros&quot; class=&quot;aligncenter wp-image-3161 size-large&quot; height=&quot;267&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-top-os-1024x576.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Although Amazon’s acquisition of &lt;b&gt;FreeRTOS&lt;/b&gt; occurred just a few months before the survey opened, it might partially explain the significant increase in its reported adoption. Going from 13% in 2016 to 20% this year, it becomes the leading embedded IoT operating system, followed by &lt;b&gt;Arm Mbed&lt;/b&gt; (9%) and &lt;b&gt;Contiki&lt;/b&gt; (7%).&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;img alt=&quot;📎&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f4ce.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;strong&gt;FreeRTOS becomes the leading embedded #IoT operating system, followed by Arm Mbed and Contiki OS.  &lt;a href=&quot;https://twitter.com/intent/tweet?url=https%3A%2F%2Fwp.me%2Fp6qsqk-OO&amp;amp;via=kartben&amp;amp;text=.@real_FreeRTOS%20becomes%20the%20leading%20%23embedded%20%23IoT%20operating%20system%2C%20followed%20by%20@ArmMbed%20and%20@contiki_ng%20according%20to%20%23IoT%20Developer%20Survey.&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone size-full wp-image-3195&quot; height=&quot;20&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/birdy_button.png&quot; width=&quot;20&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;In terms of Linux distributions, and as Raspberry Pi stays a very popular platform for IoT prototyping, Raspbian (43.3%) remains the top Linux distribution followed by Ubuntu (40.2%).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-os-and-distros.png&quot;&gt;&lt;img alt=&quot;IoT Developer Survey 2018: IoT Linux Distributions – Trends&quot; class=&quot;aligncenter wp-image-3162 size-large&quot; height=&quot;267&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/04/IoT-developer-survey-2018-os-and-distros-1024x576.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;You can find the &lt;a href=&quot;https://www.slideshare.net/kartben/iot-developer-survey-2018&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;complete report on Slideshare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;
+&lt;div style=&quot;margin-bottom: 5px;&quot;&gt; &lt;strong&gt; &lt;a href=&quot;https://www.slideshare.net/kartben/iot-developer-survey-2018&quot; target=&quot;_blank&quot; title=&quot;IoT Developer Survey 2018&quot;&gt;IoT Developer Survey 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/kartben&quot; target=&quot;_blank&quot;&gt;Benjamin Cabé&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;p&gt;Should you want to play with the raw data yourself, we made it available as a Google Spreadsheet &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1qxMy-K15wfXlbanBC6yv3gWtoTmo6ivo9xP1USTs9Wg/edit?usp=sharing&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; – feel free to export it as whatever format suits you best.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mmilinkov.wordpress.com&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Mike Milinkovich&lt;/a&gt; and I will be doing a &lt;a href=&quot;https://www.meetup.com/fr-FR/Virtual-IoT/events/249679807/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;webinar on Thursday, April 19&lt;/a&gt;, to go through the results and discuss our findings. Don’t forget to RSVP!&lt;/p&gt;
+&lt;p&gt;Thanks to everyone who took the time to fill out this survey, and thanks again to IEEE, OMA SpecWorks and the Agile-IoT project for their help with the promotion.&lt;/p&gt;
+&lt;p&gt;I am very interested in hearing your thoughts and feedback about this year’s findings in the comments of this post. And, of course, we are always open to suggestions on how to improve the survey in the future!&lt;/p&gt;
+&lt;p&gt;L’article &lt;a href=&quot;https://blog.benjamin-cabe.com/2018/04/17/key-trends-iot-developer-survey-2018&quot; rel=&quot;nofollow&quot;&gt;Key Trends from the IoT Developer Survey 2018&lt;/a&gt; est apparu en premier sur &lt;a href=&quot;https://blog.benjamin-cabe.com&quot; rel=&quot;nofollow&quot;&gt;Benjamin Cabé&lt;/a&gt;.&lt;/p&gt;
+&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/benjamin-cabe-planet-eclipse/~4/1COMKF1x4u8&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 17 Apr 2018 12:44:43 +0000</pubDate>
+</item>
+<item>
+	<title>Scott Lewis: ECF Photon supports OSGI R7</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-20358640.post-6458388910243300068</guid>
+	<link>http://eclipseecf.blogspot.com/2018/04/ecf-photon-supports-osgi-r7.html</link>
+	<description>&lt;a href=&quot;https://wiki.eclipse.org/Eclipse_Communication_Framework_Project&quot;&gt;ECF&lt;/a&gt; Photon has several major enhancements.   I'll blog about these enhancements individually over the coming weeks, starting with&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Support for OSGI R7 Remote Services&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;In the R7 final draft specification (&lt;a href=&quot;https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html&quot;&gt;chapter 100&lt;/a&gt;) detail was added about the use of &lt;a href=&quot;https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html#i1693415&quot;&gt;Remote Service Intents&lt;/a&gt;.   RS Intents describe a distribution provider's abstract capabilities.    By way of example, several new standard intents have been defined, including &lt;b&gt;osgi.basic&lt;/b&gt; and &lt;b&gt;osgi.async.   &lt;/b&gt;&lt;br /&gt;&lt;br /&gt;The &lt;a href=&quot;https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html#service.remoteservices-osgi.basic&quot; style=&quot;font-weight: bold;&quot;&gt;osgi.basic&lt;/a&gt; intent requires that a distribution provider support a remote service-specific timeout, as well as serialization of remote service arguments and return values include DTOs (&lt;a href=&quot;https://osgi.org/specification/osgi.core/7.0.0/framework.dto.html&quot;&gt;Data Type Objects&lt;/a&gt;), java primitives, maps, collections, lists, OSGI Version, etc.   &lt;br /&gt;&lt;br /&gt;The &lt;b&gt;&lt;a href=&quot;https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html#d0e1402&quot;&gt;osgi.async&lt;/a&gt;&lt;/b&gt; intent requires that remote service method signatures using CompletableFuture, Future, and OSGI's &lt;a href=&quot;https://osgi.org/specification/osgi.cmpn/7.0.0/util.promise.html&quot;&gt;Promise&lt;/a&gt; be supported directly by the distribution provider.   This allows non-blocking asynchronous remote services to be easily declared in the service interface, and implemented by the distribution provider.  &lt;a href=&quot;https://github.com/ECF/enrouteEvalExampleRemoteService/blob/master/bundles/com.acme.prime.eval.api.v2/src/com/acme/prime/eval/api/Eval.java&quot;&gt;Here is an example remote service&lt;/a&gt; declaration that demonstrates how the osgi.async intent can be used.   In a forthcoming tutorial, I'll show how such a small service can be easily defined, implemented, and remoted using ECF Remote Services.&lt;br /&gt;&lt;br /&gt;ECF's remote services impl has &lt;a href=&quot;https://wiki.eclipse.org/Distribution_Providers&quot;&gt;multiple distribution providers&lt;/a&gt;, and open APIs for creating custom or extension providers.   Most of the existing ECF distribution providers already available have been updated to implement the R7-standardized intents.   Others will be updated prior to and after Photon release.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 16 Apr 2018 17:09:05 +0000</pubDate>
+	<author>noreply@blogger.com (Scott Lewis)</author>
+</item>
+<item>
+	<title>Webtools News: WTP 3.9.5 Released!</title>
+	<guid isPermaLink="false">http://www.eclipse.org/webtools/news.php#permalink183</guid>
+	<link>http://eclipse.org/webtools/releases/3.9.5</link>
+	<description>&lt;div&gt;
+      Web Tools Platform 3.9.5 has been released!  &lt;a href=&quot;https://wiki.eclipse.org/WTP_FAQ#How_do_I_install_WTP.3F&quot;&gt;Installation&lt;/a&gt; and update can be performed using the 
+      &lt;a href=&quot;http://download.eclipse.org/releases/oxygen/&quot;&gt;Oxygen Update Site&lt;/a&gt; or through the &lt;a href=&quot;https://marketplace.eclipse.org/user/nitind/listings&quot;&gt;Eclipse Marketplace&lt;/a&gt;.
+      Release 3.9.5 &lt;a href=&quot;https://www.eclipse.org/webtools/releases/3.9.5/&quot;&gt;fixes&lt;/a&gt; issues that occur in prior releases or have been reported since 3.9's release. WTP 3.9.5 is NOT included in Oxygen.3a
+          &lt;a href=&quot;https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen3a&quot;&gt;Eclipse IDE for Java EE Developers&lt;/a&gt;, with selected portions also included in &lt;a href=&quot;http://www.eclipse.org/downloads/compare.php&quot;&gt;other packages&lt;/a&gt;.  Adopters can download &lt;a href=&quot;http://download.eclipse.org/webtools/downloads/&quot;&gt;the R3.9.5 build itself&lt;/a&gt; directly.&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;http://www.eclipse.org/webtools/news.php#permalink183&quot;&gt;More news&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 15 Apr 2018 10:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>vert.x project: New community channels</title>
+	<guid isPermaLink="true">https://vertx.io/blog/new-community-channels</guid>
+	<link>https://vertx.io/blog/new-community-channels</link>
+	<description>&lt;article&gt;&lt;p&gt;If you visited the Eclipse Vert.x website recently, you might have noticed a couple of novelties on the &lt;a href=&quot;https://vertx.io/community&quot;&gt;community&lt;/a&gt; page:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the Stack Overflow &lt;a href=&quot;https://stackoverflow.com/questions/tagged/vert.x?sort=newest&amp;amp;pageSize=15&quot;&gt;vert.x&lt;/a&gt; tag for user questions&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&quot;https://gitter.im/eclipse-vertx/vertx-users&quot;&gt;vertx-users&lt;/a&gt; Gitter channel to chat with other users and module maintainers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wondering why?&lt;/p&gt;
+&lt;h2 id=&quot;answering-questions-wherever-they-are-asked&quot;&gt;Answering questions wherever they are asked&lt;/h2&gt;
+&lt;p&gt;In order to help us support the community, we (the core team and module maintainers) have tried so far to stick to a few rules:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://groups.google.com/forum/?fromgroups#!forum/vertx&quot;&gt;user group&lt;/a&gt; for questions&lt;/li&gt;
+&lt;li&gt;IRC to chat&lt;/li&gt;
+&lt;li&gt;bugs and issues reported on GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These rules were documented on the website, but admittedly they are hard (if possible at all) to enforce.
+And let’s face it: many new users like to ask questions on Stackoverflow and GitHub.&lt;/p&gt;
+&lt;p&gt;So we now answer questions wherever they are asked.
+We keep the user group as the main channel though: some conversations just don’t fit the Stack Overflow model, and not everyone in the community watches the GitHub repositories.&lt;/p&gt;
+&lt;h2 id=&quot;moving-from-irc-to-gitter&quot;&gt;Moving from IRC to Gitter&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;#vertx&lt;/code&gt; channel is recorded on &lt;code&gt;echelog&lt;/code&gt; but it’s not convenient to search or browse.
+And sharing code, logs, issues is simply awful compared to modern alternatives like Gitter or Slack.&lt;/p&gt;
+&lt;p&gt;Gitter got our preference because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it’s free, without limits&lt;/li&gt;
+&lt;li&gt;it’s not resource hungry (on a browser at least)&lt;/li&gt;
+&lt;li&gt;it’s well integrated with GitHub&lt;/li&gt;
+&lt;li&gt;it supports advanced formatting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since the &lt;a href=&quot;https://gitter.im/eclipse-vertx/vertx-users&quot;&gt;channel&lt;/a&gt; was opened, new people are joining every day.
+At the time of writing, there are 74 people registered already.
+We hope you will be the next one!&lt;/p&gt;
+&lt;p&gt;See you soon online.&lt;/p&gt;
+&lt;/article&gt;</description>
+	<pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Eclipse Oxygen 3A has been released!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/OWE11o6tdkM/3a</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/OWE11o6tdkM/3a</link>
+	<description>Download the Oxygen 3A packages today.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/OWE11o6tdkM&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 12 Apr 2018 14:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Holger Voormann: Eclipse Oxygen.3a IDE Improvements: Java 10</title>
+	<guid isPermaLink="false">http://eclipsehowl.wordpress.com/?p=1403</guid>
+	<link>https://eclipsehowl.wordpress.com/2018/04/12/eclipse-oxygen-3a-ide-improvements-java-10/</link>
+	<description>&lt;p&gt;Three weeks after the &lt;a href=&quot;https://wp.me/pKqrW-mq&quot;&gt;Oxygen.3&lt;/a&gt; and the &lt;a href=&quot;http://openjdk.java.net/projects/jdk/10/&quot;&gt;Java 10&lt;/a&gt; release, Oxygen.3a now adds official support for Java 10 which was previously offered only as a &lt;a href=&quot;http://marketplace.eclipse.org/content/java-10-support-oxygen&quot;&gt;pre-release via the Eclipse Marketplace&lt;/a&gt;. Because &lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse&amp;amp;query_format=advanced&amp;amp;target_milestone=4.7.3a&quot;&gt;Oxygen.3a also contains some bug fixes&lt;/a&gt;, an upgrade is also recommended for Java developers who do not (yet) want to use Java 10.&lt;/p&gt;
+&lt;p&gt;The main innovation and the only language change of Java 10 is the so-called &lt;em&gt;&lt;a href=&quot;http://openjdk.java.net/jeps/286&quot;&gt;Local-Variable Type Inference&lt;/a&gt;&lt;/em&gt;: within code blocks, in variable declaration, you can use &lt;em&gt;var&lt;/em&gt; instead of the type. The specific type is determined implicitly from the assigned value. With &lt;em&gt;var&lt;/em&gt; &lt;code&gt;ArrayList&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();&lt;/code&gt; can be shortened to &lt;code&gt;var list = new ArrayList&amp;lt;String&amp;gt;();&lt;/code&gt;. This is often handy (e. g. in try-with-resources statements like &lt;code&gt;try (var reader = new BufferedReader(new FileReader(path))) { /*...*/ }&lt;/code&gt;), but in some cases it can also lead to less readable code (in my opinion e. g. in enhanced for-loops like &lt;code&gt;for (var item : x.getItems()) { /*...*/ }&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://openjdk.java.net/jeps/286#Description&quot;&gt;&lt;em&gt;var&lt;/em&gt; is not a keyword, just a reserved type name&lt;/a&gt;. This means that &lt;em&gt;var&lt;/em&gt; can still be used as a variable name but not as a type name: &lt;code&gt;int int = 1;&lt;/code&gt; and &lt;code&gt;var int = 1;&lt;/code&gt; are invalid, but &lt;code&gt;int var = 1;&lt;/code&gt; and &lt;code&gt;var var = 1;&lt;/code&gt; are both valid Java code. Hopefully I will never have to explain to anyone why a module can be named “module” and a var can be named “var”, but an int cannot be named “int” and a class cannot be named “class” and why “module” is a valid class name whereas “var” is not. And because &lt;em&gt;var&lt;/em&gt; is just a reserved type name, &lt;code&gt;final var invar = 1;&lt;/code&gt; may look weird but is valid.&lt;/p&gt;
+&lt;p&gt;Nonetheless, the Eclipse developers did a great job enhancing the Eclipse Java IDE to support &lt;em&gt;var&lt;/em&gt;. The inferred type will be shown on mouse over and in the Javadoc view, the content assist is aware of the inferred type and offers the corresponding proposals and in &lt;em&gt;Mark Occurences&lt;/em&gt; &lt;code&gt;var&lt;/code&gt; is handled as a substitute for the inferred type:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/YGgSLUpRGoc&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter size-full wp-image-1411&quot; height=&quot;253&quot; src=&quot;https://eclipsehowl.files.wordpress.com/2018/04/eclipse_oxygen_3a_ide_improvements.png?w=450&amp;amp;h=253&quot; width=&quot;450&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Furthermore, the incremental Eclipse Java compiler had to be adapted for Java 10. &lt;a href=&quot;http://mail.openjdk.java.net/pipermail/compiler-dev/2018-March/011757.html&quot;&gt;Unlike Oracle’s Java compiler javac the Eclipse compiler, however, does not stumble over &lt;code&gt;var s=List.of(&quot;a&quot;,1)&lt;/code&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For Java and other developers, several &lt;a href=&quot;http://www.eclipse.org/downloads/eclipse-packages/&quot;&gt;Eclipse Oxygen.3a IDE packages are available for download&lt;/a&gt;. Older versions of Oxygen will prompt you to upgrade to Oxygen.3a unless the built-in automatic update is disabled. Oxygen.3a is the last update for Eclipse Oxygen. Numerous major changes are currently being finalized for the next major release, Eclipse Photon, on June 27. If you want you can already test a &lt;a href=&quot;https://www.eclipse.org/downloads/index-developer.php?photon&quot;&gt;pre-release of Eclipse Photon&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy coding!&lt;/p&gt;</description>
+	<pubDate>Thu, 12 Apr 2018 10:15:13 +0000</pubDate>
+</item>
+<item>
+	<title>Webtools News: WTP 3.9.4 Released!</title>
+	<guid isPermaLink="false">http://www.eclipse.org/webtools/news.php#permalink182</guid>
+	<link>http://eclipse.org/webtools/releases/3.9.4</link>
+	<description>&lt;div&gt;
+      Web Tools Platform 3.9.4 has been released!  &lt;a href=&quot;https://wiki.eclipse.org/WTP_FAQ#How_do_I_install_WTP.3F&quot;&gt;Installation&lt;/a&gt; and update can be performed using the 
+      &lt;a href=&quot;http://download.eclipse.org/releases/oxygen/&quot;&gt;Oxygen Update Site&lt;/a&gt; or through the &lt;a href=&quot;https://marketplace.eclipse.org/user/nitind/listings&quot;&gt;Eclipse Marketplace&lt;/a&gt;.
+      Release 3.9.4 &lt;a href=&quot;https://www.eclipse.org/webtools/releases/3.9.4/&quot;&gt;fixes&lt;/a&gt; issues that occur in prior releases or have been reported since 3.9's release. WTP 3.9.4 is included in Oxygen.3a
+          &lt;a href=&quot;https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen3a&quot;&gt;Eclipse IDE for Java EE Developers&lt;/a&gt;, with selected portions also included in &lt;a href=&quot;http://www.eclipse.org/downloads/compare.php&quot;&gt;other packages&lt;/a&gt;.  Adopters can download &lt;a href=&quot;http://download.eclipse.org/webtools/downloads/&quot;&gt;the R3.9.4 build itself&lt;/a&gt; directly.&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;http://www.eclipse.org/webtools/news.php#permalink182&quot;&gt;More news&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 11 Apr 2018 10:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Milinkovich: A New Logo for the Eclipse Foundation</title>
+	<guid isPermaLink="false">http://mmilinkov.wordpress.com/?p=1446</guid>
+	<link>https://mmilinkov.wordpress.com/2018/04/10/eclipse-foundation-new-logo/</link>
+	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Since the beginning of the Eclipse Foundation in 2004 we have had two corporate logos, both of which happened to be the same logo as used by the Eclipse IDE. For a long time that was a good idea, as the Eclipse IDE was definitely our flagship project.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;However, as the role of our Foundation has changed, that has made less and less sense. With exciting new technologies such as Jakarta EE, IoT, machine learning, quantum computing, etc., tying our identity to just one of our 350 projects makes it a lot more difficult to explain.  Our visual identity needs to line up with our role as a platform and environment for developers and organizations to collaborate.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;To that end, we are going to soon be rolling out a new logo and website look-and-feel for the Eclipse Foundation. Our web team lead Christopher Guindon &lt;a href=&quot;https://www.chrisguindon.com/post/quicksilver-eclipse-org-redesign/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;has blogged&lt;/a&gt;&lt;/span&gt;&lt;b&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; about what the new website look-and-feel will be like. It includes both a refresh in the look and feel, while still making it simple for developers to get to their favorite projects and downloads. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;But first, I get the exciting job of sharing our new logo with the world. We really like it, and hope you do too!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;eclipsefoundationlogo_4&quot; class=&quot;alignnone size-full wp-image-1447&quot; src=&quot;https://mmilinkov.files.wordpress.com/2018/04/eclipsefoundationlogo_4.jpg?w=700&quot; /&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 10 Apr 2018 12:00:29 +0000</pubDate>
+</item>
+<item>
+	<title>Christopher Guindon: Quicksilver: eclipse.org new look and feel</title>
+	<guid isPermaLink="true">https://www.chrisguindon.com/post/quicksilver-eclipse-org-redesign/</guid>
+	<link>https://www.chrisguindon.com/post/quicksilver-eclipse-org-redesign/</link>
+	<description>&lt;p&gt;&lt;img alt=&quot;Eclipse.org new home page&quot; src=&quot;https://www.chrisguindon.com/images/05-quicksilver/eclipse-org-homepage.jpg&quot; title=&quot;Eclipse.org new home page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am pleased to announce a new look and feel for &lt;a href=&quot;https://www.eclipse.org&quot;&gt;www.eclipse.org&lt;/a&gt;, codenamed &lt;strong&gt;Quicksilver&lt;/strong&gt;, and a new logo for the Eclipse Foundation which Mike Milinkovich, the Executive Director of the Eclipse Foundation, has &lt;a href=&quot;https://mmilinkov.wordpress.com/2018/04/10/eclipse-foundation-new-logo/&quot;&gt;blogged&lt;/a&gt; about.&lt;/p&gt;
+
+&lt;p&gt;The main goal of the redesign is to highlight the Eclipse Foundation as more than just the IDE it started with. We want the site to reflect the fact that the Foundation now represents a collection of working groups, open source projects, vendors and individual committers all collaborating in the same space to create innovative technologies.&lt;/p&gt;
+
+&lt;p&gt;We hope we have the balance right, making sure it remains easy for the millions of developers who visit our site to get to their desired downloads easily and quickly.&lt;/p&gt;
+
+&lt;p&gt;A Quicksilver prototype is available now via our &lt;a href=&quot;https://staging.eclipse.org&quot;&gt;public staging server&lt;/a&gt;. This server is protected with basic access authentication. The username is &lt;strong&gt;testuser&lt;/strong&gt; and &lt;strong&gt;plaintext&lt;/strong&gt; is the password.&lt;/p&gt;
+
+&lt;p&gt;The main focus of this redesign was on the following pages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://staging.eclipse.org&quot;&gt;Eclipse Foundation Homepage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://staging.eclipse.org/org/workinggroups/&quot;&gt;Eclipse Working Groups&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://staging.eclipse.org/org/value/&quot;&gt;Business Value&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://staging.eclipse.org/org/&quot;&gt;Content pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can participate and contribute to this project by submitting feedback on &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=533394&quot;&gt;Bug 533394 - Quicksilver: eclipse.org new look and feel&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Quicksilver is going to be available on &lt;strong&gt;April 19th, 2018&lt;/strong&gt; for &lt;a href=&quot;https://www.eclipse.org&quot;&gt;www.eclipse.org&lt;/a&gt; only. We will continue the rollout across our broader web properties over the coming weeks.&lt;/p&gt;
+
+&lt;p&gt;Technology-wise, Quicksilver is an extension of Solstice. Since this is not a complete overhaul of our existing codebase, we’re expecting the transition from Solstice to Quicksilver to be fairly straightforward. Website maintainers for Eclipse projects and working groups should know that the colors are going to change but we don’t expect to break any existing Eclipse project websites.&lt;/p&gt;
+
+&lt;h2 id=&quot;future-plans&quot;&gt;Future plans&lt;/h2&gt;
+
+&lt;p&gt;We plan on changing our look and feel gradually. The following tasks are going to get done after the initial release of Quicksilver:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Drupal themes for &lt;a href=&quot;https://marketplace.eclipse.org&quot;&gt;Eclipse Marketplace&lt;/a&gt;, &lt;a href=&quot;https://projects.eclipse.org&quot;&gt;Eclipse PMI&lt;/a&gt; and &lt;a href=&quot;https://accounts.eclipse.org&quot;&gt;Eclipse User Profiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New Hugo theme for static websites&lt;/li&gt;
+&lt;li&gt;Mediawiki theme for &lt;a href=&quot;https://wiki.eclipse.org&quot;&gt;Eclipsepedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New theme for &lt;a href=&quot;http://planeteclipse.org/planet/&quot;&gt;Planet Eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated header and footer for &lt;a href=&quot;https://bugs.eclipse.org/bugs/&quot;&gt;Eclipse Bugzilla&lt;/a&gt;, &lt;a href=&quot;https://git.eclipse.org/r/&quot;&gt;Gerrit&lt;/a&gt;, &lt;a href=&quot;https://ci.eclipse.org/&quot;&gt;Eclipse CI&lt;/a&gt; and &lt;a href=&quot;https://git.eclipse.org/c/&quot;&gt;Eclipse Git repositories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New FUDforum theme for the &lt;a href=&quot;https://eclipse.org/forums/&quot;&gt;Eclipse Community Forums&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A lot of work needs to get done before this becomes available but I am very proud of the work we did so far for this project.&lt;/p&gt;
+
+&lt;p&gt;A huge thank you to Eric Poirier, Stephanie Swart, Thabang Mashologu, and the entire Eclipse Foundation staff!&lt;/p&gt;</description>
+	<pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Donald Raab: EC by Example: Short-circuiting methods</title>
+	<guid isPermaLink="false">https://medium.com/p/e60121bc5a</guid>
+	<link>https://medium.com/@donraab/ec-by-example-short-circuiting-methods-e60121bc5a?source=rss-df39b86e9f04------2</link>
+	<description>&lt;p&gt;Learn the methods in &lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;Eclipse Collections&lt;/a&gt; that short-circuit and return a result as soon as a condition is met.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*8p2hKb-HxKcpR_2ZPMw2Gw.png&quot; /&gt;Short-circuiting methods won’t leave you stuck in a loop for longer than necessary&lt;/figure&gt;&lt;h3&gt;What are the short-circuiting methods?&lt;/h3&gt;&lt;p&gt;The short-circuiting methods in &lt;a href=&quot;https://www.eclipse.org/collections/&quot;&gt;Eclipse Collections&lt;/a&gt; all take a &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/block/predicate/Predicate.html&quot;&gt;Predicate&lt;/a&gt; or &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/block/predicate/Predicate2.html&quot;&gt;Predicate2&lt;/a&gt; as a parameter. We refer to them as short-circuiting methods because as soon as the condition is met for a particular algorithm, the loop is broken out of and a result is immediately returned.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/760/1*5DauoMhyfI_SN2G1A1WJhw.png&quot; /&gt;“the”::equals is the method reference equivalent of string -&amp;gt; “the”.equals(string)&lt;/figure&gt;&lt;p&gt;The &lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/docs/guide.md#-short-circuit-patterns&quot;&gt;short-circuiting methods in Eclipse Collections&lt;/a&gt; are:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#detect-org.eclipse.collections.api.block.predicate.Predicate-&quot;&gt;detect&lt;/a&gt; / &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#detectWith-org.eclipse.collections.api.block.predicate.Predicate2-P-&quot;&gt;detectWith&lt;/a&gt; — returns the first object that the predicate matches or null if none match&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#detectIfNone-org.eclipse.collections.api.block.predicate.Predicate-org.eclipse.collections.api.block.function.Function0-&quot;&gt;detectIfNone&lt;/a&gt; / &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#detectWithIfNone-org.eclipse.collections.api.block.predicate.Predicate2-P-org.eclipse.collections.api.block.function.Function0-&quot;&gt;detectWithIfNone&lt;/a&gt; — returns the first object that the predicate matches or returns the result of evaluating the Function0&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#detectOptional-org.eclipse.collections.api.block.predicate.Predicate-&quot;&gt;detectOptional&lt;/a&gt; / &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#detectWithOptional-org.eclipse.collections.api.block.predicate.Predicate2-P-&quot;&gt;detectWithOptional&lt;/a&gt; — returns an Optional with the first object that the predicate matches or Optional.empty()&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/ordered/OrderedIterable.html#detectIndex-org.eclipse.collections.api.block.predicate.Predicate-&quot;&gt;detectIndex&lt;/a&gt; / &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/ordered/ReversibleIterable.html#detectLastIndex-org.eclipse.collections.api.block.predicate.Predicate-&quot;&gt;detectLastIndex&lt;/a&gt; (Ordered Only) — returns the index of the first or last object that the predicate matches or -1 if none match&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#anySatisfy-org.eclipse.collections.api.block.predicate.Predicate-&quot;&gt;anySatisfy&lt;/a&gt; / &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#anySatisfyWith-org.eclipse.collections.api.block.predicate.Predicate2-P-&quot;&gt;anySatisfyWith&lt;/a&gt; — returns true if the predicate matches any object&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#allSatisfy-org.eclipse.collections.api.block.predicate.Predicate-&quot;&gt;allSatisfy&lt;/a&gt; / &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#allSatisfyWith-org.eclipse.collections.api.block.predicate.Predicate2-P-&quot;&gt;allSatisfyWith&lt;/a&gt; — returns true if the predicate matches all of the objects&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#noneSatisfy-org.eclipse.collections.api.block.predicate.Predicate-&quot;&gt;noneSatisfy&lt;/a&gt; / &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#noneSatisfyWith-org.eclipse.collections.api.block.predicate.Predicate2-P-&quot;&gt;noneSatisfyWith&lt;/a&gt; — returns true if the predicate doesn’t match any of the objects&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The methods that include the suffix “With” all take Predicate2, while the other methods take a Predicate.&lt;/p&gt;&lt;p&gt;All of the examples in this blog are written using the Java 10 Local-Variable Type Inference feature (aka var).&lt;/p&gt;&lt;h3&gt;A few forms of detect&lt;/h3&gt;&lt;pre&gt;@Test&lt;br /&gt;public void detect()&lt;br /&gt;{&lt;br /&gt;    var mutableList = &lt;br /&gt;        &lt;em&gt;mList&lt;/em&gt;(&lt;strong&gt;&quot;the&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;quick&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;brown&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;fox&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;jumps&quot;&lt;/strong&gt;);&lt;br /&gt;    var immutableList = &lt;br /&gt;        &lt;em&gt;iList&lt;/em&gt;(&lt;strong&gt;&quot;over&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;the&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;lazy&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;dog&quot;&lt;/strong&gt;);&lt;br /&gt;&lt;br /&gt;    var the1 =&lt;br /&gt;        mutableList.detect(&lt;strong&gt;&quot;the&quot;&lt;/strong&gt;::equals);&lt;br /&gt;    var the2 =&lt;br /&gt;        immutableList.detectIfNone(&lt;strong&gt;&quot;fox&quot;&lt;/strong&gt;::equals, () -&amp;gt; &lt;strong&gt;&quot;the&quot;&lt;/strong&gt;);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(the1, the2);&lt;br /&gt;&lt;br /&gt;    var the3 =&lt;br /&gt;        mutableList.detectWith(Object::equals, &lt;strong&gt;&quot;the&quot;&lt;/strong&gt;);&lt;br /&gt;    var the4 =&lt;br /&gt;        immutableList.detectWithIfNone(Object::equals, &lt;strong&gt;&quot;fox&quot;&lt;/strong&gt;, &lt;br /&gt;            () -&amp;gt; &lt;strong&gt;&quot;the&quot;&lt;/strong&gt;);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(the3, the4);&lt;br /&gt;&lt;br /&gt;    var the5 =&lt;br /&gt;        mutableList.detectOptional(s -&amp;gt; s.endsWith(&lt;strong&gt;&quot;e&quot;&lt;/strong&gt;));&lt;br /&gt;    var the6 =&lt;br /&gt;        immutableList.detectWithOptional(String::startsWith, &lt;strong&gt;&quot;t&quot;&lt;/strong&gt;);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(the5.get(), the6.get());&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;Detecting the first and last index&lt;/h3&gt;&lt;pre&gt;@Test&lt;br /&gt;public void detectIndex()&lt;br /&gt;{&lt;br /&gt;    var mutableList = &lt;br /&gt;        &lt;em&gt;mList&lt;/em&gt;(&lt;strong&gt;&quot;the&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;quick&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;brown&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;fox&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;jumps&quot;&lt;/strong&gt;);&lt;br /&gt;    var immutableList = &lt;br /&gt;        &lt;em&gt;iList&lt;/em&gt;(&lt;strong&gt;&quot;over&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;the&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;lazy&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;dog&quot;&lt;/strong&gt;);&lt;br /&gt;&lt;br /&gt;    var the1 = mutableList.detectIndex(&lt;strong&gt;&quot;the&quot;&lt;/strong&gt;::equals);&lt;br /&gt;    var the2 = immutableList.detectIndex(&lt;strong&gt;&quot;the&quot;&lt;/strong&gt;::equals);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(0, the1);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, the2);&lt;br /&gt;&lt;br /&gt;    var fox = mutableList.detectLastIndex(&lt;strong&gt;&quot;fox&quot;&lt;/strong&gt;::equals);&lt;br /&gt;    var dog = immutableList.detectLastIndex(&lt;strong&gt;&quot;dog&quot;&lt;/strong&gt;::equals);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(3, fox);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(3, dog);&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;Examples of Any/All/NoneSatisfy&lt;/h3&gt;&lt;pre&gt;@Test&lt;br /&gt;public void anyAllNoneSatisfy()&lt;br /&gt;{&lt;br /&gt;    var list = &lt;em&gt;mList&lt;/em&gt;(&lt;strong&gt;&quot;the&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;quick&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;brown&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;fox&quot;&lt;/strong&gt;);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertTrue&lt;/em&gt;(list.anySatisfy(s -&amp;gt; s.endsWith(&lt;strong&gt;&quot;e&quot;&lt;/strong&gt;)));&lt;br /&gt;    Assert.&lt;em&gt;assertFalse&lt;/em&gt;(list.anySatisfyWith(String::endsWith, &lt;strong&gt;&quot;z&quot;&lt;/strong&gt;));&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertFalse&lt;/em&gt;(list.allSatisfyWith(String::endsWith, &lt;strong&gt;&quot;e&quot;&lt;/strong&gt;));&lt;br /&gt;    Assert.&lt;em&gt;assertTrue&lt;/em&gt;(list.allSatisfy(s -&amp;gt; !s.isEmpty()));&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertFalse&lt;/em&gt;(list.noneSatisfyWith(String::endsWith, &lt;strong&gt;&quot;x&quot;&lt;/strong&gt;));&lt;br /&gt;    Assert.&lt;em&gt;assertTrue&lt;/em&gt;(list.noneSatisfy(String::isEmpty));&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;Try out short-circuiting methods in the EC Katas&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections-kata&quot;&gt;eclipse/eclipse-collections-kata&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Here’s a few solutions demonstrating short-circuiting methods in Exercise #2 of the Eclipse Collections Pet Kata.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*7F1YTGDrtu4Z5hNMzieVyw.png&quot; /&gt;Examples of anySatisfyWith, allSatisfy and detectWith from the Pet Kata&lt;/figure&gt;&lt;p&gt;Check out this &lt;a href=&quot;http://eclipse.github.io/eclipse-collections-kata/api-design&quot;&gt;presentation&lt;/a&gt; to learn more about the origins, design and evolution of the Eclipse Collections API. There is also a &lt;a href=&quot;https://www.youtube.com/watch?v=Xrx_407Dt-I&quot;&gt;video&lt;/a&gt; covering the slides that was recorded at an Eclipse Community Virtual Meet-up.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=e60121bc5a&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 09 Apr 2018 05:54:49 +0000</pubDate>
+</item>
+<item>
+	<title>vert.x project: Eclipse Vert.x metrics now with Micrometer.io</title>
+	<guid isPermaLink="true">https://vertx.io/blog/eclipse-vert-x-metrics-now-with-micrometer-io</guid>
+	<link>https://vertx.io/blog/eclipse-vert-x-metrics-now-with-micrometer-io</link>
+	<description>&lt;article&gt;&lt;p&gt;Vert.x has already been providing metrics for some time, through the &lt;a href=&quot;https://vertx.io/docs/vertx-dropwizard-metrics/java/&quot;&gt;vertx-dropwizard-metrics&lt;/a&gt; and &lt;a href=&quot;https://vertx.io/docs/vertx-hawkular-metrics/java/&quot;&gt;vertx-hawkular-metrics&lt;/a&gt; modules. Both of them implement a service provider interface (SPI) to collect the Vert.x metrics and make them available to their respective backends.&lt;/p&gt;
+&lt;p&gt;A new module, &lt;a href=&quot;https://vertx.io/docs/vertx-micrometer-metrics/java/&quot;&gt;vertx-micrometer-metrics&lt;/a&gt;, is now added to the family. It implements the same SPI, which means that it is able to provide the same metrics.
+&lt;a href=&quot;http://micrometer.io/&quot;&gt;&lt;em&gt;Micrometer.io&lt;/em&gt;&lt;/a&gt; is a pretty new metrics library, quite comparable to &lt;em&gt;dropwizard metrics&lt;/em&gt; in that it collects metrics in a local, in-memory registry and is able to store them in various backends such as &lt;em&gt;Graphite&lt;/em&gt; or &lt;em&gt;InfluxDB&lt;/em&gt;. It has several advantages as we will see below.&lt;/p&gt;
+&lt;h2 id=&quot;tell-me-more-about-micrometer&quot;&gt;Tell me more about Micrometer&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://micrometer.io/&quot;&gt;&lt;em&gt;Micrometer.io&lt;/em&gt;&lt;/a&gt; describes itself as a a vendor-neutral application metrics facade.
+It provides a well designed API, in Java, to define &lt;em&gt;gauges&lt;/em&gt;, &lt;em&gt;counters&lt;/em&gt;, &lt;em&gt;timers&lt;/em&gt; and &lt;em&gt;distribution summaries&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Among the available backends, Micrometer natively supports &lt;em&gt;Graphite&lt;/em&gt;, &lt;em&gt;InfluxDB&lt;/em&gt;, &lt;em&gt;JMX&lt;/em&gt;, &lt;em&gt;Prometheus&lt;/em&gt; and &lt;a href=&quot;http://micrometer.io/docs&quot;&gt;several others&lt;/a&gt;. Prometheus is very popular in the Kubernetes and microservices ecosystems, so its support by Micrometer was a strong motivation for implementing it in Vert.x.&lt;/p&gt;
+&lt;p&gt;For the the moment, our implementation in Vert.x supports &lt;em&gt;Prometheus&lt;/em&gt;, &lt;em&gt;InfluxDB&lt;/em&gt; and &lt;em&gt;JMX&lt;/em&gt;. More should quickly come in the near future.&lt;/p&gt;
+&lt;h3 id=&quot;dimensionality&quot;&gt;Dimensionality&lt;/h3&gt;
+&lt;p&gt;Another interesting aspect in Micrometer is that it handles metrics &lt;em&gt;dimensionality&lt;/em&gt;: metrics can be associated with a set of key/value pairs (sometimes refered as &lt;em&gt;tags&lt;/em&gt;, sometimes as &lt;em&gt;labels&lt;/em&gt;). Every value brings a new dimension to the metric, so that in Prometheus or any other backend that supports dimensionality, we can query for datapoints of one or several dimensions, or query for datapoints aggregated over several dimensions.&lt;/p&gt;
+&lt;p&gt;  &lt;em&gt;Example: our metric &lt;code&gt;vertx_http_server_connections&lt;/code&gt; accepts labels &lt;code&gt;local&lt;/code&gt; and &lt;code&gt;remote&lt;/code&gt;, that are used to store addresses on HTTP connections&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;admonition-block note&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;admonition-icon&quot;&gt;&lt;i class=&quot;admonition-icon fa fa-comment&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;td class=&quot;content&quot;&gt;&lt;span class=&quot;content&quot;&gt; Prometheus is used in the following examples, but equivalent queries can be performed with &lt;em&gt;InfluxDB&lt;/em&gt;.&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;In Prometheus, the query &lt;code&gt;vertx_http_server_connections&lt;/code&gt; will return as many timeseries as there are combinations of &lt;code&gt;local&lt;/code&gt; and &lt;code&gt;remote&lt;/code&gt; values. Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;vertx_http_server_connections{&lt;span class=&quot;hljs-variable&quot;&gt;local=&lt;/span&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;0.0.0.0:8080&quot;&lt;/span&gt;,&lt;span class=&quot;hljs-variable&quot;&gt;remote=&lt;/span&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;1.1.1.1&quot;&lt;/span&gt;}
+vertx_http_server_connections{&lt;span class=&quot;hljs-variable&quot;&gt;local=&lt;/span&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;0.0.0.0:8080&quot;&lt;/span&gt;,&lt;span class=&quot;hljs-variable&quot;&gt;remote=&lt;/span&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;2.2.2.2&quot;&lt;/span&gt;}
+vertx_http_server_connections{&lt;span class=&quot;hljs-variable&quot;&gt;local=&lt;/span&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;0.0.0.0:8080&quot;&lt;/span&gt;,&lt;span class=&quot;hljs-variable&quot;&gt;remote=&lt;/span&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;3.3.3.3&quot;&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To query on a single dimension, we must provide the labels:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vertx_http_server_connections{local=&quot;0.0.0.0:8080&quot;,remote=&quot;1.1.1.1&quot;}&lt;/code&gt;. It will return a single timeseries.&lt;/p&gt;
+&lt;p&gt;To get an aggregate, Prometheus (PromQL) provides several &lt;a href=&quot;https://prometheus.io/docs/prometheus/latest/querying/operators/#aggregation-operators&quot;&gt;aggregation operators&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sum(vertx_http_server_connections)&lt;/code&gt; will return the sum across all dimensions.&lt;/p&gt;
+&lt;h2 id=&quot;so-what-are-the-vert-x-metrics-&quot;&gt;So what are the Vert.x metrics?&lt;/h2&gt;
+&lt;p&gt;People already familiar with the existing metrics modules (&lt;em&gt;dropwizard&lt;/em&gt; or &lt;em&gt;hawkular&lt;/em&gt;) will not be too disoriented. They are roughly the same. The main difference is where previously, some metric names could have a variable part within - such as &lt;code&gt;vertx.eventbus.handlers.myaddress&lt;/code&gt; - here we take advantage of dimensionality and we will have &lt;code&gt;vertx_eventbus_handlers{address=&quot;myaddress&quot;}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Some other metrics are no longer useful, for instance the dropwizard’s &lt;code&gt;vertx.eventbus.messages.pending&lt;/code&gt;, &lt;code&gt;vertx.eventbus.messages.pending-local&lt;/code&gt; and &lt;code&gt;vertx.eventbus.messages.pending-remote&lt;/code&gt; are now just &lt;code&gt;vertx_eventbus_pending{side=local}&lt;/code&gt; and &lt;code&gt;vertx_eventbus_pending{side=remote}&lt;/code&gt; in micrometer. The sum of them can easily be computed at query time.&lt;/p&gt;
+&lt;p&gt;The metrics provided by Vert.x are dispatched into eight big families:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Net client&lt;/strong&gt;: distribution summaries of bytes sent and received, number of connections, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Net server&lt;/strong&gt;: distribution summaries of bytes sent and received, number of connections, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTP client&lt;/strong&gt;: counter of requests, response times, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTP server&lt;/strong&gt;: counter of requests, processing times, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event bus&lt;/strong&gt;: counter of handlers, messages sent and received, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pool&lt;/strong&gt;: for worker pools and some datasource pools, queue size and waiting time, processing time, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Verticles&lt;/strong&gt;: number of verticles deployed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The full list of collected metrics is &lt;a href=&quot;https://vertx.io/docs/vertx-micrometer-metrics/java/#_vert_x_core_tools_metrics&quot;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;This section will guide you through a quick setup to run a Vert.x application with Micrometer. The code examples used here are taken from the &lt;code&gt;micrometer-metrics-example&lt;/code&gt; in &lt;code&gt;vertx-examples&lt;/code&gt; repository, in Java, using &lt;em&gt;maven&lt;/em&gt;. But the same could be done with other Vert.x supported languages, as well as &lt;em&gt;gradle&lt;/em&gt; instead of &lt;em&gt;maven&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;maven-configuration&quot;&gt;Maven configuration&lt;/h3&gt;
+&lt;p&gt;The configuration and the maven imports will vary according to the backend storage that will be used. For maven, the common part is always:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.vertx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;vertx-micrometer-metrics&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.5.1&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Then, to report to InfluxDB:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.micrometer&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;micrometer-registry-influx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;1.0.0&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Or Prometheus:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.micrometer&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;micrometer-registry-prometheus&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;1.0.0&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.vertx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;vertx-web&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.5.1&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Remark that, since Prometheus pulls metrics from their source, they must be exposed on an HTTP endpoint. That’s why &lt;code&gt;vertx-web&lt;/code&gt; is imported here. It is not &lt;em&gt;absolutely&lt;/em&gt; necessary (it’s possible to get the metrics registry content and expose it in any other way) but it’s probably the easiest way to do.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Or JMX:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.micrometer&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;micrometer-registry-jmx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;1.0.0&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;admonition-block note&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;admonition-icon&quot;&gt;&lt;i class=&quot;admonition-icon fa fa-comment&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;td class=&quot;content&quot;&gt;&lt;span class=&quot;title&quot;&gt;Note &lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;content&quot;&gt; At the moment, it is not possible to report metrics to several backends at the same time. &lt;a href=&quot;https://github.com/vert-x3/vertx-micrometer-metrics/issues/16&quot;&gt;It might be soon implemented&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;.&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&quot;setting-up-vert-x-options&quot;&gt;Setting up Vert.x options&lt;/h3&gt;
+&lt;p&gt;A &lt;code&gt;MicrometerMetricsOptions&lt;/code&gt; object must be created and passed to &lt;code&gt;VertxOptions&lt;/code&gt;, with one backend configured (though having no backend is possible: you would get metrics sent to a default Micrometer registry, but without any persistent storage).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;InfluxDB example:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Default InfluxDB options will push metrics to localhost:8086, db &quot;default&quot;&lt;/span&gt;
+MicrometerMetricsOptions options = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; MicrometerMetricsOptions()
+  .setInfluxDbOptions(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxInfluxDbOptions().setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;))
+  .setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;);
+Vertx vertx = Vertx.vertx(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxOptions().setMetricsOptions(options));
+&lt;span class=&quot;hljs-comment&quot;&gt;// Then deploy verticles with this vertx instance&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Prometheus example:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Deploy with embedded server: prometheus metrics will be automatically exposed,&lt;/span&gt;
+&lt;span class=&quot;hljs-comment&quot;&gt;// independently from any other HTTP server defined&lt;/span&gt;
+MicrometerMetricsOptions options = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; MicrometerMetricsOptions()
+  .setPrometheusOptions(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxPrometheusOptions()
+    .setStartEmbeddedServer(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;)
+    .setEmbeddedServerOptions(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; HttpServerOptions().setPort(&lt;span class=&quot;hljs-number&quot;&gt;8081&lt;/span&gt;))
+    .setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;))
+  .setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;);
+Vertx vertx = Vertx.vertx(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxOptions().setMetricsOptions(options));
+&lt;span class=&quot;hljs-comment&quot;&gt;// Then deploy verticles with this vertx instance&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Or Prometheus with the &lt;code&gt;/metrics&lt;/code&gt; endpoint bound to an existing HTTP server:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Deploy without embedded server: we need to &quot;manually&quot; expose the prometheus metrics&lt;/span&gt;
+MicrometerMetricsOptions options = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; MicrometerMetricsOptions()
+  .setPrometheusOptions(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxPrometheusOptions().setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;))
+  .setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;);
+Vertx vertx = Vertx.vertx(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxOptions().setMetricsOptions(options));
+
+Router router = Router.router(vertx);
+PrometheusMeterRegistry registry = (PrometheusMeterRegistry) BackendRegistries.getDefaultNow();
+&lt;span class=&quot;hljs-comment&quot;&gt;// Setup a route for metrics&lt;/span&gt;
+router.route(&lt;span class=&quot;hljs-string&quot;&gt;&quot;/metrics&quot;&lt;/span&gt;).handler(ctx -&amp;gt; {
+  String response = registry.scrape();
+  ctx.response().end(response);
+});
+vertx.createHttpServer().requestHandler(router::accept).listen(&lt;span class=&quot;hljs-number&quot;&gt;8080&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JMX example:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Default JMX options will publish MBeans under domain &quot;metrics&quot;&lt;/span&gt;
+MicrometerMetricsOptions options = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; MicrometerMetricsOptions()
+  .setJmxMetricsOptions(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxJmxMetricsOptions().setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;))
+  .setEnabled(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;);
+Vertx vertx = Vertx.vertx(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; VertxOptions().setMetricsOptions(options));
+&lt;span class=&quot;hljs-comment&quot;&gt;// Then deploy verticles with this vertx instance&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;setup-the-backend-server&quot;&gt;Setup the backend server&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.influxdata.com/&quot;&gt;InfluxDB&lt;/a&gt;, by default, is expected to run on &lt;code&gt;localhost:8086&lt;/code&gt; without authentication, database “default”. It is configurable in &lt;code&gt;VertxInfluxDbOptions&lt;/code&gt;.
+If you don’t have a running instance of InfluxDB, the shortest way to start is certainly with docker, just run:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;docker run -p &lt;span class=&quot;hljs-number&quot;&gt;8086&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;8086&lt;/span&gt; influxdb&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://prometheus.io/docs/prometheus/latest/getting_started/&quot;&gt;Prometheus&lt;/a&gt; needs some configuration since it pulls metrics from the sources. Once it is installed, configure the scrape endpoints in &lt;code&gt;prometheus.yml&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;-&lt;span class=&quot;ruby&quot;&gt; &lt;span class=&quot;hljs-symbol&quot;&gt;job_name:&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'vertx-8081'&lt;/span&gt;
+&lt;/span&gt;  static_configs:
+    -&lt;span class=&quot;ruby&quot;&gt; &lt;span class=&quot;hljs-symbol&quot;&gt;targets:&lt;/span&gt; [&lt;span class=&quot;hljs-string&quot;&gt;'localhost:8081'&lt;/span&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or, when using &lt;code&gt;/metrics&lt;/code&gt; endpoint bound to an existing HTTP server:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-&lt;span class=&quot;ruby&quot;&gt; &lt;span class=&quot;hljs-symbol&quot;&gt;job_name:&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'vertx-8080'&lt;/span&gt;
+&lt;/span&gt;  static_configs:
+    -&lt;span class=&quot;ruby&quot;&gt; &lt;span class=&quot;hljs-symbol&quot;&gt;targets:&lt;/span&gt; [&lt;span class=&quot;hljs-string&quot;&gt;'localhost:8080'&lt;/span&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For JMX there is nothing special to configure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;collecting-vert-x-metrics&quot;&gt;Collecting Vert.x metrics&lt;/h3&gt;
+&lt;p&gt;From now on, all Vert.x metrics will be collected and sent to the configured backend. In our Vert.x example, we setup an HTTP server metrics:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;Router router = Router.router(vertx);
+router.get(&lt;span class=&quot;hljs-string&quot;&gt;&quot;/&quot;&lt;/span&gt;).handler(ctx -&amp;gt; {
+  ctx.response().end(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Hello Micrometer from HTTP!&quot;&lt;/span&gt;);
+});
+vertx.createHttpServer().requestHandler(router::accept).listen(&lt;span class=&quot;hljs-number&quot;&gt;8080&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt; And some event bus ping-pong:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Producer side&lt;/span&gt;
+vertx.setPeriodic(&lt;span class=&quot;hljs-number&quot;&gt;1000&lt;/span&gt;, x -&amp;gt; {
+  vertx.eventBus().send(&lt;span class=&quot;hljs-string&quot;&gt;&quot;greeting&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;Hello Micrometer from event bus!&quot;&lt;/span&gt;);
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Consumer side&lt;/span&gt;
+vertx.eventBus().consumer(&lt;span class=&quot;hljs-string&quot;&gt;&quot;greeting&quot;&lt;/span&gt;, message -&amp;gt; {
+  String greeting = message.body();
+  System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Received: &quot;&lt;/span&gt; + greeting);
+  message.reply(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Hello back!&quot;&lt;/span&gt;);
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To trigger some activity on the HTTP server, we can write a small bash script:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt; curl http://localhost:&lt;span class=&quot;hljs-number&quot;&gt;8080&lt;/span&gt;/
+    sleep .&lt;span class=&quot;hljs-number&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;viewing-the-results&quot;&gt;Viewing the results&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://grafana.com/&quot;&gt;Grafana&lt;/a&gt; can be used to display the InfluxDB and Prometheus metrics. The &lt;code&gt;vertx-examples&lt;/code&gt; repository contains two dashboards for that: &lt;a href=&quot;https://github.com/vert-x3/vertx-examples/blob/master/micrometer-metrics-examples/grafana/Vertx-InfluxDB.json&quot;&gt;for InfluxDB&lt;/a&gt; and &lt;a href=&quot;https://github.com/vert-x3/vertx-examples/blob/master/micrometer-metrics-examples/grafana/Vertx-Prometheus.json&quot;&gt;for Prometheus&lt;/a&gt;.&lt;/p&gt;
+&lt;h5 id=&quot;http-server-metrics&quot;&gt;HTTP server metrics&lt;/h5&gt;
+&lt;p&gt;&lt;img alt=&quot;HTTP server metrics&quot; src=&quot;https://raw.githubusercontent.com/jotak/vertx-examples/micrometer-example/micrometer-metrics-examples/grafana/http-server-metrics.png&quot; /&gt;&lt;/p&gt;
+&lt;h5 id=&quot;event-bus-metrics&quot;&gt;Event bus metrics&lt;/h5&gt;
+&lt;p&gt;&lt;img alt=&quot;Event bus metrics&quot; src=&quot;https://raw.githubusercontent.com/jotak/vertx-examples/micrometer-example/micrometer-metrics-examples/grafana/eventbus-metrics.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;going-further&quot;&gt;Going further&lt;/h2&gt;
+&lt;p&gt;We’ve seen the basic setup. There is a good bunch of options available, detailed &lt;a href=&quot;https://vertx.io/docs/vertx-micrometer-metrics/java/&quot;&gt;in the documentation&lt;/a&gt;: how to disable some metrics domains, how to filter or rearrange labels, how to export metrics snapshots to Json objects, how to add JVM or processor instrumentation, etc.&lt;/p&gt;
+&lt;p&gt;Before we finish, there is one important point that we can cover here: defining custom metrics.
+Because the module gives you access to its Micrometer registry, you can add your custom metrics there.&lt;/p&gt;
+&lt;p&gt;Getting the default registry is straightforward:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;MeterRegistry registry = BackendRegistries.getDefaultNow();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you have plain access to the &lt;a href=&quot;https://micrometer.io/docs/concepts&quot;&gt;Micrometer API&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For instance, here is how you can track the execution time of a piece of code that is regularly called:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;MeterRegistry registry = BackendRegistries.getDefaultNow();
+Timer timer = Timer
+  .builder(&lt;span class=&quot;hljs-string&quot;&gt;&quot;my.timer&quot;&lt;/span&gt;)
+  .description(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Time tracker for my extremely sophisticated algorithm&quot;&lt;/span&gt;)
+  .register(registry);
+
+vertx.setPeriodic(&lt;span class=&quot;hljs-number&quot;&gt;1000&lt;/span&gt;, l -&amp;gt; {
+  timer.record(() -&amp;gt; myExtremelySophisticatedAlgorithm());
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since it is using the same registry, there is no extra backend configuration to do.&lt;/p&gt;
+&lt;h2 id=&quot;what-s-next-&quot;&gt;What’s next?&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;vertx-micrometer-metrics&lt;/code&gt; module will continue to be improved, with already two planned enhancements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/vertx-micrometer-metrics/issues/15&quot;&gt;Adding more backends&lt;/a&gt;, like Graphite.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/vertx-micrometer-metrics/issues/16&quot;&gt;Allow to configure several backends&lt;/a&gt;, and not only one at the same time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Would you miss any feature, please &lt;a href=&quot;https://github.com/vert-x3/vertx-micrometer-metrics/issues&quot;&gt;ask on GitHub&lt;/a&gt;. Contributions and bug fixes are also welcome!&lt;/p&gt;
+&lt;p&gt;Now is time to enter the Metrics.&lt;/p&gt;
+&lt;/article&gt;</description>
+	<pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Donald Raab: EC by Example: Collect</title>
+	<guid isPermaLink="false">https://medium.com/p/262a46030c49</guid>
+	<link>https://medium.com/@donraab/ec-by-example-collect-262a46030c49?source=rss-df39b86e9f04------2</link>
+	<description>&lt;p&gt;Learn how to transform a collection using the &lt;em&gt;collect&lt;/em&gt; method in &lt;a href=&quot;https://www.eclipse.org/collections/&quot;&gt;Eclipse Collections&lt;/a&gt;.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*xqyPm6cMl0LVrKLVSXOIhA.png&quot; /&gt;The Golden Gate Bridge from Fort Point&lt;/figure&gt;&lt;h3&gt;What is Collect?&lt;/h3&gt;&lt;p&gt;The method named &lt;em&gt;collect&lt;/em&gt; in Eclipse Collections takes a Function as a parameter, applies that function to each element in a collection, and returns a the resulting collection. This method is the equivalent of the method named &lt;em&gt;map&lt;/em&gt; on the &lt;em&gt;java.util.Stream&lt;/em&gt; class in the JDK.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/688/1*EJE8uUaDf-zm8aM9afdf4w.png&quot; /&gt;Calling collect on a List with a Function&lt;/figure&gt;&lt;p&gt;The method &lt;em&gt;collect&lt;/em&gt; in Eclipse Collections derives its name from the Smalltalk method named &lt;a href=&quot;https://martinfowler.com/articles/collection-pipeline/#op-catalog&quot;&gt;&lt;em&gt;collect&lt;/em&gt;&lt;/a&gt;. The method &lt;em&gt;collect&lt;/em&gt; will return the same collection type as the source collection (where feasible), but the value type contained in the collection may be different. The method &lt;em&gt;collect&lt;/em&gt; in Eclipse Collections should not be confused with the method &lt;em&gt;collect&lt;/em&gt; on &lt;em&gt;java.util.Stream&lt;/em&gt; which takes a &lt;em&gt;Collector&lt;/em&gt;. The method collect on &lt;em&gt;Stream&lt;/em&gt; is a more general &lt;a href=&quot;https://www.ibm.com/developerworks/library/j-java-streams-2-brian-goetz/&quot;&gt;mutable reduction&lt;/a&gt; which may return any type. The method &lt;em&gt;collect&lt;/em&gt; on &lt;em&gt;java.util.Stream&lt;/em&gt; does not appear on &lt;em&gt;java.util.Collection &lt;/em&gt;or any of its extensions. So while there is a conceptual naming collision, there is no overloading of the methods to cause extra confusion.&lt;/p&gt;&lt;h3&gt;Collecting from a List (Java 8)&lt;/h3&gt;&lt;pre&gt;@Test&lt;br /&gt;public void collectingFromAListJava8()&lt;br /&gt;{&lt;br /&gt;    ExecutorService executor = Executors.&lt;em&gt;newWorkStealingPool&lt;/em&gt;();&lt;br /&gt;&lt;br /&gt;    MutableList&amp;lt;Integer&amp;gt; mList = &lt;em&gt;mList&lt;/em&gt;(1, 2, 3, 4, 5);&lt;br /&gt;    ImmutableList&amp;lt;Integer&amp;gt; iList = &lt;em&gt;iList&lt;/em&gt;(1, 2, 3, 4, 5);&lt;br /&gt;&lt;br /&gt;    Function&amp;lt;Integer, Integer&amp;gt; squared = i -&amp;gt; i * i;&lt;br /&gt;&lt;br /&gt;    MutableList&amp;lt;Integer&amp;gt; mutable = mList.collect(squared);&lt;br /&gt;&lt;br /&gt;    ImmutableList&amp;lt;Integer&amp;gt; immutable = iList.collect(squared);&lt;br /&gt;&lt;br /&gt;    LazyIterable&amp;lt;Integer&amp;gt; lazy = mList.asLazy().collect(squared);&lt;br /&gt;&lt;br /&gt;    ParallelListIterable&amp;lt;Integer&amp;gt; parallel =&lt;br /&gt;            mList.asParallel(executor, 2).collect(squared);&lt;br /&gt;&lt;br /&gt;    ImmutableList&amp;lt;Integer&amp;gt; expected = &lt;em&gt;iList&lt;/em&gt;(1, 4, 9, 16, 25);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, mutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, immutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, lazy.toList());&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, parallel.toList());&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;Collecting from a List (Java 10)&lt;/h3&gt;&lt;pre&gt;@Test&lt;br /&gt;public void collectingFromAListJava10()&lt;br /&gt;{&lt;br /&gt;    var executor = Executors.&lt;em&gt;newWorkStealingPool&lt;/em&gt;();&lt;br /&gt;&lt;br /&gt;    var mutableList = &lt;em&gt;mList&lt;/em&gt;(1, 2, 3, 4, 5);&lt;br /&gt;    var immutableList = &lt;em&gt;iList&lt;/em&gt;(1, 2, 3, 4, 5);&lt;br /&gt;&lt;br /&gt;    Function&amp;lt;Integer, Integer&amp;gt; squared = i -&amp;gt; i * i;&lt;br /&gt;&lt;br /&gt;    var mutable = mutableList.collect(squared);&lt;br /&gt;&lt;br /&gt;    var immutable = immutableList.collect(squared);&lt;br /&gt;&lt;br /&gt;    var lazy = mutableList.asLazy().collect(squared);&lt;br /&gt;&lt;br /&gt;    var parallel = &lt;br /&gt;            mutableList.asParallel(executor, 2).collect(squared);&lt;br /&gt;&lt;br /&gt;    var expected = &lt;em&gt;iList&lt;/em&gt;(1, 4, 9, 16, 25);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, mutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, immutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, lazy.toList());&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, parallel.toList());&lt;br /&gt;}&lt;/pre&gt;&lt;p&gt;Notice that Function cannot be replaced with var. This is because a lambda must be assigned to some type.&lt;/p&gt;&lt;h3&gt;Collecting from a primitive List (Java 8)&lt;/h3&gt;&lt;pre&gt;@Test&lt;br /&gt;public void collectingFromAPrimitiveListJava8()&lt;br /&gt;{&lt;br /&gt;    MutableIntList mList = IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5);&lt;br /&gt;    ImmutableIntList iList = IntLists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5);&lt;br /&gt;&lt;br /&gt;    IntToIntFunction squared = i -&amp;gt; i * i;&lt;br /&gt;&lt;br /&gt;    MutableIntList mutable =&lt;br /&gt;            mList.collectInt(squared, new IntArrayList());&lt;br /&gt;&lt;br /&gt;    ImmutableIntList immutable =&lt;br /&gt;            iList.collectInt(squared, new IntArrayList())&lt;br /&gt;                    .toImmutable();&lt;br /&gt;&lt;br /&gt;    LazyIntIterable lazy =&lt;br /&gt;            mList.asLazy().collectInt(squared);&lt;br /&gt;&lt;br /&gt;    MutableIntList expected =&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 4, 9, 16, 25);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, mutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, immutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, lazy.toList());&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;Collecting from a primitive List (Java 10)&lt;/h3&gt;&lt;pre&gt;@Test&lt;br /&gt;public void collectingFromAPrimitiveListJava10()&lt;br /&gt;{&lt;br /&gt;    var mutableIntList = IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5);&lt;br /&gt;    var immutableIntList = IntLists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5);&lt;br /&gt;&lt;br /&gt;    IntToIntFunction squared = i -&amp;gt; i * i;&lt;br /&gt;&lt;br /&gt;    var mutable =&lt;br /&gt;            mutableIntList.collectInt(squared, new IntArrayList());&lt;br /&gt;&lt;br /&gt;    var immutable =&lt;br /&gt;            immutableIntList.collectInt(squared, new IntArrayList())&lt;br /&gt;                    .toImmutable();&lt;br /&gt;&lt;br /&gt;    var lazy = mutableIntList.asLazy().collectInt(squared);&lt;br /&gt;&lt;br /&gt;    var expected = IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 4, 9, 16, 25);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, mutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, immutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, lazy.toList());&lt;br /&gt;}&lt;/pre&gt;&lt;p&gt;Notice that IntToIntFunction cannot be replaced with var. This is because a lambda must be assigned to some type.&lt;/p&gt;&lt;h3&gt;Is it possible to collect selectively?&lt;/h3&gt;&lt;p&gt;There is a method named &lt;em&gt;collectIf&lt;/em&gt; which applies a &lt;em&gt;Predicate&lt;/em&gt; first to each element, and then applies a &lt;em&gt;Function&lt;/em&gt; to each element where the &lt;em&gt;Predicate&lt;/em&gt; returned true. This method is a fused form of &lt;em&gt;select&lt;/em&gt; and &lt;em&gt;collect&lt;/em&gt;. It is also possible to just call &lt;em&gt;select&lt;/em&gt; followed by &lt;em&gt;collect&lt;/em&gt; either eagerly, lazily or in parallel.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void collectingSelectively()&lt;br /&gt;{&lt;br /&gt;    var executor = Executors.&lt;em&gt;newWorkStealingPool&lt;/em&gt;();&lt;br /&gt;&lt;br /&gt;    var mutableList = &lt;em&gt;mList&lt;/em&gt;(1, 2, 3, 4, 5);&lt;br /&gt;    var immutableList = &lt;em&gt;iList&lt;/em&gt;(1, 2, 3, 4, 5);&lt;br /&gt;&lt;br /&gt;    Function&amp;lt;Integer, Integer&amp;gt; squared = i -&amp;gt; i * i;&lt;br /&gt;    Predicate&amp;lt;Integer&amp;gt; evens = i -&amp;gt; i % 2 ==0;&lt;br /&gt;&lt;br /&gt;    var mutable = mutableList.collectIf(evens, squared);&lt;br /&gt;&lt;br /&gt;    var immutable = immutableList.collectIf(evens, squared);&lt;br /&gt;&lt;br /&gt;    var lazy1 =&lt;br /&gt;            mutableList.asLazy().collectIf(evens, squared);&lt;br /&gt;    var lazy2 =&lt;br /&gt;            mutableList.asLazy().select(evens).collect(squared);&lt;br /&gt;&lt;br /&gt;    var parallel1 =&lt;br /&gt;            mutableList.asParallel(executor, 2)&lt;br /&gt;                    .collectIf(evens, squared);&lt;br /&gt;&lt;br /&gt;    var parallel2 =&lt;br /&gt;            mutableList.asParallel(executor, 2)&lt;br /&gt;                    .select(evens).collect(squared);&lt;br /&gt;&lt;br /&gt;    var expected = &lt;em&gt;iList&lt;/em&gt;(4, 16);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, mutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, immutable);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, lazy1.toList());&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, lazy2.toList());&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, parallel1.toList());&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, parallel2.toList());&lt;br /&gt;}&lt;/pre&gt;&lt;p&gt;Notice that Function and Predicate cannot be replaced with var. This is because a lambda must be assigned to some type.&lt;/p&gt;&lt;h3&gt;APIs covered in the examples&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#collect-org.eclipse.collections.api.block.function.Function-&quot;&gt;Collect&lt;/a&gt; (&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/list/MutableList.html#collect-org.eclipse.collections.api.block.function.Function-&quot;&gt;Eager&lt;/a&gt;, &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/LazyIterable.html#collect-org.eclipse.collections.api.block.function.Function-&quot;&gt;Lazy&lt;/a&gt; and &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/list/ParallelListIterable.html#collect-org.eclipse.collections.api.block.function.Function-&quot;&gt;Parallel&lt;/a&gt;) — transforms elements of a source collection to a new collection&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#collectIf-org.eclipse.collections.api.block.predicate.Predicate-org.eclipse.collections.api.block.function.Function-&quot;&gt;CollectIf&lt;/a&gt; (&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/list/MutableList.html#collectIf-org.eclipse.collections.api.block.predicate.Predicate-org.eclipse.collections.api.block.function.Function-&quot;&gt;Eager&lt;/a&gt;, &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/LazyIterable.html#collectIf-org.eclipse.collections.api.block.predicate.Predicate-org.eclipse.collections.api.block.function.Function-&quot;&gt;Lazy&lt;/a&gt; and &lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/list/ParallelListIterable.html#collectIf-org.eclipse.collections.api.block.predicate.Predicate-org.eclipse.collections.api.block.function.Function-&quot;&gt;Parallel&lt;/a&gt;) — transforms the elements of a source collection which satisfy a given predicate to a new collection&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/impl/factory/Iterables.html#mList-T...-&quot;&gt;mList&lt;/a&gt; — Creates a MutableList&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/impl/factory/Iterables.html#iList-T-T-T-T-T-&quot;&gt;iList&lt;/a&gt; — Creates an ImmutableList&lt;/li&gt;&lt;li&gt;IntLists.mutable.&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/factory/list/primitive/MutableIntListFactory.html#with-int...-&quot;&gt;with&lt;/a&gt; — Creates a MutableIntList&lt;/li&gt;&lt;li&gt;IntLists.immutable.&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/factory/list/primitive/ImmutableIntListFactory.html#with-int...-&quot;&gt;with&lt;/a&gt; — Creates an ImmutableIntList&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#asLazy--&quot;&gt;asLazy&lt;/a&gt; — Returns a LazyIterable or LazyIntIterable&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/list/ListIterable.html#asParallel-java.util.concurrent.ExecutorService-int-&quot;&gt;asParallel&lt;/a&gt; — Returns a ParallelIterable&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/collections/javadoc/9.1.0/org/eclipse/collections/api/RichIterable.html#toList--&quot;&gt;toList&lt;/a&gt; — Converts the target Iterable into a MutableList&lt;/li&gt;&lt;li&gt;var — Local variable Type Inference included in Java 10 (&lt;a href=&quot;http://openjdk.java.net/jeps/286&quot;&gt;JEP 286&lt;/a&gt;)&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Check out this &lt;a href=&quot;http://eclipse.github.io/eclipse-collections-kata/api-design&quot;&gt;presentation&lt;/a&gt; to learn more about the origins, design and evolution of the Eclipse Collections API. There is also a &lt;a href=&quot;https://www.youtube.com/watch?v=Xrx_407Dt-I&quot;&gt;video&lt;/a&gt; covering the slides that was recorded at an Eclipse Community Virtual Meet-up.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=262a46030c49&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 05 Apr 2018 08:05:11 +0000</pubDate>
+</item>
+<item>
+	<title>EclipseCon France 2018: Check out the program!</title>
+	<guid isPermaLink="false">https://www.eclipsecon.org/france2018/news/3848 at https://www.eclipsecon.org/france2018</guid>
+	<link>https://www.eclipsecon.org/france2018/news/check-out-program</link>
+	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The &lt;a href=&quot;https://www.eclipsecon.org/france2018/program/sessions/accepted&quot; target=&quot;_blank&quot;&gt;list version of the program&lt;/a&gt; is ready. We had a record number of submissions, and we also have a record number of talks with the addition of another room on Wednesday.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the community for submitting, and to &lt;a href=&quot;https://www.eclipsecon.org/france2018/about-pc&quot; target=&quot;_blank&quot;&gt;the program committee&lt;/a&gt; for choosing the best EclipseCon France program ever.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-news-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://www.eclipsecon.org/france2018/news/check-out-program&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;img-responsive block-center&quot; height=&quot;250&quot; src=&quot;https://www.eclipsecon.org/france2018/sites/default/files/styles/solstice_news_-_default_-_thumbnail/public/news/laptop_stickers.jpg?itok=YXUG_MBO&quot; width=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Wed, 04 Apr 2018 14:49:09 +0000</pubDate>
+</item>
+<item>
+	<title>itemis: New Project Wizard: einfach mit Xtext 2.14 generieren</title>
+	<guid isPermaLink="true">https://blogs.itemis.com/en/new-project-wizard-einfach-mit-xtext-2-14-generieren</guid>
+	<link>https://blogs.itemis.com/en/new-project-wizard-einfach-mit-xtext-2-14-generieren</link>
+	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Wer DSLs mit Eclipse &lt;/span&gt;&lt;a href=&quot;https://github.com/eclipse/xtext&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Xtext&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; umsetzt, profitiert davon, dass die notwendige Infrastruktur automatisiert aus der Grammatik erzeugt wird. Mit minimalem Aufwand entsteht somit eine Umgebung, in der alles gegeben ist, um direkt mit der eigenen DSL durchzustarten. Eine Grammatik und zwei Knöpfe später startet man voller Vorfreude Eclipse und fragt sich zunächst, welche Art von Projekt zu erstellen ist. Diese Frage beantwortet Xtext bisher nicht und der Entwickler hat die Wahl. &lt;/span&gt;&lt;/p&gt;  
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Ist das Projekt erzeugt, stellt sich nun die Frage, wie die brandneue DSL genutzt werden kann... Wie war nochmal die Dateiendung? Ist das jetzt eine Textdatei? Gibt es keinen Wizard? Oh, ein Beispiel wäre super! Aber wo finde ich das? &lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;Wer kennt diese Situation nicht?&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Bisher war das Erstellen eines Wizards Handarbeit – immer wieder. Dabei sind die Anforderungen an Wizards kein Hexenwerk und die Umsetzung auch nicht. Was man sich wünscht, ist ein Wizard der eindeutig zeigt, wie ein spezielles Projekt für unsere DSL zu erzeugen ist, das im besten Fall sogar bereits Beispiele enthält. Das lässt sich doch generieren, oder? Klar! Und in &lt;/span&gt;&lt;a href=&quot;https://projects.eclipse.org/projects/modeling.tmf.xtext&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Xtext 2.14&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; haben wir genau diese Möglichkeit geschaffen.&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Auch wenn diese Version erst mit Eclipse Photon im Juni 2018 erscheinen wird, möchten wir hier gerne schon mal einen kleinen Einblick ermöglichen.&lt;/span&gt;&lt;/p&gt; 
+&lt;h2&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Erzeugen des Wizards&lt;/span&gt;&lt;/h2&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Direkt nach dem Anlegen eines neuen Xtext-Projektes enthält das Projekt eine &lt;code&gt;mwe2&lt;/code&gt;-Datei, die definiert, was generiert wird. Diese enthält den folgenden Abschnitt:&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;language = StandardLanguage {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    name = &quot;org.xtext.example.mydsl.MyDsl&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    fileExtensions = &quot;mydsl&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    serializer = {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        generateStub = false&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    validator = {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        // composedCheck =&lt;/span&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;org.eclipse.xtext.validation.NamesAreUniqueValidator&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; }&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Um den Wizard zu generieren, ist dieser Abschnitt um ein &lt;a href=&quot;https://github.com/eclipse/xtext-core/blob/master/org.eclipse.xtext.xtext.generator/src/org/eclipse/xtext/xtext/generator/ui/projectWizard/TemplateProjectWizardFragment.xtend&quot;&gt;&lt;code&gt;TemplateProjectWizardFragment&lt;/code&gt;&lt;/a&gt; für den Wizard zu erweitern.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;language = StandardLanguage {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    name = &quot;org.xtext.example.mydsl.MyDsl&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    fileExtensions = &quot;mydsl&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    serializer = {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        generateStub = false&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    validator = {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        // composedCheck =&lt;/span&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;org.eclipse.xtext.validation.NamesAreUniqueValidator&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    &lt;/span&gt;&lt;strong&gt;newTemplateProjectWizardForEclipse = {&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;&lt;/strong&gt;&lt;strong&gt;        generate = true&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;&lt;/strong&gt;&lt;strong&gt;    }&lt;/strong&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;}&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Wenn nun die Generierung wie üblich über &lt;code&gt;Run As -&amp;gt; MWE2 Workflow&lt;/code&gt; angestoßen wird, dann werden nicht nur der Editor, die Autocompletion usw. generiert, sondern eben auch alle notwendigen Extensions für den Wizard.&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Im UI-Projekt der Sprache wird ein Package &lt;/span&gt;&lt;code&gt;wizard&lt;/code&gt; generiert, das vor allem eine Datei &lt;code&gt;MyDslProjectTemplateProvider.xtend&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; enthält (wobei der Name der Datei von dem Namen der Sprache abhängt). In dieser Datei wird der Inhalt des Wizards definiert. Weitere Konfigurationen sind normalerweise nicht nötig.&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;Wenn man nach der Generierung direkt den Runtime-Workspace öffnet, ist es möglich, neue Projekte anzulegen, indem der neue Wizard geöffnet wird – zum Beispiel über das Hauptmenü über&lt;code&gt; File -&amp;gt; New -&amp;gt; Project&lt;/code&gt;. Hier gibt es eine Kategorie &lt;code&gt;MyDsl&lt;/code&gt; mit einem &lt;code&gt;MyDsl Project&lt;/code&gt; (wiederum vom Namen der Spache abhängig). &lt;br /&gt;Sollten diese Namen unpassend sein, lässt sich das natürlich mit Standard-Eclipse-Mitteln in der &lt;code&gt;plugin.xml&lt;/code&gt; anpassen. Für diejenigen, die den Wizard in ihre bestehende Sprache einbauen möchten und schon verzweifelt nach den neuen Einträgen in der &lt;code&gt;plugin.xml&lt;/code&gt; suchen noch ein Tipp: Xtext generiert nach dem ersten Generatorlauf nicht mehr direkt in die &lt;code&gt;plugin.xml&lt;/code&gt; sondern in die &lt;code&gt;plugin.xml_gen&lt;/code&gt; und das Zusammenführen ist Handarbeit.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;img alt=&quot;OpenNewProjectWizard&quot; height=&quot;423&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/OpenNewProjectWizard.png?t=1522852283713&amp;amp;width=602&amp;amp;height=423&amp;amp;name=OpenNewProjectWizard.png&quot; style=&quot;width: 602px; margin-top: 0px; margin-bottom: 0px;&quot; width=&quot;602&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Auf der ersten Seite lässt sich wie üblich ein Projektname und eine Location festlegen.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;img alt=&quot;NewProjectWizardSeite1&quot; height=&quot;423&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/NewProjectWizardSeite1.png?t=1522852283713&amp;amp;width=597&amp;amp;height=423&amp;amp;name=NewProjectWizardSeite1.png&quot; style=&quot;width: 597px; margin-top: 0px; margin-bottom: 0px;&quot; width=&quot;597&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Die zweite Seite bietet eine Auswahl mit allen definierten Templates an, aus der der Benutzer auswählen kann. Per default wird lediglich ein “Hello World”-Template zur Verfügung gestellt.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;img alt=&quot;NewProjectWizardTemplateSelection&quot; height=&quot;423&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/NewProjectWizardTemplateSelection.png?t=1522852283713&amp;amp;width=597&amp;amp;height=423&amp;amp;name=NewProjectWizardTemplateSelection.png&quot; style=&quot;width: 597px; margin-top: 0px; margin-bottom: 0px;&quot; width=&quot;597&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Die folgende, optionale Seite bietet Möglichkeiten, das Template zu konfigurieren. Das ist im Falle des “Hello World”-Beispiels natürlich auch nur als solches zu verstehen.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;img alt=&quot;NewProjectWizardTemplateConfiguration&quot; height=&quot;424&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/NewProjectWizardTemplateConfiguration.png?t=1522852283713&amp;amp;width=599&amp;amp;height=424&amp;amp;name=NewProjectWizardTemplateConfiguration.png&quot; style=&quot;width: 599px; margin-top: 0px; margin-bottom: 0px;&quot; width=&quot;599&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Wird der Wizard mit “Finish” beendet, wird ein Projekt erzeugt, dem bereits die Xtext-Nature zugewiesen wurde und das ein “Hello World” der erzeugten DSL enthält.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;img alt=&quot;GeneratedProject-1&quot; height=&quot;230&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/GeneratedProject-1.png?t=1522852283713&amp;amp;width=601&amp;amp;height=230&amp;amp;name=GeneratedProject-1.png&quot; style=&quot;width: 601px; margin-top: 0px; margin-bottom: 0px;&quot; width=&quot;601&quot; /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;h2&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Definieren eigener Templates&lt;/span&gt;&lt;/h2&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Um das “Hello World” an die eigene Sprache anzupassen oder weitere Templates hinzuzufügen, muss der &lt;code&gt;TemplateProvider&lt;/code&gt;, eine Klasse welche &lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/wizard/template/IProjectTemplateProvider.java&quot;&gt;&lt;code&gt;IProjectTemplateProvider&lt;/code&gt;&lt;/a&gt; implementiert, angepasst werden. Dieser liefert mit der Methode &lt;/span&gt;&lt;code&gt;getProjectTemplates &lt;/code&gt;eine Liste mit allen verfügbaren Templates für die Sprache zurück. Per default sieht die Implementierung wie folgt aus:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;class MyDslProjectTemplateProvider implements&lt;/span&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;IProjectTemplateProvider {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    override getProjectTemplates() {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        #[new HelloWorldProject]&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;}&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;br /&gt;Das Hinzufügen eines weiteren Templates bedeutet also das Hinzufügen einer neuen Instanz zu dieser Liste. Zum Beispiel:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;class MyDslProjectTemplateProvider implements&lt;/span&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;IProjectTemplateProvider {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    override getProjectTemplates() {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        #[new HelloWorldProject, new TestProject]&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;}&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Das neue Projekt muss eine Subklasse von &lt;/span&gt;&lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/wizard/template/AbstractProjectTemplate.java&quot;&gt;&lt;code&gt;AbstractProjectTemplate&lt;/code&gt;&lt;/a&gt; sein. Am einfachsten lässt sich eine solche durch die Nutzung der Active Annotation &lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/wizard/template/ProjectTemplate.xtend&quot;&gt;&lt;code&gt;ProjectTemplate&lt;/code&gt;&lt;/a&gt; erzeugen. Diese Annotation bietet die Möglichkeit, den Namen, ein Icon sowie einen Beschreibungstext für das Template festzulegen. Diese regeln die Darstellung des Templates in der Liste der verfügbaren Templates im Wizard.&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Man würde also in etwa so beginnen:&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;@ProjectTemplate(label=&quot;Test&quot;, icon=&quot;project_template.png&quot;,&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    description=&quot;&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Test&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;This is a test project.&amp;lt;/p&amp;gt;&quot;)&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;final class HelloWorldProject {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;}&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Hier ist zumindest die Methode &lt;/span&gt;&lt;code&gt;generateProjects(IProjectGenerator)&lt;/code&gt; zu implementieren. Der übergebene &lt;code&gt;IProjectGenerator&lt;/code&gt; enthält dabei eine einzelne Methode &lt;code&gt;generate(ProjectFactory)&lt;/code&gt;, welche man nun beliebig oft aufrufen kann, um beim Beenden des Wizards Eclipse-Projekte anzulegen. Dabei liefert Xtext bereits verschiedene Implementierungen der &lt;code&gt;ProjectFactory&lt;/code&gt; mit, um &lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/util/JavaProjectFactory.java&quot;&gt;Java&lt;/a&gt;-, &lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/util/PluginProjectFactory.java&quot;&gt;Plugin&lt;/a&gt;- oder &lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/util/FeatureProjectFactory.xtend&quot;&gt;Featureprojekte&lt;/a&gt; zu erzeugen. Eigene Implementierungen sind hier natürlich denkbar.&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Ein Aufruf, um ein einfaches Pluginprojekt mit einer Datei zu erzeugen, kann dann zum Beispiel so aussehen:&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; generator.generate(new PluginProjectFactory =&amp;gt; [&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    projectName = projectInfo.projectName&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    location = projectInfo.locationPath&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    projectNatures += #[JavaCore.NATURE_ID, &lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                        &quot;org.eclipse.pde.PluginNature&quot;, &lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                        XtextProjectHelper.NATURE_ID]&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    builderIds += JavaCore.BUILDER_ID&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    folders += &quot;src&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    addFile('''src/Model.mydsl''', '''&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        Hello World!&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    ''')&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;])&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Zusätzliche Aufrufe von &lt;/span&gt;&lt;code&gt;generate &lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;erzeugen weitere Projekte, während weitere Aufrufe von &lt;/span&gt;&lt;code&gt;addFile &lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;zusätzliche Dateien in den Projekten erzeugen.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;h2&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;UI zur Parametrisierung&lt;/span&gt;&lt;/h2&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Um nicht nur komplett statische Templates zu liefern, ist es möglich, mit der API ein einfaches UI zu definieren. Dieses bekommt der Nutzer präsentiert und kann so Parameter des Templates festlegen.&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Die API bietet dabei per default die Möglichkeit, Checkboxen, Textfelder und Comboboxen zu definieren. Um Übersicht zu schaffen, können diese noch mit Group-Elementen gruppiert werden. &lt;/span&gt;&lt;/p&gt; Die Klasse 
+&lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/wizard/template/AbstractProjectTemplate.java&quot;&gt;&lt;code&gt;AbstractProjectTemplate&lt;/code&gt;&lt;/a&gt; liefert hierfür entsprechende Methoden, mit denen das Interface definiert werden kann. Eine Checkbox wird durch den Aufruf von 
+&lt;code&gt;check&lt;/code&gt; erzeugt. Wenn diese nun einer Instanzvariablen zugewiesen wird, kann diese in der 
+&lt;code&gt;generateprojects&lt;/code&gt;-Methode genutzt werden, um den vom Benutzer ausgewählten Wert zu ermitteln. Zum Beispiel könnte mit folgendem Code eine Checkbox erzeugt werden, welche die Generierung eine Projektes nach Auswahl des Users unterdrückt:
+&lt;br /&gt;
+&lt;br /&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;@ProjectTemplate(label=&quot;Test&quot;, icon=&quot;project_template.png&quot;,&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    description=&quot;&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Test&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;This is a test project.&amp;lt;/p&amp;gt;&quot;)&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;final class TestProject {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    val generateHello = check(&quot;Generate Hello&quot;, true)&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    override generateProjects(IProjectGenerator generator) {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        if (generateHello.value) {&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;            generator.generate(new PluginProjectFactory =&amp;gt; [&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                projectName = projectInfo.projectName&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                location = projectInfo.locationPath&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                projectNatures += #[JavaCore.NATURE_ID,&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                                    &quot;org.eclipse.pde.PluginNature&quot;,&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                                    XtextProjectHelper.NATURE_ID]&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                builderIds += JavaCore.BUILDER_ID&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                folders += &quot;src&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                addFile('''src/Model.mydsl''', '''&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                    Hello World!&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;                ''')&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;            ])&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;        }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;    }&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;}&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Textfelder und Comboboxen lassen sich mit den Methoden &lt;/span&gt;&lt;code&gt;text&lt;/code&gt;und &lt;code&gt;combo&lt;/code&gt; analog anlegen und verwenden.&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Sollte ein noch ausgefeilterer Wizard benötigt werden, können die Methoden &lt;/span&gt;&lt;code&gt;updateVariables&lt;/code&gt; und &lt;code&gt;validate&lt;/code&gt; wie im &quot;Hello World&quot;-Beispiel überschrieben werden. Diese werden nach jeder User-Interaktion mit dem UI aufgerufen.&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;code&gt;updateVariables&lt;/code&gt; kann verwendet werden, um Widgets zu manipulieren – zum Beispiel um bestimmte Element zu aktivieren oder deaktivieren, wenn der Benutzer einen Wert im Wizard verändert.&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;code&gt;validate&lt;/code&gt; hingegen kann einen Status zurückliefern, um Eingabefehler vom User im Wizard als Fehlermeldung zu melden.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;h2&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Templates per Plugin beisteuern&lt;/span&gt;&lt;/h2&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Die Project Templates werden über einen Extension Point registriert. Zunächst einmal bekommt man als DSL-Entwickler davon nichts mit. Interessant wird dies erst, wenn das eigene Plugin durch Dritte erweitert wird. Diese können dann einfach weitere Implementierungen von &lt;a href=&quot;https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/wizard/template/IProjectTemplateProvider.java&quot;&gt;&lt;code&gt;IProjectTemplateProvider&lt;/code&gt;&lt;/a&gt; beisteuern. Hier ist es nötig, die implementierende Klasse zu referenzieren und den Grammatiknamen, zu dem man contributet, anzugeben. Über diesen Namen wird entschieden, in welchem Wizard die Templates angezeigt werden. Das von Xtext generierte Beispiel sieht in der &lt;code&gt;plugin.xml&lt;/code&gt; dann wie folgt aus.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;pre class=&quot;prettyprint&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;lt;extension point=&quot;org.eclipse.xtext.ui.projectTemplate&quot;&amp;gt;&lt;br /&gt;    &amp;lt;projectTemplateProvider&lt;br /&gt;            class=&quot;org.xtext.example.mydsl.ui.wizard.MyDslProjectTemplateProvider&quot;&lt;br /&gt;            grammarName=&quot;org.xtext.example.mydsl.MyDsl&quot;&amp;gt;&lt;br /&gt;    &amp;lt;/projectTemplateProvider&amp;gt;&lt;br /&gt;&amp;lt;/extension&amp;gt;&lt;br /&gt;&lt;/span&gt;&lt;/pre&gt; 
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Wer jetzt nicht mehr auf Eclipse Photon warten kann, dem sei die nächtliche Update-Site &lt;code&gt;http://download.eclipse.org/modeling/tmf/xtext/updates/composite/latest/&lt;/code&gt; ans Herz gelegt. Einfach das neueste und heißeste Xtext installieren und loslegen!&lt;/span&gt;&lt;/p&gt;  
+&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://track.hubspot.com/__ptq.gif?a=761475&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fblogs.itemis.com%2Fen%2Fnew-project-wizard-einfach-mit-xtext-2-14-generieren&amp;amp;bu=https%253A%252F%252Fblogs.itemis.com&amp;amp;bvt=rss&quot; style=&quot;width: 1px!important;&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 04 Apr 2018 14:20:00 +0000</pubDate>
+	<author>adeutsch@itemis.de (Arne Deutsch)</author>
+</item>
+<item>
+	<title>Eclipse Announcements: Winners of Open IoT Challenge 4.0 Demonstrate How Open Source Accelerates Innovation</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/hn6I6OZ6roc/20180404_iotchallenge_winners2018.php</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/hn6I6OZ6roc/20180404_iotchallenge_winners2018.php</link>
+	<description>Eclipse IoT is pleased to announce the winners of the fourth annual Open IoT Challenge!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/hn6I6OZ6roc&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 04 Apr 2018 14:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: EclipseCon France 2018 Program Announced</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/MU3P8PQbswc/accepted</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/MU3P8PQbswc/accepted</link>
+	<description>See the list of accepted sessions, and register now for the lowest price. We'll see you June 13 - 14 in Toulouse.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/MU3P8PQbswc&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 03 Apr 2018 14:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Voting for the Jakarta EE logo is now open!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/c7bkDM79IuE/viewform</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/c7bkDM79IuE/viewform</link>
+	<description>Voting will be conducted using a ranked poll. To vote, simply rank the final shortlist of logos in order of preference.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/c7bkDM79IuE&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 29 Mar 2018 22:45:00 +0000</pubDate>
+</item>
+<item>
+	<title>JBoss Tools Team: JBoss Tools 4.5.3.AM3 for Eclipse Oxygen.3</title>
+	<guid isPermaLink="true">https://tools.jboss.org/blog/4.5.3.am3-for-oxygen.3.html</guid>
+	<link>https://tools.jboss.org/blog/4.5.3.am3-for-oxygen.3.html</link>
+	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Happy to announce 4.5.3.AM3 (Developer Milestone 3) build for Eclipse Oxygen.3.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Downloads available at &lt;a href=&quot;https://tools.jboss.org/downloads/jbosstools/oxygen/4.5.3.AM3.html&quot;&gt;JBoss Tools 4.5.3 AM3&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-new&quot;&gt;&lt;/a&gt;What is New?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Full info is at &lt;a href=&quot;https://tools.jboss.org/documentation/whatsnew/jbosstools/4.5.3.AM3.html&quot;&gt;this page&lt;/a&gt;. Some highlights are below.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;openshift&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#openshift&quot;&gt;&lt;/a&gt;OpenShift&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;cdk-and-minishift-server-adapter-runtime-download&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#cdk-and-minishift-server-adapter-runtime-download&quot;&gt;&lt;/a&gt;CDK and Minishift Server Adapter runtime download&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When working with both CDK and upstream Minishift, you needed to have previously downloaded the CDK
+      or Minishift binary. It is now possible to download the runtime to a specific folder when you create
+      the server adapter.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Let’s see an example with the CDK server adapter.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;From the &lt;strong&gt;Servers&lt;/strong&gt; view, select the new Server menu item and enter cdk in the filter:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Select Red Hat Container Development Kit 3.2+&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard1&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard1.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Click the &lt;strong&gt;Next&lt;/strong&gt; button:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard3&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard3.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;In order to download the runtime, click the &lt;strong&gt;Download and install runtime…​&lt;/strong&gt; link:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard4&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard4.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Select the version of the runtime you want to download&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard5&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard5.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Click the &lt;strong&gt;Next&lt;/strong&gt; button:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard6&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard6.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You need an account to download the CDK. If you already had configured credentials, select the one you
+      want to use. If you didn’t, click the &lt;strong&gt;Add&lt;/strong&gt; button to add your credentials.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard7&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard7.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Click the &lt;strong&gt;Next&lt;/strong&gt; button. Your credentials will be validated, and upon success, you must accept
+      the license agreement:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard8&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard8.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Accept the license agreement and click the &lt;strong&gt;Next&lt;/strong&gt; button:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard9&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard9.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can choose the folder where you want the runtime to be installed. Once you’ve set it,
+      click the &lt;strong&gt;Finish&lt;/strong&gt; button:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The download of the runtime will be started and you should see the progression on the server adapter
+      wizard:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard10&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard10.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Once the download is completed, you will notice that the &lt;strong&gt;Minishift Binary&lt;/strong&gt; and &lt;strong&gt;Username&lt;/strong&gt; fields have been filled:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard11&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard11.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Click the &lt;strong&gt;Finish&lt;/strong&gt; button to create the server adapter.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Please note that if it’s the first time you install CDK, you must perform an initialization. In the &lt;strong&gt;Servers&lt;/strong&gt; view, right click
+      the server and select the &lt;strong&gt;Setup CDK&lt;/strong&gt; menu item:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard12&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard12.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;cdk server adapter wizard13&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/cdk-server-adapter-wizard13.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;hibernate-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#hibernate-tools&quot;&gt;&lt;/a&gt;Hibernate Tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;hibernate-runtime-provider-updates&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#hibernate-runtime-provider-updates&quot;&gt;&lt;/a&gt;Hibernate Runtime Provider Updates&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A number of additions and updates have been performed on the available Hibernate runtime  providers.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;new-hibernate-5-3-runtime-provider&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#new-hibernate-5-3-runtime-provider&quot;&gt;&lt;/a&gt;New Hibernate 5.3 Runtime Provider&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;With beta releases available in the Hibernate 5.3 stream, the time was right to make available a corresponding Hibernate 5.3 runtime provider. This runtime provider incorporates Hibernate Core version 5.3.0.Beta2 and Hibernate Tools version 5.3.0.Beta1.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center;&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;hibernate 5 3&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/hibernate/images/4.5.3.AM3/hibernate_5_3.png&quot; width=&quot;381&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;title&quot;&gt;Figure 1. Hibernate 5.3 is available&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;other-runtime-provider-updates&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#other-runtime-provider-updates&quot;&gt;&lt;/a&gt;Other Runtime Provider Updates&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 5.0 runtime provider now incorporates Hibernate Core version 5.0.12.Final and Hibernate Tools version 5.0.6.Final.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 5.1 runtime provider now incorporates Hibernate Core version 5.1.12.Final and Hibernate Tools version 5.1.7.Final.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 5.2 runtime provider now incorporates Hibernate Core version 5.2.15.Final and Hibernate Tools version 5.2.10.Final.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;fuse-tooling&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-tooling&quot;&gt;&lt;/a&gt;Fuse Tooling&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;fuse-ignite-technical-extension-templates&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-ignite-technical-extension-templates&quot;&gt;&lt;/a&gt;Fuse Ignite Technical Extension templates&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The existing template for &quot;Custom step using a Camel Route&quot; has been updated to work with Fuse 7 Tech Preview 4.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Two new templates have been added:
+      - Custom step using Java Bean
+      - Custom connector&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;New Fuse Ignite wizard with 3 options&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/igniteExtensionWizard10.3.0.AM3.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;improvements-of-the-wizard-to-create-a-fuse-integration-project&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#improvements-of-the-wizard-to-create-a-fuse-integration-project&quot;&gt;&lt;/a&gt;Improvements of the wizard to create a Fuse Integration project&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The creation wizard provides better guidance for the targeted deployment environment:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;New Fuse Integration Project wizard page to select environment&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/newFuseIntegrationWizard-environment.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;More place is available to choose the templates and they are now filtered based on the targeted environment:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;New Fuse Integration Project wizard page to select templates&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/newFuseIntegrationWizard-templates.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;It also points out to other places to find different examples for advanced users (see the link at the bottom of the previous screenshot).&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;camel-rest-dsl-editor-technical-preview&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#camel-rest-dsl-editor-technical-preview&quot;&gt;&lt;/a&gt;Camel Rest DSL editor (Technical preview)&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Camel is providing a Rest DSL to help the integration through Rest endpoints. Fuse Tooling is now providing a new tab in read-only mode to visualize the Rest endpoints defined.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Rest DSL editor tab in read-only mode&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/restViewer.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;It is currently in Tech Preview and needs to be activated in Window → Preferences → Fuse Tooling → Editor → Enable Read Only Tech preview REST DSL tab.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Work is still ongoing and feedback is very welcome on this new feature, you can comment on &lt;a href=&quot;https://issues.jboss.org/browse/FUSETOOLS-1287&quot;&gt;this JIRA epic&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;dozer-upgrade-and-migration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#dozer-upgrade-and-migration&quot;&gt;&lt;/a&gt;Dozer upgrade and migration&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When upgrading from Camel &amp;lt; 2.20 to Camel &amp;gt; 2.20, the Dozer dependency has been upgraded to a version not backward-compatible
+      If you open a Data transformation based on Dozer in Fuse Tooling, it will propose to migrate the file used for the transformation (technically changing the namespace). It allow to continue to use the Data Transformation editor and have - in most cases - the Data Transformation working at runtime with Camel &amp;gt; 2.20.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Enjoy!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Jeff Maury&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Wed, 28 Mar 2018 15:15:31 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Three days left to complete the Jakarta EE Survey!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/Nw4e_8orxX0/jakartaec</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/Nw4e_8orxX0/jakartaec</link>
+	<description>One week left to share your insights on Java EE and help shape the future of Jakarta EE.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/Nw4e_8orxX0&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 27 Mar 2018 12:10:00 +0000</pubDate>
+</item>
+
+</channel>
+</rss>

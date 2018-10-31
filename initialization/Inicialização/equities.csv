@@ -1,0 +1,156 @@
+Name (or Code);RIC;ISIN;CUSIP/CINS;SEDOL;Type of Equity;Currency;Exchange;Ex-Dividend Date;Country ofIssuer;Debt / Equity;TRBC Sector;Market Capitalisation(USD)
+Ambev SA;ABEV3.SA;BRABEVACNOR1;P0273U106;BG7ZWY7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;26-Jun-2017;Brazil;0,83;Brewers (NEC);96.700.614.269
+Vale SA;VALE5.SA;BRVALEACNPA3;P9661Q148;2257127;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;24-Apr-2017;Brazil;1,49;Iron Ore Mining;50.860.551.050
+Cielo SA;CIEL3.SA;BRCIELACNOR3;P2859E100;B614LY3;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;18-Sep-2017;Brazil;1,91;Transaction & Payment Services;20.568.125.521
+CCR SA;CCRO3.SA;BRCCROACNOR2;P2170M104;2840970;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;12-Apr-2017;Brazil;5,23;Highway Operators;10.969.493.691
+BRF SA;BRFS3.SA;BRBRFSACNOR8;P1905C100;2036995;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;13-Jul-2016;Brazil;2,60;Meat Processing;10.059.563.333
+WEG SA;WEGE3.SA;BRWEGEACNOR0;P9832B129;2945422;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;24-Jul-2017;Brazil;1,25;"Electrical Components & Equipment
+(NEC)";9.870.218.135
+Braskem SA;BRKM5.SA;BRBRKMACNPA4;P18533110;B0774N4;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-Oct-2016;Brazil;33,56;Commodity Chemicals (NEC);9.730.776.387
+Atacadao SA;CRFB3.SA;BRCRFBACNOR2;P0565P138;BF7LBH4;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;2,65;Food Retail & Distribution (NEC);9.327.370.964
+Kroton Educacional SA;KROT3.SA;BRKROTACNOR9;P6115V251;2836946;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;19-May-2017;Brazil;0,27;General Education Services;7.663.520.819
+Lojas Americanas SA;LAME4.SA;BRLAMEACNPR6;P6329M105;2516710;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;05-Jan-2017;Brazil;8,85;General Department Stores;7.632.122.156
+Raia Drogasil SA;RADL3.SA;BRRADLACNOR0;P7942C102;B7FQV64;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;27-Jun-2017;Brazil;0,94;Retail - Drugs without Grocery;7.308.490.816
+Jbs SA;JBSS3.SA;BRJBSSACNOR8;P59695109;B1V74X7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;3,28;Meat Processing;6.825.137.273
+Companhia Brasileira de Distribuicao;PCAR4.SA;BRPCARACNPR0;P3055E464;B5VGS74;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;28-Apr-2016;Brazil;3,31;Food Retail & Distribution (NEC);6.675.063.784
+Lojas Renner SA;LREN3.SA;BRLRENACNOR1;P6332C102;B0CGYD6;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;26-Jun-2017;Brazil;1,46;Apparel & Accessories Retailers (NEC);6.644.629.036
+Gerdau SA;GGBR4.SA;BRGGBRACNPR8;P2867P113;2645517;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;22-Nov-2016;Brazil;1,26;Iron & Steel (NEC);6.134.112.595
+Fibria Celulose SA;FIBR3.SA;BRFIBRACNOR9;P3997N101;B04M7D3;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;10-May-2017;Brazil;1,50;Pulp Mills;6.118.850.042
+Klabin SA;KLBN4.SA;BRKLBNACNPR9;P60933101;2813347;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-Aug-2017;Brazil;3,13;Paper Products (NEC);5.591.657.359
+M Dias Branco SA Industria e Comercio de Alimentos;MDIA3.SA;BRMDIAACNOR7;P64876108;B1FRH89;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;16-Dec-2016;Brazil;0,31;Cookie, Cracker & Pasta Manufacturing;5.437.211.308
+Azul SA;AZUL.K;US05501U1060;05501U106;;"American Depository
+Receipts";US Dollar;NYSE Consolidated;;Brazil;7,38;Airlines (NEC);4.324.641.587
+Embraer SA;EMBR3.SA;BREMBRACNOR4;P3700H201;B16FPG6;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;13-Jun-2017;Brazil;2,01;Commercial Aircraft Manufacturing;3.796.346.895
+Localiza Rent a Car SA;RENT3.SA;BRRENTACNOR4;P6330Z111;B08K3S0;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;07-Jul-2017;Brazil;2,38;Passenger Car Rental;3.630.729.502
+Suzano Papel e Celulose SA;SUZB5.SA;BRSUZBACNPA3;P88205235;B02GKF0;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;1,90;Paper Products (NEC);3.590.540.693
+Natura Cosmeticos SA;NATU3.SA;BRNATUACNOR6;P7088C106;B014K55;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;01-Mar-2017;Brazil;7,45;Personal Products (NEC);3.554.056.224
+Companhia Siderurgica Nacional;CSNA3.SA;BRCSNAACNOR6;P8661X103;B019KX8;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;12-Mar-2015;Brazil;5,21;Iron & Steel (NEC);3.474.904.497
+Usinas Siderurgicas de Minas Gerais SA Usiminas;USIM5.SA;BRUSIMACNPA6;P9632E117;2386009;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;29-Apr-2015;Brazil;0,82;Iron & Steel (NEC);3.284.665.675
+Magazine Luiza SA;MGLU3.SA;BRMGLUACNOR2;P6425Q109;B4975P9;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;26-Apr-2017;Brazil;8,81;Department Stores (NEC);2.714.648.033
+Smiles SA;SMLE3.SA;BRSMLEACNOR1;P8T12E100;B97PYY2;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;03-Jul-2017;Brazil;2,03;Business Support Services (NEC);2.639.353.862
+Grendene SA;GRND3.SA;BRGRNDACNOR3;P49516100;B03L0B0;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-Aug-2017;Brazil;0,11;Footwear (NEC);2.584.049.832
+Alpargatas SA;ALPA4.SA;BRALPAACNPR7;P0246W106;B07C796;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;14-Aug-2017;Brazil;0,87;Footwear (NEC);2.231.975.906
+Guararapes Confeccoes SA;GUAR3.SA;BRGUARACNOR4;P5012L101;2211747;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;29-Jun-2017;Brazil;1,15;Apparel & Accessories Retailers (NEC);2.105.115.476
+Sao Martinho SA;SMTO3.SA;BRSMTOACNOR3;P8493J108;B1P3R43;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;31-Jul-2017;Brazil;1,55;Sugar & Artificial Sweeteners;2.010.463.465
+Multiplus SA;MPLU3.SA;BRMPLUACNOR3;P69915109;B3PRVV4;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;09-Aug-2017;Brazil;5,84;Business Support Services (NEC);1.985.000.397
+B2W Companhia Digital;BTOW3.SA;BRBTOWACNOR8;P19055113;B1LH3Y1;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;28-Mar-2011;Brazil;2,33;Internet & Mail Order Department Stores;1.965.661.839
+Estacio Participacoes SA;ESTC3.SA;BRESTCACNOR5;P3784E108;B23PBF7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;20-Apr-2017;Brazil;0,70;General Education Services;1.883.717.793
+Ecorodovias Infraestrutura e Logistica SA;ECOR3.SA;BRECORACNOR8;P3661R107;B5720R0;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;30-Mar-2017;Brazil;12,06;Highway Operators;1.870.361.398
+Whirlpool SA;WHRL4.SA;BRWHRLACNPR2;P9863F130;2597607;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-Aug-2017;Brazil;1,67;Appliances, Tools & Housewares (NEC);1.782.172.064
+Duratex SA;DTEX3.SA;BRDTEXACNOR3;P3593G146;B27WY88;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;15-Feb-2017;Brazil;1,04;Flooring & Interior Tile Manufacturers;1.701.562.260
+Metalurgica Gerdau SA;GOAU4.SA;BRGOAUACNPR8;P4834C118;2648862;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;25-Aug-2015;Brazil;3,66;Iron & Steel (NEC);1.608.168.094
+CVC Brasil Operadora e Agencia de Viagens SA;CVCB3.SA;BRCVCBACNOR1;P3R154102;BGSH2S6;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;4,17;Leisure & Recreation (NEC);1.525.023.919
+Via Varejo SA;VVAR11.SA;BRVVARCDAM10;P9783A153;BGSHPP4;Brazilian Units;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;13-Sep-2016;Brazil;5,24;Consumer Electronics Retailers;1.438.632.841
+Prumo Logistica SA;PRML3.SA;BRPRMLACNOR9;P7922A118;BLD3273;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;1,40;Marine Cargo Handling Services;1.333.265.130
+Marfrig Global Foods SA;MRFG3.SA;BRMRFGACNOR0;P64386116;B1YWHR4;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;03-May-2011;Brazil;21,13;Meat Processing;1.299.914.657
+Somos Educacao SA;SEDU3.SA;BRSEDUACNOR1;P8T31H100;BYVDGW9;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-May-2015;Brazil;3,16;Book Publishing;1.201.581.126
+Cia Hering;HGTX3.SA;BRHGTXACNOR9;P25849160;B010V16;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;09-Aug-2017;Brazil;0,26;Apparel & Accessories (NEC);1.158.660.768
+Arezzo Industria e Comercio SA;ARZZ3.SA;BRARZZACNOR3;P04508100;B3NS1W0;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;03-Jul-2017;Brazil;0,35;Women's Footwear;1.017.948.829
+Ser Educacional SA;SEER3.SA;BRSEERACNOR5;P8T84T100;BFH4PZ9;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;20-Mar-2017;Brazil;1,12;General Education Services;1.015.945.183
+Cosan Logistica SA;RLOG3.SA;BRRLOGACNOR4;P3R67S106;BR17H74;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-May-2015;Brazil;11,27;Railway Freight Operators;920.557.319
+Marcopolo SA;POMO4.SA;BRPOMOACNPR7;P64331112;2599131;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;11-Nov-2016;Brazil;1,69;Heavy Buses & Coaches;914.450.744
+Minerva SA;BEEF3.SA;BRBEEFACNOR6;P6831V106;B23GH52;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-Apr-2017;Brazil;16,21;Meat Processing;903.140.452
+Dimed SA Distribuidora de Medicamentos;PNVL3.SA;BRPNVLACNOR9;P7535A109;2672322;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;29-Dec-2016;Brazil;1,15;Drug Retailers (NEC);771.797.081
+Iochpe Maxion SA;MYPK3.SA;BRMYPKACNOR7;P58749105;B06YX28;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;31-Mar-2017;Brazil;2,83;Auto, Truck & Motorcycle Parts (NEC);767.704.385
+Mahle Metal Leve SA;LEVE3.SA;BRLEVEACNOR2;P6528U106;B0HZY49;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;15-Aug-2016;Brazil;0,93;Engine & Powertrain Systems;731.200.651
+SLC Agricola SA;SLCE3.SA;BRSLCEACNOR2;P8711D107;B1Y4WK8;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;27-Apr-2017;Brazil;1,15;Fishing & Farming (NEC);685.537.693
+Movida Participacoes SA;MOVI3.SA;BRMOVIACNOR0;P6S8CC103;BD448C6;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;2,87;Passenger Car Rental;684.018.721
+Tupy SA;TUPY3.SA;BRTUPYACNOR1;P9414P108;2906786;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;14-Jun-2017;Brazil;1,38;Auto, Truck & Motorcycle Parts (NEC);668.268.814
+Netshoes (CAYMAN) Ltd;NETS.K;KYG6455X1079;G6455X107;;Ordinary Shares;US Dollar;NYSE Consolidated;;Brazil;8,00;Internet & Mail Order Department Stores;609.532.617
+Magnesita Refratarios SA;MAGG3.SA;BRMAGGACNOR4;P6426L158;B23VRX5;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;05-May-2017;Brazil;2,15;Construction Materials (NEC);561.381.151
+Restoque Comercio e Confeccoes de Roupas SA;LLIS3.SA;BRLLISACNOR4;P8086J101;B2R7VR1;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;24-Nov-2014;Brazil;0,89;Apparel & Accessories Retailers (NEC);556.883.338
+Randon SA Implementos e Participacoes;RAPT4.SA;BRRAPTACNPR4;P7988W103;B010V49;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;14-Jul-2017;Brazil;2,11;Heavy Machinery & Vehicles (NEC);531.713.070
+JSL SA;JSLG3.SA;BRJSLGACNOR2;P6065E101;B5LBY82;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;21-Jan-2016;Brazil;13,56;Ground Freight & Logistics (NEC);525.898.418
+Vulcabras Azaleia SA;VULC3.SA;BRVULCACNOR2;P98074118;B1XFXM1;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;26-Apr-2011;Brazil;19,89;Sports & Outdoor Footwear;499.391.189
+MRS Logistica SA;MRSA5B.SO;BRMRSAACNPA9;P6986K111;2327246;Preference Shares;Brazilian Real;Sociedade Operadora do Mercado de Ativos;25-Apr-2017;Brazil;1,29;Railway Freight Operators;448.433.852
+Santos Brasil Participacoes SA;STBP3.SA;BRSTBPACNOR3;P8338G103;2835545;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;18-Dec-2015;Brazil;0,36;Marine Port Services (NEC);436.185.093
+GAEC Educacao SA;ANIM3.SA;BRANIMACNOR6;P4611H116;BFMXX80;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;27-Apr-2017;Brazil;1,18;General Education Services;426.377.887
+Marisa Lojas SA;AMAR3.SA;BRAMARACNOR4;P6462B106;B3V89C8;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;30-Apr-2015;Brazil;1,61;Department Stores (NEC);412.018.372
+"Valid Solucoes e Servicos de Seguranca em Meios de Pagamento
+e Identificacao SA";VLID3.SA;BRVLIDACNOR5;P9656C112;B13NPP2;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;1,10;Specialized Printing Services;399.751.876
+Companhia de Ferro Ligas da Bahia Ferbasa;FESA4.SA;BRFESAACNPR5;P3054X117;B07C6Z5;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;18-Jul-2017;Brazil;0,22;Iron & Steel (NEC);354.822.296
+Fras Le SA;FRAS3.SA;BRFRASACNOR0;P4317P107;B010DG5;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;23-Jun-2017;Brazil;0,56;Automotive Systems;314.830.069
+Tegma Gestao Logistica SA;TGMA3.SA;BRTGMAACNOR7;P90284103;B1ZBDK5;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;10-Aug-2017;Brazil;1,21;Freight Trucking;302.552.892
+Construtora Tenda SA;TEND3.SA;BRTENDACNOR4;P31432100;B28J1X2;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;0,75;Homebuilding (NEC);269.439.386
+Unipar Carbocloro SA;UNIP6.SA;BRUNIPACNPB8;P9441U104;2905879;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-Aug-2017;Brazil;2,04;Commodity Chemicals (NEC);254.338.783
+Companhia de Locacao das Americas;LCAM3.SA;BRLCAMACNOR3;P2R93B103;B82CQN4;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;28-Jun-2017;Brazil;3,42;Business Support Services (NEC);231.365.064
+Mills Estruturas e Servicos de Engenharia SA;MILS3.SA;BRMILSACNOR2;P6799C108;B5LGRJ9;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;24-Jun-2014;Brazil;0,51;Industrial Equipment Rental;226.599.337
+Brasilagro Companhia Brasileira de Propriedades Agricolas;AGRO3.SA;BRAGROACNOR7;P18023104;B1428Z9;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;08-Nov-2016;Brazil;0,24;Grain (Crop) Production;216.070.663
+TPI Triunfo Participacoes e Investimentos SA;TPIS3.SA;BRTPISACNOR8;P92070104;B23FDJ5;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2016;Brazil;3,96;Highway Operators;210.266.730
+Profarma Distribuidora de Produtos Farmaceuticos SA;PFRM3.SA;BRPFRMACNOR1;P7913E103;B1G92Q7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2014;Brazil;2,57;Drug Retailers (NEC);194.036.402
+Kepler Weber SA;KEPL3.SA;BRKEPLACNOR1;P60653105;2490245;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;28-Apr-2016;Brazil;0,63;Agricultural Machinery;191.971.064
+Brasil Pharma SA;BPHA3.SA;BRBPHAACNOR6;P1815Q108;B3Q1YB6;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2012;Brazil;3,79;Retail - Drugs without Grocery;181.695.597
+Ferrovia Centro Atlantica SA;VSPT3.SA;BRVSPTACNOR1;P9806S108;2939801;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;0,16;Railway Freight Operators;176.159.767
+Springs Global Participacoes SA;SGPS3.SA;BRSGPSACNOR4;P8739A101;B23F629;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;03-May-2010;Brazil;1,57;Textiles & Leather Goods (NEC);168.024.277
+Grazziotin SA;CGRA4.SA;BRCGRAACNPR9;P4916J114;B010TY5;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;26-Dec-2016;Brazil;0,40;General Department Stores;163.557.528
+Paranapanema SA;PMAM3.SA;BRPMAMACNOR3;P7579L102;B092PF6;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2016;Brazil;12,79;Copper Ore Mining;159.053.195
+Sao Paulo Turismo SA;AHEB3.SA;BRAHEBACNOR0;P0355U107;2044255;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;3,94;Theatres & Performing Arts;150.320.670
+Companhia de Participacoes Alianca da Bahia;PEAB4.SA;BRPEABACNPR0;P3055D102;2635347;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;0,26;Industrial Conglomerates;139.565.389
+Celulose Irani SA;RANI3.SA;BRRANIACNOR5;P22051109;B0765M7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;09-Mar-2017;Brazil;2,77;Paper Mills & Products;136.827.715
+T4F Entretenimento SA;SHOW3.SA;BRSHOWACNOR7;P9T44H103;B5N8KL6;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;27-Apr-2017;Brazil;0,88;Theatres & Performing Arts;134.764.145
+Cristal Pigmentos do Brasil SA;CRPG5.SA;BRCRPGACNPA3;P3R81G120;BYNQSR5;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;01-Jun-2017;Brazil;0,53;Coloring Agents;131.679.019
+Dohler SA;DOHL3.SA;BRDOHLACNOR2;P3575C105;2272313;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;18-Dec-2015;Brazil;0,26;Textiles & Leather Goods (NEC);123.102.452
+Technos SA;TECN3.SA;BRTECNACNOR6;P90188106;B3ZQXN7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;23-Dec-2016;Brazil;0,60;Apparel & Accessories (NEC);105.076.198
+Industrias Romi SA;ROMI3.SA;BRROMIACNOR8;P5603Z105;B07C730;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;23-Mar-2016;Brazil;0,80;Machine Tools;104.411.360
+Terra Santa Agro SA;TESA3.SA;BRTESAACNOR9;P3773U139;BD0NBG2;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;1,15;Fishing & Farming (NEC);103.576.277
+Eucatex SA Industria e Comercio;EUCA4.SA;BREUCAACNPR8;P5371Z105;2317797;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;26-Apr-2017;Brazil;0,68;Grain (Crop) Production;96.982.739
+Cremer SA;CREM3.SA;BRCREMACNOR2;P3284T100;2232867;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;09-May-2017;Brazil;3,17;Industrial Machinery;94.373.576
+Josapar Joaquim Oliveira SA Particip;JOPA4.SA;BRJOPAACNPR2;P6031C106;2474744;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;28-Apr-2017;Brazil;2,29;Ready-Made Meals;79.293.087
+Metalfrio Solutions SA;FRIO3.SA;BRFRIOACNOR2;P6636G106;B1VSJ13;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;29-Jun-2011;Brazil;11,73;"Heating, Ventilation & Air Conditioning
+System...";73.565.378
+Companhia Melhoramentos de Sao Paulo;MSPA3.SA;BRMSPAACNOR0;P69863101;2196736;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;15-May-2017;Brazil;0,82;Sanitary Products;73.259.933
+Eternit SA;ETER3.SA;BRETERACNOR3;P3766A108;B01GYT3;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;17-Dec-2015;Brazil;0,83;Construction Materials (NEC);73.189.586
+Schulz SA;SHUL4.SA;BRSHULACNPR4;P6540M116;B1WL029;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;03-May-2017;Brazil;1,05;Industrial Machinery & Equipment (NEC);72.388.510
+Rodobens Negocios Imobiliarios SA;RDNI3.SA;BRRDNIACNOR9;P81424106;B1MJRR7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;27-Apr-2016;Brazil;1,12;Residential Builders - Single Homes;71.446.643
+Trisul SA;TRIS3.SA;BRTRISACNOR4;P94073106;B28M799;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;28-Apr-2017;Brazil;0,69;Residential Builders - Multifamily Homes;66.045.780
+Panatlantica SA;PATI4.SA;BRPATIACNPR3;P74891113;B0G4005;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;27-Apr-2017;Brazil;1,27;Metallic Rolling & Drawing Products;63.581.595
+Battistella Administracao e Participacoes SA;BTTL4.SA;BRBTTLACNPR7;P1620L112;2083753;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2008;Brazil;1,11;Heavy Trucks;62.672.060
+Pettenati SA Industria Textil;PTNT3.SA;BRPTNTACNOR6;P7867L103;2682213;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-Nov-2016;Brazil;1,82;Textiles & Leather Goods (NEC);62.466.969
+WLM Industria e Comercio SA;WLMM4.SA;BRWLMMACNPR3;P9881V133;BZBYD06;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2016;Brazil;0,23;Heavy Machinery & Vehicles Wholesale;61.559.668
+Nadir Figueiredo Ind e Com SA;NAFG4.SA;BRNAFGACNPR1;P7068T111;2618412;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;21-Jun-2017;Brazil;1,03;Tools & Housewares;61.123.369
+Elekeiroz SA;ELEK3.SA;BRELEKACNOR5;P3641T108;2194945;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;26-Dec-2013;Brazil;2,90;Commodity Chemicals (NEC);57.261.563
+Fertilizantes Heringer SA;FHER3.SA;BRFHERACNOR5;P40228101;B1VQDQ0;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-Mar-2008;Brazil;8,87;Fertilizers;55.913.168
+Bicicletas Monark SA;BMKS3.SA;BRBMKSACNOR9;P1R67M103;2095479;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;0,15;Bicycle Manufacturing;49.970.931
+Companhia de Tecidos Norte de Minas COTEMINAS;CTNM4.SA;BRCTNMACNPR6;P3164Y104;2229212;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2011;Brazil;2,81;Textiles & Leather Goods (NEC);48.426.286
+Saraiva SA Livreiros Editores;SLED4.SA;BRSLEDACNPR7;P8515A192;2965141;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;1,71;Book Publishing;43.486.875
+METISA Metalurgica Timboense SA;MTSA4.SA;BRMTSAACNPR9;P6543P116;B1W6CF1;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;29-Nov-2016;Brazil;0,50;Heavy Machinery & Vehicles (NEC);43.073.890
+Unicasa Industria de Moveis SA;UCAS3.SA;BRUCASACNOR1;P9449Z105;B4P6HK9;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;14-Dec-2015;Brazil;0,34;Home Furnishings (NEC);41.587.649
+Companhia Tecidos Santanense;CTSA3.SA;BRCTSAACNOR3;P2603M119;2200615;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-May-2015;Brazil;0,76;Industrial Clothing & Uniforms;28.867.348
+Log-in Logistica Intermodal SA;LOGN3.SA;BRLOGNACNOR3;P6401A102;B1Y4WH5;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;18-Mar-2009;Brazil;8,78;Marine Freight & Logistics (NEC);28.725.300
+GPC Participacoes SA em Recuperacao Judicial;GPCP3.SA;BRGPCPACNOR4;P4896V103;2129282;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;01-Jul-2005;Brazil;36,94;Commodity Chemicals (NEC);23.489.785
+"Empresa Nacional de Comercio Redito e Participacoes SA
+Encorpar";ECPR3.SA;BRECPRACNOR5;P3711T103;2117566;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;17-Jul-2014;Brazil;2,32;Distilleries;20.985.918
+Bardella SA Industrias Mecanicas;BDLL4.SA;BRBDLLACNPR8;P1615M117;2081672;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-May-2015;Brazil;1,82;Heavy Machinery & Vehicles (NEC);20.674.736
+Sondotecnica Engenharia Solos SA;SOND5.SA;BRSONDACNPA8;P87265115;B1WRT64;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;04-May-2015;Brazil;0,44;Business Support Services (NEC);17.863.810
+Contax Participacoes SA;CTAX3.SA;BRCTAXACNOR3;P3144E103;2817219;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;08-Dec-2014;Brazil;166,00;Call Center Services;16.938.795
+Companhia de Fiacao e Tecidos Cedro Cachoeira;CEDO3.SA;BRCEDOACNOR8;P2578S109;2181743;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;24-Mar-2014;Brazil;7,64;Textiles & Leather Goods (NEC);16.684.190
+Rio Novo Gold Inc;RN.TO;VGG757001075;G75700107;B652FL8;"Fully Paid Ordinary
+Shares";Canadian Dollar;The Toronto Stock Exchange;;Brazil;0,21;Diversified Mining;16.250.365
+Electro Aco Altona SA;EALT4.SA;BREALTACNPR1;P3631H114;2309299;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;08-Aug-2016;Brazil;2,53;Iron, Steel Mills & Foundries;15.343.794
+Azevedo & Travassos SA;AZEV4.SA;BRAZEVACNPR7;P0608H119;B08ZWK0;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;14-Dec-2015;Brazil;26,16;Construction & Engineering (NEC);14.029.707
+Tekno SA;TKNO4.SA;BRTKNOACNPR5;P90246110;B1YH122;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;29-Apr-2015;Brazil;0,17;Paints & Coatings;13.909.180
+Siderurgica JL Aliperti SA;APTI3.SA;BRAPTIACNOR6;P8657M103;2806778;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2016;Brazil;0,53;Iron & Steel (NEC);12.619.070
+Excelsior Alimentos SA;BAUH4.SA;BRBAUHACNPR3;P16216114;2084411;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;24-Apr-2017;Brazil;1,04;Meat Processing;9.863.858
+Lupatech SA;LUPA3.SA;BRLUPAACNOR8;P64028114;B14TFV5;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;10-Apr-2007;Brazil;11,61;Industrial Valve Manufacturing;9.422.341
+Springer SA;SPRI3.SA;BRSPRIACNOR2;P8738P109;2834382;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;30-Apr-2013;Brazil;0,13;"Heating, Ventilation & Air Conditioning
+System...";8.363.232
+Trevisa Investimentos SA;LUXM3.SA;BRLUXMACNOR7;P9368Y105;B08BYT1;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;0,89;Inland Water Freight;8.287.183
+Dtcom Direct to Company SA;DTCY3.SA;BRDTCYACNOR5;P35886103;2964308;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;8,61;Business Support Services (NEC);7.993.981
+Construtora Lix da Cunha SA;LIXC3.SA;BRLIXCACNOR3;P3089Q103;2220710;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;12-May-2009;Brazil;15,12;Construction & Engineering (NEC);5.514.107
+Metalgrafica Iguacu SA;MTIG4.SA;BRMTIGACNPR7;P6527T118;2583082;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;03-Jan-2012;Brazil;2,84;Metal Containers & Packaging;5.507.109
+Tecnosolo Engenharia SA;TCNO3.SA;BRTCNOACNOR5;P90148100;2236621;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;06-May-2015;Brazil;13,42;Construction & Engineering (NEC);4.232.867
+Suzano Holding SA;NEMO5.SA;BRNEMOACNPA9;P8820T100;2629629;Preference Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;5,57;Paper Products (NEC);--
+Unidas SA;UNID3.SA;BRUNIDACNOR3;P94859108;BD83SQ3;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;1,80;Passenger Car Rental;--
+Companhia Industrial Cataguases;CATA3.SA;BRCATAACNOR1;P25858104;2155124;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-Jan-2017;Brazil;0,81;Natural Fabrics;--
+Pratica Participacoes SA;PRCA3.SA;BRPRCAACNOR3;P7S0DE103;BYNZS16;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;1,02;Industrial Machinery;--
+Forno de Minas Alimentos SA;FOMS3.SA;BRFOMSACNOR2;P4368V102;BZ77HH4;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;1,57;Food Processing (NEC);--
+Polpar SA;PPAR3.SA;BRPPARACNOR5;P7905X101;B1YB2S7;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;0,27;Paper Products (NEC);--
+Minasmaquinas SA;MMAQ3.SA;BRMMAQACNOR1;P6665L109;2593531;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;08-Mar-2017;Brazil;0,39;New Car Dealers;--
+Cinesystem SA;CNSY3.SA;BRCNSYACNOR6;P2R63D105;BD8D904;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;2,55;Movie Theaters & Movie Products;--
+Sauipe SA;PSEG3.SA;BRPSEGACNOR4;P85228115;2140584;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;0,27;Hotels, Motels & Cruise Lines (NEC);--
+Conservas Oderich SA;ODER3.SA;BRODERACNOR6;P3075N106;2155168;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;02-May-2017;Brazil;1,67;Food Processing (NEC);--
+CTC Centro de Tecnologia Canavieira SA;CTCA3.SA;BRCTCAACNOR7;P3R05Y108;BDCX1B5;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;;Brazil;0,50;Agricultural Biotechnology;--
+;;;;;;;;;;;;
+Litel Participacoes SA;LTEL5B.SO;BRLTELACNPA4;P6297H179;2662668;Preference Shares;Brazilian Real;Sociedade Operadora do Mercado de Ativos;08-May-2017;Brazil;0,19;Iron & Steel (NEC);--
+Grucai Participacoes SA;GRUC3.SA;BRGRUCACNOR0;P4915U102;2364083;Ordinary Shares;Brazilian Real;BM&F Bovespa SA Bolsa de Valores Mercadorias e Futuros;17-Feb-2010;Brazil;0,71;Ground Freight & Logistics (NEC);--
+;;;;;;;;;;;;

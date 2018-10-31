@@ -1,0 +1,26 @@
+package abm;
+
+import java.util.HashMap;
+
+import repast.simphony.context.Context;
+import repast.simphony.dataLoader.ContextBuilder;
+
+public class Builder implements ContextBuilder<Object>{
+	
+	private HashMap<String,Float> params = new HashMap<String,Float>();
+
+	
+	@Override
+	public Context<Object> build(Context<Object> context) {
+		
+		
+		
+		
+		return context;
+		
+	}
+
+	private float findParameterByName(String name) {
+		return (float) params.get(name);
+	}
+}

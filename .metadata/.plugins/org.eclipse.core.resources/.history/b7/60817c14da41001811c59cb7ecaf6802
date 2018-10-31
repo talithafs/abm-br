@@ -1,0 +1,53 @@
+package abm.creators;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import abm.agents.CapitalGoodsFirm;
+import abm.agents.ConsumptionGoodsFirm;
+import abm.agents.Firm;
+import abm.helpers.Constants;
+import cern.jet.random.Uniform;
+import repast.simphony.random.RandomHelper;
+
+
+public class FirmsCreator implements AgentsCreator<Firm> {
+
+	public ArrayList<Firm> create(HashMap<String,Float> params){
+		
+		ArrayList<Firm> firms = new ArrayList<Firm>();
+		
+		int nCaps = params.get(Constants.Keys.N_CAP_FIRMS).intValue();
+		int nCons = params.get(Constants.Keys.N_CON_FIRMS).intValue();
+		float gdpPerWorker = params.get(Constants.Keys.GDP_PER_EMPL)/12 ;
+		float debtPerWorker = params.get(Constants.Keys.DEBT_PER_WORKER)/12;
+		
+		Uniform unifGdp = RandomHelper.createUniform(0, 2*gdpPerWorker);
+		Uniform unifDebt = RandomHelper.createUniform(0, 2*debtPerWorker);
+		
+		for(int i = 0; i < nCaps; i++) {
+			
+			float income = (float) unifGdp.nextDouble();
+			float debt = (float) unifDebt.nextDouble();
+			
+			CapitalGoodsFirm cap = new CapitalGoodsFirm(income,debt);
+			firms.add(cap);
+		}
+		
+		for(int i = 0; i < nCons; i++) {
+			
+			float income = (float) unifGdp.nextDouble();
+			float debt = (float) unifDebt.nextDouble();
+			
+			ConsumptionGoodsFirm con = new ConsumptionGoodsFirm(income,debt);
+			firms.add(con);
+		}
+		
+		return firms ;
+	}
+	
+	public void distribute(ArrayList<Firm> firms, ArrayList<Integer[]> distribution) {
+		
+	}
+	
+}

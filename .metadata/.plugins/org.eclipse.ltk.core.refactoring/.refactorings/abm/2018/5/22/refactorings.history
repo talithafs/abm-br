@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;abm.tste.java&apos; to &apos;ProductionTest.java&apos;&#x0A;- Original project: &apos;abm&apos;&#x0A;- Original element: &apos;abm.tste.java&apos;&#x0A;- Renamed element: &apos;abm.ProductionTest.java&apos;" description="Rename compilation unit &apos;tste.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/tests&lt;abm{tste.java" name="ProductionTest.java" references="false" stamp="1527433042751" version="1.0"/>
+</session>

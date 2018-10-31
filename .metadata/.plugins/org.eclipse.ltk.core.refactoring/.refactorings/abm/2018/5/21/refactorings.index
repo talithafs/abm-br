@@ -1,0 +1,9 @@
+1526860643659	Rename type 'PlanProductionTest'
+1526860756102	Rename type 'ConPlanProductionTest'
+1526946985604	Rename type 'CreditMarketTest'
+1526956171573	Delete element
+1526997624858	Rename field 'riskPremium'
+1526997638742	Rename method 'getRiskPremium'
+1526997650182	Rename method 'setRiskPremium'
+1527006699992	Rename method 'getCreditOffering'
+1527362003205	Rename type 'Helper'

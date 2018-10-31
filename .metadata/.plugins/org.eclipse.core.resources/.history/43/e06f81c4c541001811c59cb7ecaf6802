@@ -1,0 +1,5 @@
+package abm.creators;
+
+public class FirmsCreator implements AgentsCreator<T> {
+
+}
