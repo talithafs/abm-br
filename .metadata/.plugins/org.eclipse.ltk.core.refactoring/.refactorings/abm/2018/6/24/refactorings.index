@@ -1,5 +1,0 @@
-1528725385814	Rename field 'lastPeriodCredit'
-1528725703588	Rename method 'getLastPeriodCredit'
-1528725719049	Rename method 'setLastPeriodCredit'
-1528725731574	Rename local variable 'lastPeriodCredit'
-1528738943868	Rename method 'fireWorkers'

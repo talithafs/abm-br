@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename field &apos;innExponnent&apos; in &apos;abm.Calibrable&apos; to &apos;innExponent&apos;&#x0A;- Original project: &apos;abm&apos;&#x0A;- Original element: &apos;abm.Calibrable.innExponnent&apos;&#x0A;- Renamed element: &apos;abm.Calibrable.innExponent&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;innExponnent&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;abm{Calibrable.java[Calibrable^innExponnent" name="innExponent" references="true" setter="false" stamp="1528486769380" textual="false" version="1.0"/>
-</session>
