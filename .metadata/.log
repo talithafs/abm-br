@@ -1642,3 +1642,13 @@ Stack Trace
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2018-10-29 22:45:39.694
 !MESSAGE Server returned lastModified <= 0 for http://www.objectaid.net/update/content.jar
+!SESSION 2018-12-06 23:53:54.739 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=9-Ubuntu
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.committers.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.committers.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-12-06 23:54:18.090
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.papyrus.infra.ui.fonts/org.eclipse.papyrus.infra.ui.fonts.internal.addon.FontAddon
