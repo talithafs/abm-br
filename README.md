@@ -8,6 +8,8 @@ I built this model with **[Eclipse IDE for Eclipse Committers](https://www.eclip
 4. Press Eclipse's *Run* button. This will open the Repast view.
 5. Press Repast's *Start* button.
 
+**Tip**: If you have never worked with Repast, a good way to start is following [this](https://repast.github.io/docs/RepastJavaGettingStarted.pdf) tutorial. 
+
 # The Model
 
 The objective, the methodology, and a thorough description of the model can be found at `initialization/paper.pdf`. This file is being constantly updated, so make sure you always have the latest version. Since the model is still under construction, several parts of this document may be outdated at any point in time, but I'll keep these marked in red. 
