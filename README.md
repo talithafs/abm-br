@@ -1,6 +1,6 @@
 # Environment Setup
 
-I built this model with [Eclipse IDE for Eclipse Committers](https://www.eclipse.org/downloads/packages/release/oxygen/3a/eclipse-ide-eclipse-committers), Version: Oxygen.3a, Release (4.7.3a)** (Build id: 20180405-1200) and [Repast Simphony](https://repast.github.io/). In order to run it, you should:
+I built this model with [Eclipse IDE for Eclipse Committers](https://www.eclipse.org/downloads/packages/release/oxygen/3a/eclipse-ide-eclipse-committers), Version: Oxygen.3a, Release 4.7.3a (Build id: 20180405-1200) and [Repast Simphony](https://repast.github.io/). In order to run it, you should:
 
 1. Download and install *Eclipse Oxygen.3a*.
 2. From within Eclipse, install Repast, following [these steps](https://repast.github.io/download.html) (section: *Repast Simphony Eclipse Update Site*). 
