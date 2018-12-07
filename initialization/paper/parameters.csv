@@ -1,0 +1,28 @@
+"Description","Unit","Value1","Value2"
+"Number of Workers","workers",2000,NA
+"Number of Unemployed Workers","workers",166,NA
+"Number of Firms","firms",287,NA
+"Number of Banks","banks",5,NA
+"Microfirms maximum number of workers","workers",11,NA
+"Small firms maximum number of workers","workers",58,NA
+"Medium firms maximum number of workers","workers",168,NA
+"Microfirms A","1:workers 2:firms",2,101
+"Microfirms B","1:workers 2:firms",3,148
+"Microfirms C","1:workers 2:firms",6,1
+"Microfirms D","1:workers 2:firms",10,1
+"Microfirms TOTALS","1:workers 2:firms",662,250
+"Small Firms A","1:workers 2:firms",15,30
+"Small Firms B","1:workers 2:firms",20,1
+"Small Firms C","1:workers 2:firms",21,1
+"Small Firms TOTALS","1:workers 2:firms",491,32
+"Medium Firms A","1:workers 2:firms",77,2
+"Medium Firms B","1:workers 2:firms",78,2
+"Medium Firms TOTALS","1:workers 2:firms",310,4
+"Large Firms A","1:workers 2:firms",185,1
+"Large Firms B","1:workers 2:firms",186,1
+"Large Firms TOTALS","1:workers 2:firms",371,2
+"Real GDP","goods",115056000,NA
+"Real GDP per employed worker","goods",62735,NA
+"Percentage of salaries in GDP","percentage",44,NA
+"Profit per worker (last 12 months)","goods",35415,NA
+"Saving rate","percentage",16.4,NA

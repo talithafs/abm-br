@@ -1,127 +1,14 @@
 ---
-title: "Toward an Agent-Based Model for the Brazilian Economy"
-subtitle: "Data Initialization"
+title: "Untitled"
 author: "Talitha Speranza"
-date: "April 10, 2018"
+date: "June 26, 2018"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
-# Chunck options
-knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
-# Libraries
-library(kableExtra)
-library(dplyr)
 
-# Constants
-mln <- 1*10^6 
-tsd <- 1*10^3
-bln <- 1*10^9
-tln <- 1*10^12
 
-# 
-disp.params <- data.frame("Description" = character(), "Unit" = character(), 
-                          "Value" = numeric(), stringsAsFactors=FALSE)
-params <- data.frame("key" = character(), "value" = numeric(), stringsAsFactors = FALSE)
-```
 
-# Number of Agents 
-
-```{r echo=F}
-n.consumers <- 2000
-```
-
-The number of agents of each type in relation to other types will be based on the real proportions we observe in Brazilian time series and official records. The number of consumers, from now on $E$, is fixed in `r n.consumers` and the quantitity of other agents is calculated from this number. We begin by reading data on Brazilian firms and employees^[Brazilian Institute for Statistics and Geography, [Central Registry of Enterprises (2015)](https://sidra.ibge.gov.br/pesquisa/cempre/quadros/brasil/2015 )]. Some registers of this database are shown below (Table \ref{tab:cce}).
-
-```{r echo = F}
-# Read data from Cadastro Central de Empresas
-dist.firms <- read.csv("cce.csv", stringsAsFactors = F, encoding = "latin1")
-dist.firms[dist.firms == "X"] <- 0
-dist.firms[,4:7] <- data.frame(lapply(dist.firms[,4:7], as.integer))
-
-# This column will be used later
-dist.firms$avg.min.wages <- as.numeric(gsub(",","\\.",dist.firms$avg.min.wages)) 
-
-# Eliminate NAs
-dist.firms <- na.omit(dist.firms)
-
-# Filter 
-v1 <- filter(dist.firms, (type == "c" | type == "k") & bracket == "Total")
-v2 <- filter(dist.firms, (type == "b"))
-
-# Get totals
-tot.firms <- sum(v1$units)
-tot.empls <- sum(v1$employees)
-tot.banks <- sum(v2$units)
-
-# Get subtotals
-v11 <- filter(v1, type == "c")
-v12 <- filter(v1, type == "k")
-tot.c <- sum(v11$units)
-tot.k <- sum(v12$units)
-```
-
-```{r echo=F}
-# Display table
-sub.dist.firms <- head(dist.firms[,-2],20)
-names(sub.dist.firms) <- c("","Bracket","Units", "Employees","Salaried","Wage Volume", "Avg. Min. Wages")
-kableExtra::kable(sub.dist.firms, format = "latex", booktabs = T, caption = "\\label{tab:cce}Twenty first records of IBGE's Central Registry of Enterprises, 2015. First column represents the specialization according to CNAE 2.0. Bracket is in number of employees. Wage volume is in thousands of R\\$.") %>% 
-  kable_styling(latex_options = c("scale_down","hold_position")) %>%
-  collapse_rows(columns = 1, latex_hline = "major") 
-```
-
-According to this dataset, in 2015 Brazil had approximately `r round(tot.firms/mln,1)` million non-financial private firms, which employed around `r round(tot.empls/mln,1)` million workers, and there were about `r round(tot.banks/tsd, 2)` thousand private banks and other financial firms. The number of consumption goods firms was approximately `r round(tot.c/mln,1)` million, whereas the number of capital goods firms was around `r round(tot.k/mln,1)` million. 
-
-```{r echo = F}
-unemp <- read.csv2("desemprego.csv", stringsAsFactors = F, sep="\t")
-unemp.rate <- round(mean(unemp[grepl("2015",unemp[,1]),2])/100,3)
-
-tot.workers <- tot.empls/(1 - unemp.rate)
-```
-
-We need to consult the unemployment rate series to calculate the total number of workers available in 2015. That year, the unemployment rate was `r unemp.rate*100`% in 2015, as disclosed by IBGE's [_Monthly National Household Survey_](https://sidra.ibge.gov.br/tabela/6381), so the total number of workers can be approximated to `r round(tot.workers/mln,2)` million.
-
-Let $F_1$ be the number of consuption goods firms, $F_2$ the number of capital goods firms, and $B$ the number of banks within the model. Then:
-
-```{r echo = F}
-n.con.firms <- round(n.consumers*(tot.c/tot.workers))
-n.cap.firms <- round(n.consumers*(tot.k/tot.workers))
-n.banks <- round(n.consumers*(tot.banks/tot.workers))
-n.unemployed <- round(2000*unemp.rate)
-n.employed <- n.consumers - n.unemployed
-```
-
-\begin{equation}
-F_1 \approx E\cdot\left(\frac{`r round(tot.c/mln,1)`}{`r round(tot.workers/mln,1)`}\right) \approx `r n.consumers`\cdot `r round(tot.c/tot.workers, 3)` \approx `r n.con.firms`
-\end{equation}
-
-\begin{equation}
-F_2 \approx E\cdot \left(\frac{`r round(tot.k/mln,1)`}{`r round(tot.workers/mln,1)`}\right) \approx `r n.consumers`\cdot `r round(tot.k/tot.workers, 4)` \approx `r n.cap.firms`
-\end{equation}
-
-\begin{equation}
-B \approx E\cdot \left(\frac{`r round(tot.banks/mln,1)`}{`r round(tot.workers/mln,1)`}\right) \approx `r n.consumers`\cdot `r round(tot.banks/tot.workers, 3)` \approx `r n.banks`
-\end{equation}
-
-Table \ref{tab:agents} shows a list of the parameters already discussed.
-
-```{r echo = F}
-#  Fill 'disp.params'
-disp.params[1,] <- list("Number of Consumers", "consumers", n.consumers)
-disp.params[2,] <- list("Number of Unemployed Consumers", "consumers", n.unemployed)
-disp.params[3,] <- list("Number of Consumption Goods Firms", "firms", n.con.firms)
-disp.params[4,] <- list("Number of Capital Goods Firms", "firms", n.cap.firms)
-disp.params[5,] <- list("Number of Banks", "banks", n.banks)
-
-params[1,] <- list("n_consumers", n.consumers)
-params[2,] <- list("n_unemployed", n.unemployed)
-params[3,] <- list("n_con_firms", n.con.firms)
-params[4,] <- list("n_cap_firms",n.cap.firms)
-params[5,] <- list("n_banks",n.banks)
-
-knitr::kable(disp.params, caption="\\label{tab:agents}Number of agents of each type.", row.names = F, booktabs = T)
-```
 
 ## Gross Domestic Product
 
@@ -164,21 +51,16 @@ params[7,] <- list("gdp_per_empl", round(gdp.per.empl/12,2))
 params[8,] <- list("perc_sal", perc.sal)
 params[9,] <- list("prf_per_empl",round(prf.per.empl/12,2))
 
-kable(disp.params[6:9,-4], caption="\\label{tab:gdp}GDP and its components.", row.names = F)
+kableExtra::kable(disp.params[6:9,-4], caption="\\label{tab:gdp}GDP and its components.", row.names = F, booktabs = T)
 ```
 
 Initial profits were assigned to each firm according to its number of workers. The unit of profit, $\pi_u$, is shown in the table above (*Profit per employed worker*). If a firm has $N$ employees, its starting profit is $N \cdot \pi_u \cdot x$, where $x \sim U(0,2)$. This way, we introduce more heterogeneity into the system, by allowing some firms to begin with littler or no profits and other with outstanding past results. Given that the mean of $x$ is 1, the average initial profit per worker matches real data.
 
 ```{r echo = F}
-capc <- read.csv2("used_capacity.csv", stringsAsFactors = F, sep="\t", encoding = "latin1")
+capc <- read.csv2("data/used_capacity.csv", stringsAsFactors = F, sep="\t", encoding = "latin1")
 capc <- round(mean(capc[grepl("2015",capc[,1]),2])/100,3)
 
 params[10,] <- list("used_cap",capc)
-```
-
-
-```{r echo = F}
-#knitr::kable(params)
 ```
 
 ## Number of Employees Per Firm
@@ -225,7 +107,7 @@ The *Central Register of Enterprises* also serves the purpose of calculating how
 filtered <- filter(dist.firms, type == "k", bracket != "Total")[,3:5]
 filtered <- aggregate(filtered[,-1], by = list(filtered$bracket), FUN = sum)
 names(filtered) <- c("Bracket","Units","Employees")
-knitr::kable(filtered, caption = "\\label{tab:caps}Aggregated data for capital goods firms, by brackets. Some columns are not shown, because they are not going to be useful in the following calculations.") 
+kableExtra::kable(filtered, caption = "\\label{tab:caps}Aggregated data for capital goods firms, by brackets. Some columns are not shown, because they are not going to be useful in the following calculations.", booktabs = T) 
 ```
 
 The next step is to divide each element from the column *units* by the sum of all elments, so as to find the percentages they represent. On the other hand, elements of *employees* are divided by `r tot.empls`, which is the total number of workers registered in the original dataset (the sum of employees from capital and consumption goods firms). This way, this column will represent percentages of the total number of workers. Having these columns of percentages, we multiply the first by the number of the associated type of firm within the model (`r n.cap.firms` capital goods firms and `r n.con.firms` consumption goods firms) and the second by the number of employed consumers (`r n.employed`). The results are presented in table \ref{tab:dist.percs}.
@@ -234,7 +116,7 @@ The next step is to divide each element from the column *units* by the sum of al
 s = sum(filtered$Units)
 filtered$units = ceiling((filtered$Units/s)*n.cap.firms)
 filtered$employees = ceiling((filtered$Employees/tot.empls)*n.employed)
-knitr::kable(filtered, caption="\\label{tab:dist.percs} Number of firms and employees per bracket.")
+kableExtra::kable(filtered, caption="\\label{tab:dist.percs} Number of firms and employees per bracket.", booktabs = T)
 ```
 
 Note that the second column, *employees* represent the total number of employees in all units. Therefore, we find the average number of employees per firm and round it down to the nearest integer. Some firms will have this number of employees, while others will have one more, in order to absorb the remainder. For instance, if *employees* is 535 and *units* is 100, 65 firms will have 5 employees and 35 firms, 6 employees, since $\lceil 535/100 \rceil = 5$ and the remainder is 35, which imposes that 35 firms have $5 + 1 = 6$ employees. We now have the initial distribution of employees per firm. The result of such calculations are shown in table \ref{tab:dist.cap}. 
@@ -257,7 +139,7 @@ for(i in 1:nrow(dist.fir)){
 
 params[2,] <- list("n_unemployed", n.consumers - sum)
 
-write.csv(dist.fir, file = "/home/talithafs/Dropbox/DissertaÃ§Ã£o/Modelo/abm/input/dist_fir.csv", row.names = F)
+#write.csv(dist.fir, file = "/home/talithafs/Dropbox/Dissertação/Modelo/abm/input/dist_fir.csv", row.names = F)
 
 names(dist.cap) <- c("N. Firms", "N. Employees", "Tot. Employees")
 names(dist.con) <- names(dist.cap)
@@ -272,7 +154,7 @@ Workers belong to social classes that are defined by income brackets. Each of th
 
 ```{r echo=F}
 # Read data
-dist.inc <- read.csv("distribuicao_renda_riqueza.csv", stringsAsFactors = F, encoding = "latin1")
+dist.inc <- read.csv("data/distribuicao_renda_riqueza.csv", stringsAsFactors = F, encoding = "latin1")
 dist.inc[,-1] <- data.frame(lapply(dist.inc[,-1], function(x) {
   y <- gsub(',', '', x)
   as.numeric(y)
@@ -285,7 +167,7 @@ dist.inc[,-1] <- data.frame(lapply(dist.inc[,-1], as.integer))
 disp <- dist.inc
 names(disp) <- c("Bracket","Population","Income","Not Exempt","Exempt","Wealth")
 
-knitr::kable(disp, caption = "\\label{tab:income}Income and wealth distribution.")
+kableExtra::kable(disp, caption = "\\label{tab:income}Income and wealth distribution.", booktabs = T, row.names = F)
 ```
 
 ```{r echo=F}
@@ -299,7 +181,7 @@ wealth = (wealth/nom.gdp)*gdp
 Wealth is on the last column of this dataset, and totals on the last row. Hence, total wealth is element (`r c(nrow(dist.inc),ncol(dist.inc))`) of table \ref{tab:income} multiplied by 1 million (data are in R\$ millions). To find the model's total wealth proportional to its GDP, we have to divide it by the nominal GDP, since income and wealth are in nominal values, and then multiply it by the model's initial GDP. By doing so, we find that the model initial total wealth is `r round(wealth/mln,1)` million.
 
 ```{r echo=F}
-# Collapse "renda isenta" and "renda nÃ£o isenta" 
+# Collapse "renda isenta" and "renda não isenta" 
 dist.inc$renda <- (dist.inc$renda + dist.inc$rend.ist + dist.inc$rend.trib.ex)*mln
 dist.inc <- dist.inc[,c(-4,-5)]
 dist.inc$bens = dist.inc$bens*mln
@@ -314,7 +196,7 @@ Given that the table separates income that is exempt from taxes (column 5) from 
 
 ```{r echo=F}
 # Aggregate by social class 
-filt <- dist.inc$faixa %in% c("AtÃ© 1/2","Mais de 1/2 a 1", "Mais de 1 a 2")
+filt <- dist.inc$faixa %in% c("Até 1/2","Mais de 1/2 a 1", "Mais de 1 a 2")
 class.E = dist.inc[filt,]
 class.E = data.frame(lapply(class.E[,-1], sum))
 class.E$faixa = "E - Between 0+ and 2 MS"
@@ -349,44 +231,14 @@ classes <- c("A","B","C","D","E")
 
 vec.emps <- round(props$pessoas*n.employed)
 vec.unemps <- round(props$pessoas*n.unemployed)
-
-# disp.params <- data.frame(Variable = "Number of Consumers",
-#                   Class = classes,
-#                   Unit = "employed workers - unemployed workers",
-#                   "Value 1" = vec.emps,
-#                   "Value 2" = vec.unemps)
-
-#params[10:14,] <- list(paste0("n_emps_class_",classes), vec.emps)
-#params[15:19,] <- list(paste0("n_unemps_class_",classes), vec.unemps)
-
 vec.wages <- round((props$renda*gross.sal/round(props$pessoas*n.employed))/12)
-
-# df <- data.frame(Variable = "Monthly wage of an employed consumer",
-#                  Class = classes,
-#                  Unit = "goods",
-#                  "Value 1" = vec.wages,
-#                  "Value 2" = "-")
-# disp.params <- rbind(disp.params, df)
-
-#params[20:24,] <- list(paste0("mon_wage_class_",classes),vec.wages)
-
 vec.wealth <- round((props$bens*wealth)/(props$pessoas*n.consumers))
-
-# df <- data.frame(Variable = "Wealth of a consumer",
-#                  Class = classes,
-#                  Unit = "goods",
-#                  "Value 1" = vec.wealth,
-#                  "Value 2" = "-")
-# disp.params <- rbind(disp.params, df)
-
-#params[25:29,] <- list(paste0("wealth_class_",classes),vec.wealth)
-
 ```
 
 ```{r echo=F}
 # NAO FALEI DISSO!
 
-filt <- dist.inc$faixa %in% c("AtÃ© 1/2","Mais de 1/2 a 1", "Mais de 1 a 2")
+filt <- dist.inc$faixa %in% c("Até 1/2","Mais de 1/2 a 1", "Mais de 1 a 2")
 class.E = dist.inc[filt,]
 
 avg.mon.inc = sum(class.E$renda/12)/sum(class.E$pessoas) 
@@ -397,19 +249,15 @@ params[nrow(params)+1,] <- list("min_wage",round(min.wage,2))
 
 ```{r echo = F}
 dist.inc <- data.frame(class = classes, emps = vec.emps, unemps = vec.unemps, mon.wage = vec.wages, wealth = vec.wealth)
-write.csv(dist.inc, "/home/talithafs/Dropbox/DissertaÃ§Ã£o/Modelo/abm/input/dist_inc.csv", row.names = F)
+#write.csv(dist.inc, "/home/talithafs/Dropbox/Dissertação/Modelo/abm/input/dist_inc.csv", row.names = F)
 
 disp.params <- dist.inc[,-1]
 names(disp.params) <- c("Employed","Unemployed","Monthly Wage","Wealth")
 row.names(disp.params) <- classes 
 
-# kableExtra::kable(disp.params, format = "latex", booktabs = T, caption = "\\label{tab:inc.params} Wealth and income of our model's consumers.") %>% 
-#   kable_styling(latex_options = c("scale_down","hold_position")) %>%
-#   collapse_rows(columns = 1, latex_hline = "major") 
 kableExtra::kable(disp.params, format = "latex", booktabs = T, caption = "\\label{tab:inc.params} Wealth and income of our model's consumers.")  %>% 
    kable_styling(latex_options = "hold_position")
 ```
-
 
 First, we found the percentage of people in each class in the Brazilian population. Then, we applied those percentages to the model and, using the unemployment rate, calculated the numbers of employed and unemployed workers within a class. For instance, 8.45\% of the Brazilian population belongs to class A. Hence, 169 ($= 2000\cdot0.845$) workers in our model must belong to this class, 14 ($= 169\cdot0.83$) being initially unemployed and 155 ($= 169 - 14$), employed. Results of these computations are exhibited above (table \ref{tab:inc.params}).
 
@@ -418,10 +266,10 @@ First, we found the percentage of people in each class in the Brazilian populati
 Non-corporate debt is expressed as a percentage of household income^[BCB, Household Debt without Mortgage Loans (Series 20400)]. Since families in our model are composed of one member only, this percentage represents approximately how much debt each worker has in relation to his income, in the first run. Actually, non-corporate debt rate was assigned to consumers following a $U(0,54.34)$ distribution, whose mean is exactly the percentage found in Brazilian data ($27.17$, as shown in the table below). We did so because some individuals might not hold debt at all, but others may be severely indebted. 
 
 ```{r echo = F}
-hh.debt <- read.csv2("divida_familias.csv",stringsAsFactors = F)
+hh.debt <- read.csv2("data/divida_familias.csv",stringsAsFactors = F)
 hh.debt <- round(mean(as.numeric(hh.debt[grepl("2015",hh.debt$Date),2])),2)
 
-f.debt <- read.csv2("divida_empresas.csv",stringsAsFactors = F)
+f.debt <- read.csv2("data/divida_empresas.csv",stringsAsFactors = F)
 f.debt[,2] <- gsub(",","",f.debt[,2])
 f.debt <- round(mean(as.numeric(f.debt[grepl("2015",f.debt$Date),2])),2)
 
@@ -433,7 +281,7 @@ disp.params[1,] <- list("Mean household debt (% last 12 months earnings)","goods
 disp.params[2,] <- list("Mean firms debt (% GDP)", "goods", 100*prop.f.debt)
 disp.params[3,]<- list("Firms debt per employee", "goods", debt.per.empl)
 
-knitr::kable(disp.params, caption = "\\label{tab:debt}Debt parameters", row.names = F)
+kableExtra::kable(disp.params, caption = "\\label{tab:debt}Debt parameters", row.names = F, booktabs = T)
 ```
 
 Corporate debt^[BCB, Credit operations outstanding by type of borrower - Private sector (Series 22047)] is split among firms roughly in proportion to the their number of employees. It means that the whole amount of debt is divided into the total number of workers, and the result of this division is the unit of debt, which is then multiplied by a uniform random variable between 0 and 2 (such that the mean is exactly the unit of debt). For instance, a firm with 5 workers has an initial debt of 5 times this randomized unit. Again, the idea of using a random element is to introduce heterogeneity and account for different levels of indebtness. This level, however, refer only to the long-term debt. We will talk about short-term debt later.
@@ -460,11 +308,11 @@ Interest rates charged on loans are different across types of agents. The risk o
 In view of the lack of data on the dimensions of the differences among these charges, interest rates will be calibrated along with several other parameters in the second model. However, in the first model, banks choose initial values for each type of borrower obeying a very simple rule. A mean rate, which is the interest demanded from medium firms, is attributed to each bank accoring to a normal distribution, whose mean is the real mean of interest rates on new credit operations^[BCB-Dstat, Monthly average interest rate of nonearmarked new credit operations - Non-financial corporations (Series 25437) and Households (Series 25462)] in 2015. Banks add or subtract a uniformly random value between 0 and 0.5 to set other interest rates. For example, if the interest charged to medium firms is 2.08, then to small firms it could be 2.29 ($= 2.08 + 0.21$), to micro firms, 2.43 ($= 2.29 + 0.14$), and to large firms, 1.65 ($= 2.08 - 0.43$).  
 
 ```{r echo = F}
-interest <- read.csv2("taxa_de_juros.csv",stringsAsFactors = F)
+interest <- read.csv2("data/taxa_de_juros.csv",stringsAsFactors = F)
 f.ints <- round(mean(as.numeric(interest[grepl("2015",interest$Date),2])),2)
 h.ints <- round(mean(as.numeric(interest[grepl("2015",interest$Date),3])),2)
 
-s.ints <- read.csv("poupanca.csv", stringsAsFactors = F, encoding = "latin1")
+s.ints <- read.csv("data/poupanca.csv", stringsAsFactors = F, encoding = "latin1")
 s.ints <- mean(as.numeric(s.ints[grepl("2015",s.ints[,1]),2]))
 
 require(BETS)
@@ -484,10 +332,7 @@ params[nrow(params)+1,] <- list("mean_savs_int",round(s.ints/100,5))
 params[nrow(params)+1,] <- list("bkr_rate",0.031)
 params[nrow(params)+1,] <- list("mean_selic",round(mean.selic,3))
 
-write.csv(params, file = "/home/talithafs/Dropbox/DissertaÃ§Ã£o/Modelo/abm/input/parameters.csv",row.names = F)
+#write.csv(params, file = "/home/talithafs/Dropbox/Dissertação/Modelo/abm/input/parameters.csv",row.names = F)
 
-knitr::kable(disp.params[1:4,], caption = "\\label{tab:int}Interest rates", row.names = F)
+kableExtra::kable(disp.params[1:4,], caption = "\\label{tab:int}Interest rates", row.names = F, booktabs = T)
 ```
-
-
-

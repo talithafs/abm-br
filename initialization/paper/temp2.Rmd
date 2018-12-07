@@ -1,0 +1,57 @@
+---
+title: "Toward a Multi-Purpose Agent-Based Model for the Brazilian Economy: New Model"
+author: "Talitha Speranza"
+date: '`r Sys.Date()`'
+output:
+  tufte::tufte_handout:
+    citation_package: natbib
+    latex_engine: xelatex
+  tufte::tufte_book:
+    citation_package: natbib
+    latex_engine: xelatex
+  tufte::tufte_html: default
+link-citations: yes
+subtitle: New Model
+header-includes:
+ - \usepackage{amsmath}
+ - \usepackage{amssymb}
+---
+
+```{r setup, include=FALSE}
+library(tufte)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+```{marginfigure}
+$Q_j(t) = p_j(t) \cdot q_j(t)$
+```
+
+
+# 10. Genetic Evolution
+
+Consumption goods firms need to adapt the following parameters:
+
+* $\beta_j$: proportion between inventory and production;
+* $\delta_j$: amortization rate;
+* $\alpha_j$: proportion between internal funds and loans for financing;
+* $\kappa_j$: prices' sensibility to excessive demand.
+
+The genetic selection of these values depends on basically three other parameters:
+
+* $P$: population maximum size;
+* $N$: number of other firms from which to copy chromossomes;
+* $T$: number of lags to be stored.
+
+A chromossome is defined as $c_f^l = [\beta_f^l, \delta_f^l, \alpha_f^l, \kappa_f^l]$, where $f$ is the firm index and $l$ is the time index. Therefore, $f \in \{j, f_1, f_2,...,f_N\}$ and $l \in \{t-1,t-2,...,t-T\}$. There are two objective functions in the case of these firms: $\Pi(c_f^l)$, realized profits, and $L(c_f^l)$, total value of loans. The first must be maximized, the second, minimized.
+
+
+![Flowchart of the genetic algorithm agents use to adapt its behaviour.](AG.pdf)
+
+\newpage
+
+```{r bib, eval= F, include=FALSE}
+# create a bib file for the R packages used in this document
+knitr::write_bib(c('base', 'rmarkdown'), file = 'skeleton.bib')
+```
